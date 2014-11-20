@@ -1,0 +1,15 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+Time for Ramen Underground.. !!
+
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li>{{ question.question_text }}</a></li>
+        <a href="{%  url 'polls:detail'  question.id %}"> vote </a> / <a href="{%  url 'polls:results'  question.id %}">result</a>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
