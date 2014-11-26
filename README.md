@@ -5,8 +5,10 @@ Exmaple and Sample Code for Python Development.
 
 Free to copy and use.
 
-URL of usage examples.
+URL of usage examples will be updated soon. 
 
-http://ypark.uni.me/Python/
+
+
+
 
 
