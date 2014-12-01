@@ -1,8 +1,8 @@
 to test
 
-source vir_env/bin/activate
+>> $ source vir_env/bin/activate
 
-python manage.py runserver
+>> $ python manage.py runserver
 
 
 to see demo
