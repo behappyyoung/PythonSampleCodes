@@ -1,0 +1,106 @@
+#chatContent{
+    background-color: #EDF0F0;
+    font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+}
+
+#chat {
+    width: 80%;
+    display: inline;
+    float: left;
+    background-color: #C9C9C9;
+    border-style: outset;
+}
+
+#chatText {
+    overflow: auto;
+    position: relative;
+    height: 70%;
+    width: 100%;
+}
+
+#chatInput input{
+    float: left;
+}
+
+#chatSendText {
+    border:none;
+    position: relative;
+    height: 32px;
+    width: 80%;
+    font-size: 18px;
+    padding-top: 9px;
+    padding-left: 4px;
+    outline-style:none;
+    font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+    color: #5a5a5a;
+    -webkit-box-shadow: inset 2px 2px 1px #888888; 
+    box-shadow: inset 2px 2px 1px #888888;
+}
+
+#chatSendButton{
+    border:none;
+    position: relative;
+    float: left;
+    height: 32px;
+    width: 20%;
+    font-size: 18px;
+    font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+    -webkit-box-shadow: 2px 2px 1px #888888; /* Safari and Chrome */
+    box-shadow: 2px 2px 1px #888888;
+}
+
+#chatSendButton:active, #chatSendButton.pressed{
+    border:none;
+    position: relative;
+    float: left;
+    height: 32px;
+    width: 20%;
+    font-size: 18px;
+    font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+    box-shadow: inset 2px 2px 1px #888888;
+}
+
+
+.chatMessage {
+    background-color: #C9C9C9;
+    color: black;
+    overflow: auto;
+    margin-left: 2px;
+}
+
+.myMessage {
+    background-color: #F4F4F4;
+    color: black;
+    display: block;
+    margin-left: 2px;
+}
+
+#connectedUsers{
+    overflow: auto;
+    position: relative;
+    width: 15%;
+    list-style-type: none;
+    float: left;
+    border-style: outset;
+}
+
+#connectedUsersList{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+#connectedUsersTitle{
+    font-size: 10px;
+}
+.messageDate, .messageUsername{
+    display: inline;
+    font-size: 10px;
+}
+
+.messageContent{
+    font-style: oblique;
+    font-size: 14px;
+
+}

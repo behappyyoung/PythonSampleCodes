@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>{% block title %} django Test {% endblock %}</title>
+  {% block meta %}{% endblock %}
+</head>
+
+<body id="{% block body_id %}{% endblock %}" class="{% block body_class %}{% endblock %}">
+
+<!-- site tree -->
+{% load sitetree %}
+{% sitetree_menu from "maintree" include "trunk" %}
+{% sitetree_breadcrumbs from "maintree"  %}
+
+<!-- message -->
+{% load inbox %}
+{% inbox_count as my_var %}
+{% if my_var  %}
+    New message : <a href="/messages/" >{{ my_var }} </a>
+{% else %}
+    No New Message
+{% endif %}
+  <div id="body">
+
+  <!-- side bar ..=> sub menu -->
+  {% block sidebar %}
+  {% endblock %}
+
+
+    {% block body %}
+      <div class="content_title">
+        {% block content_title %}{% endblock %}
+      </div>
+      <div class="content">
+        {% block content %}{% endblock %}
+      </div>
+    {% endblock %}
+  </div>
+</body>
+</html>
