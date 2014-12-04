@@ -1,15 +1,30 @@
+{% extends 'base.html' %}
+
 {% load staticfiles %}
 
+{% block title %}Polls{% endblock %}
+{% block content_title %}<h2>Polls</h2>{% endblock %}
+
+{% block content %}
+
+
+
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
-Time for Ramen Underground.. !!
 
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
-        <li>{{ question.question_text }}</a></li>
-        <a href="{%  url 'polls:detail'  question.id %}"> vote </a> / <a href="{%  url 'polls:results'  question.id %}">result</a>
+        <li>{{ question.question_text }} <a href="{%  url 'polls:detail'  question.id %}"> vote </a> </li>
+
+            <ul>
+            {% for choice in question.choice_set.all %}
+                <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+            {% endfor %}
+            </ul>
+
     {% endfor %}
     </ul>
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+{% endblock %}
