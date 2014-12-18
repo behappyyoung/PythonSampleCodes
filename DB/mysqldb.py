@@ -5,7 +5,7 @@ import sys
 
 try:
  conn = MySQLdb.connect (
-  host = "takofirecom.ipagemysql.com",
+  host = "localhost",
   user = "projectm",
   passwd = "projectm",
   db = "projectm")
