@@ -1,0 +1,22 @@
+dumping path: /home/young
+dumping path: /home/young
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.html'}, {'name': 'dirtree.py'}], 'name': 'dirtree'}
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.html'}, {'name': 'dirtree.py'}], 'name': 'dirtree'}
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.html'}, {'name': 'dirtree.py'}], 'name': 'dirtree'}
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.html'}, {'name': 'dirtree.py'}], 'name': 'dirtree'}
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.html'}, {'name': 'dirtree.py'}], 'name': 'dirtree'}
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.html'}, {'name': 'dirtree.py'}], 'name': 'dirtree'}
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.html'}, {'name': 'dirtree.py'}, {'children': [], 'name': 'testdir'}], 'name': 'dirtree'}
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.html'}, {'name': 'dirtree.py'}, {'children': [{'name': 'testfile1.txt'}], 'name': 'testdir'}], 'name': 'dirtree'}
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.html'}, {'name': 'dirtree.py'}, {'children': [{'name': 'testfile1.txt'}], 'name': 'testdir'}], 'name': 'dirtree'}
+dumping path: /var/www/PythonSampleCodes/Flask/dirtree
+dumping make_tree(path): {'children': [{'name': 'flask.log'}, {'name': 'dirtree.py'}, {'children': [{'name': 'testfile1.txt'}], 'name': 'testdir'}, {'children': [{'name': 'dirtree.html'}], 'name': 'templates'}], 'name': 'dirtree'}
