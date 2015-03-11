@@ -29,8 +29,10 @@ def dirtree():
 ##    return jsonify(**pathtree)
     return render_template('dirtree.html', tree=pathtree)
 
+'''
 if __name__=="__main__":
     handler = RotatingFileHandler('flask.log', maxBytes=10000, backupCount=1)
     handler.setLevel(logging.INFO)
     app.logger.addHandler(handler)
     app.run(host='localhost', port=8888, debug=True)
+'''
