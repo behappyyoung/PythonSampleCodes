@@ -123,7 +123,7 @@ def makePalindrome(intArray):
            stepcount = stepcount + makePalindrome(intArray)
            return stepcount
     else:
-        middle = length/2-1
+        middle = length/2
         if intArray[middle] == intArray[middle-1]+1:
            if intArray[length/2] == intArray[length/2+1]+1:
                 return stepcount
