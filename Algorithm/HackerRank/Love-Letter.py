@@ -127,6 +127,19 @@ def makePalindrome(intArray):
         if intArray[middle] == intArray[middle-1]+1:
            if intArray[length/2] == intArray[length/2+1]+1:
                 return stepcount
+           elif intArray[middle] > intArray[middle+1]+1:
+                while intArray[middle] > intArray[middle+1]+1:
+                    intArray[middle] =  intArray[middle]-1
+                    stepcount = stepcount + 1
+                stepcount = stepcount + makePalindrome(intArray)
+                return stepcount
+           else:
+                while intArray[middle] < intArray[middle+1]+1:
+                    intArray[middle-1] =  intArray[middle+1] -1
+                    stepcount = stepcount + 1
+                stepcount = stepcount + makePalindrome(intArray)
+                return stepcount
+
         elif intArray[middle] > intArray[middle-1]+1:
             while intArray[middle] > intArray[middle-1]+1:
                 intArray[middle] =  intArray[middle] -1
