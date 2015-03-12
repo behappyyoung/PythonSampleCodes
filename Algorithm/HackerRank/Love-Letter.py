@@ -8,6 +8,7 @@ He can reduce the value of a letter, e.g. he can change d to c, but he cannot ch
 In order to form a palindrome, if he has to repeatedly reduce the value of a letter, he can do it until the letter becomes a. Once a letter has been changed to a, it can no longer be changed.
 Each reduction in the value of any letter is counted as a single operation. Find the minimum number of operations required to convert a given string into a palindrome.
 '''
+import socket
 
 import math
 
@@ -17,146 +18,73 @@ for num in range(0, T):
     myinput.append(raw_input())
 
 
-def setFirstSmallest(intArray, smallnumber):
-    stepcount =0
-    while intArray[0] == smallnumber:
-          intArray[0] = intArray[0]-1
-          stepcount = stepcount +1
-    return stepcount
-
-
 def makePalindrome(intArray):
     stepcount = 0
-    num = 0
     length = len(intArray)
+    i = 0
+    j = length -1
 
-    while num < math.ceil(length/2.0)-1:
-##                print intArray
-##            if intArray[0] > intArray[num]:                     ## if any number smaller than first one
-  ##              stepcount = stepcount + setFirstSmallest(intArray, intArray[num])
-    ##            stepcount = stepcount + makePalindrome(intArray)
-      ##      else:
-                if intArray[num]>intArray[num+1]:                  ## current > next
-                   intArray[num] = intArray[num] -1
-                   stepcount = stepcount + 1
-                elif intArray[num]==intArray[num+1]:                  ## current == next
-                    if intArray[num] == 97:
-                        if num == 0:
-                           num = num + 1
-                        elif intArray[num-1] == 97:
-                           num = num + 1
-                        elif intArray[num] < intArray[num-1]:
-                           intArray[num-1] = intArray[num-1] -1
-                           num = num -1
+    while i <= math.ceil(length/2.0)-1:
+        gonext = 'stay'
+        if socket.gethostname()=='young-ubuntu-honda':
+            print i, j, ' :' , stepcount, '  ', intArray
+        if intArray[i] == intArray[j]:
+            if i==j or j-i==1:
+                gonext = 'next'
+
+            elif intArray[i] == 97:                                 ## i, j value == 97
+                if 1 >= intArray[i+1] - intArray[i]:
+                    if 1 >= intArray[j-1] - intArray[j]:            ## both i+1, j-1  value  <=98
+                        gonext = 'next'
                     else:
-                        intArray[num] = intArray[num] -1
+                        intArray[j-1] = intArray[j-1] -1
                         stepcount = stepcount + 1
-                        if num == 0:
-                           num = num + 1
-                        elif intArray[num] <= intArray[num-1]:
-                           num = num -1
-                        else:
-                           num = num + 1
-                else:                                               ## current < next
-                   if intArray[num]==intArray[num+1]-1:             ## current == next -1
-                      num = num +1
-                   else:
-                      intArray[num+1] = intArray[num+1] -1
-                      stepcount = stepcount + 1
-    num = length-1
-    while num > math.floor(length/2.0) :
-##            print intArray
-            if intArray[length-1] > intArray[0]:               ## last > first
-                intArray[length-1] = intArray[length-1]-1
-                stepcount = stepcount + 1
-                num = length-1
-
-            else:                                               ## first == last
-                if intArray[num-1] < intArray[num]:              ## before < current
-                    if intArray[num] == 97:
-                        print 'input error'
-                        return stepcount
-                    else:
-                        intArray[num] = intArray[num] -1
-                        num = num + 1
-                elif intArray[num-1] == intArray[num]:              ## before == current
-                    if intArray[num] == 97:
-                        if num == length-1:
-                           num = num - 1
-                        elif intArray[num+1] == 97:
-                           num = num - 1
-                        elif intArray[num] < intArray[num+1]:
-                           intArray[num+1] = intArray[num+1] -1
-                           num = num +1
-                    else:
-                        intArray[num] = intArray[num] -1
-                        stepcount = stepcount + 1
-                        if num == length-1:
-                           num = num - 1
-                        elif intArray[num] <= intArray[num+1]:
-                           num = num + 1
-                        else:
-                           num = num - 1
-
-
-                elif intArray[num-1]-1 ==intArray[num]:
-                    num = num - 1
                 else:
-                    intArray[num-1] = intArray[num-1]-1
-                    stepcount = stepcount +1
-
-
-    if length % 2 ==0:          ## even number of array   #### do agin
-       middle = length/2-1
-       if intArray[middle]== intArray[middle+1]:
-            return stepcount
-       elif intArray[middle] > intArray[middle+1]:
-           while intArray[middle] > intArray[middle+1]:
-                intArray[middle] =  intArray[middle] -1
+                    if 1 >= intArray[j-1] - intArray[j]:
+                        intArray[i+1] = intArray[i+1] -1
+                        stepcount = stepcount + 1
+                    else:
+                        intArray[j-1] = intArray[j-1] -1
+                        stepcount = stepcount + 1
+            elif i!=0 and 1 > intArray[i]-intArray[i-1]:
+                gonext = 'prev'
+            elif 1 > intArray[i+1]-intArray[i]:
+                intArray[i] = intArray[i] -1
+                intArray[j] = intArray[j] -1
+                stepcount = stepcount + 2
+            elif 1 > intArray[j-1]-intArray[j]:
+                intArray[i] = intArray[i] -1
+                intArray[j] = intArray[j] -1
+                stepcount = stepcount + 2
+            elif 1 < intArray[i+1]-intArray[i]:
+                intArray[i+1] = intArray[i+1] -1
                 stepcount = stepcount + 1
-           stepcount = stepcount + makePalindrome(intArray)
-           return stepcount
-       else:
-           while intArray[middle] < intArray[middle+1]:
-               intArray[middle+1] =  intArray[middle+1] -1
-               stepcount = stepcount + 1
-           stepcount = stepcount + makePalindrome(intArray)
-           return stepcount
-    else:
-        middle = length/2
-        if intArray[middle] == intArray[middle-1]+1:
-           if intArray[length/2] == intArray[length/2+1]+1:
-                return stepcount
-           elif intArray[middle] > intArray[middle+1]+1:
-                while intArray[middle] > intArray[middle+1]+1:
-                    intArray[middle] =  intArray[middle]-1
-                    stepcount = stepcount + 1
-                stepcount = stepcount + makePalindrome(intArray)
-                return stepcount
-           else:
-                while intArray[middle] < intArray[middle+1]+1:
-                    intArray[middle-1] =  intArray[middle+1] -1
-                    stepcount = stepcount + 1
-                stepcount = stepcount + makePalindrome(intArray)
-                return stepcount
-
-        elif intArray[middle] > intArray[middle-1]+1:
-            while intArray[middle] > intArray[middle-1]+1:
-                intArray[middle] =  intArray[middle] -1
+            elif 1 < intArray[j-1]-intArray[j]:
+                intArray[j-1] = intArray[j-1] -1
                 stepcount = stepcount + 1
-            stepcount = stepcount + makePalindrome(intArray)
-            return stepcount
+            else:
+                gonext = 'next'
+
+        elif intArray[i]<intArray[j]:
+            intArray[j] = intArray[j] - 1
+            stepcount = stepcount + 1
         else:
-           while intArray[middle] < intArray[middle-1]+1:
-                intArray[middle-1] =  intArray[middle-1] -1
-                stepcount = stepcount + 1
-           stepcount = stepcount + makePalindrome(intArray)
-           return stepcount
+            intArray[i] = intArray[i] - 1
+            stepcount = stepcount + 1
+
+        if gonext == 'next':
+            i = i + 1
+            j = j - 1
+        elif gonext == 'prev':
+            i = i -1
+            j = j + 1
+
+    return stepcount
 
 for i in myinput:
-    tempArray =[]
+    intArray =[]
     for c in i:
-        tempArray.append(ord(c))
+        intArray.append(ord(c))
 
-    print makePalindrome(tempArray)
+    print makePalindrome(intArray)
 
