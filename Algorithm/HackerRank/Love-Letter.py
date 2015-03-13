@@ -56,26 +56,29 @@ def makePalindrome(intArray):
             elif idiff ==1 and jdiff ==1:
                 gonext = 'next'
             elif 1 < idiff:
-                intArray[i+1] = intArray[i+1] - idiff + 1
-                stepcount = stepcount +idiff - 1
-                gonext = 'next'
+                intArray[i+1] = intArray[i+1] - ( idiff - 1 )
+                stepcount = stepcount + ( idiff - 1 )
             elif 1 < jdiff:
-                intArray[j-1] = intArray[j-1] - jdiff + 1
-                stepcount = stepcount +  jdiff -1
-                gonext = 'next'
+                intArray[j-1] = intArray[j-1] - ( jdiff - 1)
+                stepcount = stepcount +  ( jdiff - 1 )
+                
             elif 1 > idiff:
                 intArray[i] = intArray[i]-1
                 intArray[j] = intArray[j]-1
                 stepcount = stepcount + 2
-                if i!=0 and  intArray[i] != 97 :
+                if intArray[i] == 97 :
+                    gonext ='next'
+                elif i!=0:
                     gonext = 'prev'
+
             elif 1 > jdiff:
                 intArray[i] = intArray[i]  -1
                 intArray[j] = intArray[j] -1
                 stepcount = stepcount  + 2
-                if i!=0 and  intArray[i] != 97 :
+                if intArray[i] == 97 :
+                    gonext ='next'
+                elif i!=0:
                     gonext = 'prev'
-
 
         elif intArray[i]<intArray[j]:
             diff = intArray[j]-intArray[i]
