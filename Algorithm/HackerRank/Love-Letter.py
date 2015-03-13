@@ -67,13 +67,13 @@ def makePalindrome(intArray):
                 intArray[i] = intArray[i]-1
                 intArray[j] = intArray[j]-1
                 stepcount = stepcount + 2
-                if i!=0 and  1 > intArray[i]-intArray[i-1]:
+                if i!=0 and  intArray[i] != 97 :
                     gonext = 'prev'
             elif 1 > jdiff:
                 intArray[i] = intArray[i]  -1
                 intArray[j] = intArray[j] -1
                 stepcount = stepcount  + 2
-                if i!=0 and 1 > intArray[i]-intArray[i-1]:
+                if i!=0 and  intArray[i] != 97 :
                     gonext = 'prev'
 
 

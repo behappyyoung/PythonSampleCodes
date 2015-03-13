@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py" afterPath="$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PythonSampleCodes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="Love-Letter.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17311412" vertical-offset="301" max-vertical-offset="1650">
-              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.5212766" vertical-offset="301" max-vertical-offset="1650">
+              <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
               <folding>
                 <element signature="e#713#726#0" expanded="true" />
               </folding>
@@ -539,8 +538,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17311412" vertical-offset="301" max-vertical-offset="1650">
-          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.5212766" vertical-offset="301" max-vertical-offset="1650">
+          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
           <folding>
             <element signature="e#713#726#0" expanded="true" />
           </folding>
