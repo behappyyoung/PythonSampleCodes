@@ -26,8 +26,8 @@ def makePalindrome(intArray):
 
     while i <= math.ceil(length/2.0)-1:
         gonext = 'stay'
-        if socket.gethostname()=='young-ubuntu-honda':
-            print i, j, ' :' , stepcount, '  ', intArray
+##        if socket.gethostname()=='young-ubuntu-honda':
+##            print i, j, ' :' , stepcount, '  ', intArray
         if intArray[i] == intArray[j]:
             if i==j or j-i==1:
                 gonext = 'next'
@@ -40,12 +40,13 @@ def makePalindrome(intArray):
                         intArray[j-1] = intArray[j-1] -1
                         stepcount = stepcount + 1
                 else:
-                    if 1 >= intArray[j-1] - intArray[j]:
+                    if 1 >= intArray[j-1] - intArray[j]:            ##  value [i+1]  > 98  [j-1] <= 98
                         intArray[i+1] = intArray[i+1] -1
                         stepcount = stepcount + 1
-                    else:
+                    else:                                           ## both i+1, j-1  value  > 98
+                        intArray[i+1] = intArray[i+1] -1
                         intArray[j-1] = intArray[j-1] -1
-                        stepcount = stepcount + 1
+                        stepcount = stepcount + 2
             elif i!=0 and 1 > intArray[i]-intArray[i-1]:
                 gonext = 'prev'
             elif 1 > intArray[i+1]-intArray[i]:
