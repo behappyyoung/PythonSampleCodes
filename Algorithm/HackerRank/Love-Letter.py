@@ -57,6 +57,8 @@ def makePalindrome(intArray):
 	            stepcount = stepcount + 2
 		    if i!=0 and intArray[i] >= 98 :
                     	gonext = 'prev'
+		    else:
+			gonext = 'next'	
 
             elif 1 > jdiff:
             	if intArray[i] == 97 :
@@ -66,7 +68,9 @@ def makePalindrome(intArray):
 	                intArray[j] = intArray[j] -1
 	                stepcount = stepcount  + 2
 		        if i!=0 and intArray[i] >= 98 :
-                 	   gonext = 'prev'
+                 	    gonext = 'prev'
+   		        else:
+			    gonext = 'next'	
 
         elif intArray[i]<intArray[j]:
             diff = intArray[j]-intArray[i]
