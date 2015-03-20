@@ -5,12 +5,13 @@ for i in range (0,T):
     
     answer = 0
     # write code to compute answer
-    print A, B, C1
     buy = int(A / B)
     wrapper = buy
-    extra = int(wrapper / C1)
-    wrapper = buy + extra  - (extra * C1)   ## total wrapper remaining
-    extra = int (wrapper / C1) + extra
-    print buy+extra
-##    print answer
+    answer = buy
+    while wrapper >= C1:
+        extra = int(wrapper / C1)
+        remain = int(wrapper % C1)
+        wrapper = remain + extra       
+        answer = answer + extra
+    print answer
 
