@@ -2,45 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/CHANGELOG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/MANIFEST.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/PKG-INFO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/apiclient/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/apiclient/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/googleapiclient/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/googleapiclient/channel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/googleapiclient/discovery.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/googleapiclient/errors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/googleapiclient/http.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/googleapiclient/mimeparse.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/googleapiclient/model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/googleapiclient/sample_tools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/build/lib.linux-x86_64-2.7/googleapiclient/schema.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/dist/google_api_python_client-1.4.0-py2.7.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/google_api_python_client.egg-info/PKG-INFO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/google_api_python_client.egg-info/SOURCES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/google_api_python_client.egg-info/dependency_links.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/google_api_python_client.egg-info/requires.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/google_api_python_client.egg-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/googleapiclient/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/googleapiclient/channel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/googleapiclient/discovery.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/googleapiclient/errors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/googleapiclient/http.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/googleapiclient/mimeparse.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/googleapiclient/model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/googleapiclient/sample_tools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/googleapiclient/schema.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/setup.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google-api-python-client-1.4.0/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google_api_python_client-1.4.0-py2.7.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google_api_python_client.egg-info/PKG-INFO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google_api_python_client.egg-info/SOURCES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google_api_python_client.egg-info/dependency_links.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google_api_python_client.egg-info/requires.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIs/Google/google_api_python_client.egg-info/top_level.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PythonSampleCodes.iws" />
@@ -67,8 +28,28 @@
       <file leaf-file-name="Love-Letter.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1125">
-              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="1125">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="67" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sherlock-Squares.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3539823" vertical-offset="0" max-vertical-offset="1017">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sherlock-Squares.input" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.input">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -77,21 +58,19 @@
       <file leaf-file-name="presence.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APIs/PubNub/plainPython/examples/presence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
               <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APIs/Google/YouTube/search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31380752" vertical-offset="0" max-vertical-offset="975">
+            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="975">
               <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#41#78#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,12 +116,14 @@
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.input" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py" />
         <option value="$PROJECT_DIR$/APIs/YouTube/search.py" />
+        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.py" />
+        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.input" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1472" />
-    <option name="y" value="52" />
+    <option name="x" value="1428" />
+    <option name="y" value="82" />
     <option name="width" value="1249" />
     <option name="height" value="1118" />
   </component>
@@ -234,6 +215,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Algorithm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackerRank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonSampleCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonSampleCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="APIs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -280,7 +279,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,6 +396,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -409,9 +420,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -469,7 +477,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1472" y="52" width="1249" height="1118" extended-state="0" />
+    <frame x="1428" y="82" width="1249" height="1118" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -485,11 +493,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -512,6 +520,182 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/APIs/Google/YouTube/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="975">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.biginput">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="480">
+          <caret line="1" column="9050" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="9050" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="600">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="1125">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="67" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="750">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="135">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIs/PubNub/plainPython/examples/presence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIs/Google/YouTube/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="975">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.biginput">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="480">
+          <caret line="1" column="9050" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="9050" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="600">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="1125">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="67" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="585">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIs/PubNub/plainPython/examples/presence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIs/Google/YouTube/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="975">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.biginput">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="480">
+          <caret line="1" column="9050" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="9050" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="600">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIs/PubNub/plainPython/examples/presence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIs/Google/YouTube/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="975">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.biginput">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="1" column="9050" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="9050" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="600">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
@@ -690,22 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APIs/PubNub/plainPython/examples/presence.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
@@ -716,11 +884,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/APIs/Google/YouTube/search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31380752" vertical-offset="0" max-vertical-offset="975">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#78#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="1125">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="67" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Love-Letter.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1017">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Sherlock-Squares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3539823" vertical-offset="0" max-vertical-offset="1017">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
