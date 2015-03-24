@@ -1,6 +1,6 @@
 <!doctype html>
-<title>Path: {{ tree.name }}</title>
-<h1>{{ tree.name }}</h1>
+<title> Show Directory / Files {{ tree.name }}</title>
+<h1>{{ tree.name }} : {{ tree.path }}</h1>
 <ul>
 {%- for item in tree.children recursive %}
     <li>{{ item.name }}
