@@ -23,10 +23,6 @@ def makePalindrome(intArray):
     length = len(intArray)
     i = 0
     j = length -1
-    diff = 0
-    idiff = 0
-    jdiff = 0
-
 
     while i <= math.ceil(length/2.0)-1:
         if i==j or j-i==1:
@@ -34,6 +30,7 @@ def makePalindrome(intArray):
 	if i > 10:
 		break
         gonext = 'stay'
+<<<<<<< HEAD
 ##        print i, j, ' :' , stepcount, '  ', intArray
         if intArray[i] == intArray[j]:                               ## should be  [i] == [j] always
             idiff = int(intArray[i+1]-intArray[i])
@@ -76,6 +73,23 @@ def makePalindrome(intArray):
 			gonext = 'next'	
                 
            
+=======
+        if (i !=0) and (  i==j or j-i==1) :
+                break
+
+        if intArray[i] == intArray[j]:                               ## should be  [i] == [j] always
+            if intArray[i+1] != intArray[j-1]:
+                if intArray[i+1]<intArray[j-1]:
+                    diff = intArray[j-1]-intArray[i+1]
+                    intArray[j-1] = intArray[j-1] - diff
+                    stepcount = stepcount + diff
+                else:
+                    diff = intArray[i+1]-intArray[j-1]
+                    intArray[i+1] = intArray[i+1] - diff
+                    stepcount = stepcount + diff
+            else:
+                gonext = 'next'
+>>>>>>> 42a57001c2336187c4b6f08870f341f7cc6cabaf
 
         elif intArray[i]<intArray[j]:
             diff = intArray[j]-intArray[i]
