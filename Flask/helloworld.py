@@ -11,5 +11,5 @@ def hello():
     return 'Hello World'
 
 if __name__ == "__main__": 
-    app.run()
+    app.run(host='192.168.10.115', port=5000)
 
