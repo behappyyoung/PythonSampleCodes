@@ -1,5 +1,0 @@
-.idea
-venv
-*.sqlite
-*.py[co]
-*.wsgi
