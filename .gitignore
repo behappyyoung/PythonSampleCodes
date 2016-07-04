@@ -1,5 +1,6 @@
 .idea
 venv
 wenv
+wvenv
 venv3
 *.pyc
