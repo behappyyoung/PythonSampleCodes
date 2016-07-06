@@ -56,7 +56,7 @@ ROOT_URLCONF = 'projectE.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['projectE/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
