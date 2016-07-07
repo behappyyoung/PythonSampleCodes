@@ -1,10 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h1> Items in stock  </h1>
-
-    <ul>
-
+{% if user.is_authenticated %}
         {% for item in items %}
         <li>
             <a href="{% url 'item_detail' item.id %}">
@@ -13,4 +10,8 @@
         </li>
         {% endfor %}
     </ul>
+
+{% else %}
+    <a href="{% url 'login' %}" > Login </a>
+{% endif %}
 {% endblock content %}
