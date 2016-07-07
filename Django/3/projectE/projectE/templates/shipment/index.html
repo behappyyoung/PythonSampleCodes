@@ -2,10 +2,23 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-        {% for item in items %}
+{{shipments}}
+    <ul>
+        {% for shipment in shipments %}
         <li>
-            <a href="{% url 'item_detail' item.id %}">
-                {{ item.title | capfirst }}
+            <a href="">
+                {{ shipment.거래처.거래처명 }}
+
+            </a>
+        </li>
+                 <li>
+            <a href="">
+                {{ shipment.현장.현장명}}
+            </a>
+        </li>
+         <li>
+            <a href="">
+                {{ shipment.예정량}}
             </a>
         </li>
         {% endfor %}

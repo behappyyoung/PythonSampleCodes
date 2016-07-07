@@ -4,7 +4,7 @@ from django.http import Http404
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect, HttpResponse
 
-from shipment.models import Item
+from shipment.models import Item, Job, 거래처, 현장, 출하
 
 def index(request):
     items = Item.objects.exclude(amount=0)
@@ -44,7 +44,9 @@ def user_login(request):
                 # If the account is valid and active, we can log the user in.
                 # We'll send the user back to the homepage.
                 login(request, user)
-                return render(request, 'shipment/index.html', {})
+                shipments = 출하.objects.all()
+                print(shipments)
+                return render(request, 'shipment/index.html', {'shipments': shipments})
             else:
                 # An inactive account was used - no logging in!
                 return HttpResponse("Your  account is disabled.")
