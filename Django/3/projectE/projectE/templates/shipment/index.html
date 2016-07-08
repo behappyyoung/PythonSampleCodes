@@ -2,9 +2,11 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-{{shipments}}
+logged in
+
     <ul>
-        {% for shipment in shipments %}
+        {{ request.session.shipment }}
+        {% for shipment in request.session.shipments %}
         <li>
             <a href="">
                 {{ shipment.거래처.거래처명 }}
