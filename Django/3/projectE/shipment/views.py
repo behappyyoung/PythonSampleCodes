@@ -8,10 +8,10 @@ from django.core import serializers
 from shipment.models import Item, Job, 거래처, 현장, 출하
 
 def index(request):
-    items = Item.objects.exclude(amount=0)
-    return render(request, 'shipment/index.html', {
-        'items': items,
-    })
+    shipments = 출하.objects.all()
+    customers = 거래처.objects.all()
+    return render(request, 'shipment/index.html', {'shipments': shipments, 'customers': customers})
+
 def item_detail(request, id):
     try:
         item = Item.objects.get(id=id)
@@ -21,9 +21,17 @@ def item_detail(request, id):
         'item' : item,
     })
 
+def user_logout(request):
+    logout(request) ## user log out
+    print('logout')
+    return render(request, 'shipment/index.html', {})
+
+
 def user_login(request):
-    # Like before, obtain the context for the user's request.
-    ##context = RequestContext(request)
+    print('hrere', request.user.is_authenticated)
+    if request.user.is_active:
+        print('user logged in')
+        return HttpResponseRedirect('/')
 
     # If the request is a HTTP POST, try to pull out the relevant information.
     if request.method == 'POST':
@@ -43,19 +51,17 @@ def user_login(request):
             # Is the account active? It could have been disabled.
             if user.is_active:
                 # If the account is valid and active, we can log the user in.
-                # We'll send the user back to the homepage.
                 login(request, user)
+
                 request.session['username'] = username
-                shipments = 출하.objects.all()
-                request.session['shipments'] = serializers.serialize('json', shipments)
-                print('shipments', shipments)
-                return render(request, 'shipment/index.html', {})
+                return HttpResponseRedirect('/')
+
             else:
                 # An inactive account was used - no logging in!
                 return HttpResponse("Your  account is disabled.")
         else:
             # Bad login details were provided. So we can't log the user in.
-            print("Invalid login details: {0}, {1}", format(username, password))
+            print("Invalid login details: " + username +","+ password)
             return HttpResponse("Invalid login details supplied.")
 
     # The request is not a HTTP POST, so display the login form.

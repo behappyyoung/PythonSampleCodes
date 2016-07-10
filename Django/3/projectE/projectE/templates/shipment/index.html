@@ -1,12 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% if user.is_authenticated %}
+{% if user.is_active %}
 logged in
+<a href="{% url 'logout' %}" > Logout </a>
 
     <ul>
+        customer {{ customers}} <br />
+
+        shipments {{ shipments}} <br />
+
+
+        {% for shipment in shipments %}
         {{ request.session.shipment }}
-        {% for shipment in request.session.shipments %}
         <li>
             <a href="">
                 {{ shipment.거래처.거래처명 }}
