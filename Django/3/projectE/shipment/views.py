@@ -4,13 +4,32 @@ from django.http import Http404
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core import serializers
+import json
+##from rest_framework import serializers
+
 
 from shipment.models import Item, Job, 거래처, 현장, 출하
+from shipment.serializers import CustomerSerializer
 
 def index(request):
     shipments = 출하.objects.all()
     customers = 거래처.objects.all()
-    return render(request, 'shipment/index.html', {'shipments': shipments, 'customers': customers})
+    json_customers = serializers.serialize('json', customers)
+    print(customers)
+##    serializer = CustomerSerializer(customers)
+##    print(serializer.data)
+    customers_list = list(customers)
+    print(customers_list)
+    for c in customers:
+        print(c.거래처명)
+    print(json_customers)
+    print(json.dumps(json_customers, ensure_ascii=False).encode("utf8"))
+    return render(request, 'shipment/index.html', {'shipments': shipments, 'customers': json_customers})
+
+def orders(request):
+    shipments = 출하.objects.all()
+    return render(request, 'shipment/orders.html', {'shipments': shipments})
+
 
 def item_detail(request, id):
     try:

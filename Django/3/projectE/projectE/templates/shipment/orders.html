@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if user.is_active %}
+logged in to Orders
+
+<a href="{% url 'index' %}" > 첫화면 </a>
+
+<div class="menu-wrapper">
+    <div class="menu title-wrapper">  <div class="menu-title">수 주 관 리</div></div>
+
+    <div class="menu"> 등 록 </div>
+    <div class="menu">  수 정 </div>
+
+</div>
+
+<div>  수 주 현 황</div>
+<div>
+
+</div>
+{% else %}
+    <a href="{% url 'login' %}" > Login </a>
+{% endif %}
+{% endblock content %}

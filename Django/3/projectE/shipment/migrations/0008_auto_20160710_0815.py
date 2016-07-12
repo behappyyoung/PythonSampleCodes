@@ -50,12 +50,6 @@ class Migration(migrations.Migration):
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='거래처',
-            name='현장',
-            field=models.ForeignKey(default=' ', on_delete=django.db.models.deletion.CASCADE, to='shipment.현장'),
-            preserve_default=False,
-        ),
-        migrations.AddField(
             model_name='출하',
             name='사각',
             field=models.CharField(default=' ', max_length=200),
