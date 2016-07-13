@@ -3,58 +3,74 @@
 
 {% if user.is_active %}
 logged in
+<div ng-controller="shipmentController as shipment">
+    <a href="{% url 'logout' %}" > Logout </a>
+    <div class="menu-wrapper">
+        <div class="menu">
+            <a href="{% url 'orders' %}" target="_top"> 출 하- 수주등록 </a>
+        </div>
+        <div class="menu">
+            <a href="{% url 'orders' %}" target="_top"> 출 하- 수 정 및조 회 </a>
+        </div>
+    </div>
+    <div>
+        <script type="text/javascript">
+        var shipmentApp = angular.module('myApp', []);
+        shipmentApp.config(function($interpolateProvider) {
+                $interpolateProvider.startSymbol('[[');
+                 $interpolateProvider.endSymbol(']]');
+        });
+        shipmentApp.controller('shipmentController', function() {
+                {% autoescape off %}
+                         this.label = JSON.parse('{{ customers }}');
+                 {% endautoescape %}
+      });
 
-<a href="{% url 'logout' %}" > Logout </a>
-<div class="menu-wrapper">
-    <div class="menu">
-        <a href="{% url 'orders' %}" target="_top"> 출 하- 수주등록 </a>
-    </div>
-    <div class="menu">
-        <a href="{% url 'orders' %}" target="_top"> 출 하- 수 정 및조 회 </a>
-    </div>
-</div>
-<div>
-    <script type="text/javascript">
+                {% autoescape off %}
+            var obj = JSON.parse('{{ customers }}');
+           {% endautoescape %}
+        </script>
+        <div  ng-repeat-start="item in shipment.label" >
+                [[item]]
+        </div>
+        <div ng-repeat-end>
+
+        </div>
+        <ul>
+            customer {{customers}} <br />
             {% autoescape off %}
-        var obj = JSON.parse('{{ customers }}');
-       {% endautoescape %}
-    </script>
+                {{ customers }}
+            {% endautoescape %}
 
-    <ul>
-        customer {{customers}} <br />
-        {% autoescape off %}
-            {{ customers }}
-        {% endautoescape %}
+            {% for customer in customers %}
+                <div> {{customer.거래처명}}</div>
+            {% endfor %}
 
-        {% for customer in customers %}
-            <div> {{customer.거래처명}}</div>
-        {% endfor %}
-
-        shipments {{ shipments}} <br />
+            shipments {{ shipments}} <br />
 
 
-        {% for shipment in shipments %}
-        {{ request.session.shipment }}
-            <li>
-                <a href="">
-                    {{ shipment.거래처.거래처명 }}
+            {% for shipment in shipments %}
+            {{ request.session.shipment }}
+                <li>
+                    <a href="">
+                        {{ shipment.거래처.거래처명 }}
 
-                </a>
-            </li>
-                     <li>
-                <a href="">
-                    {{ shipment.현장.현장명}}
-                </a>
-            </li>
-             <li>
-                <a href="">
-                    {{ shipment.예정량}}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+                    </a>
+                </li>
+                         <li>
+                    <a href="">
+                        {{ shipment.현장.현장명}}
+                    </a>
+                </li>
+                 <li>
+                    <a href="">
+                        {{ shipment.예정량}}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
-
 {% else %}
     <a href="{% url 'login' %}" > Login </a>
 {% endif %}
