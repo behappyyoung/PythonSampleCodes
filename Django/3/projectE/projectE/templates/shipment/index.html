@@ -3,7 +3,7 @@
 
 {% if user.is_active %}
 logged in
-<div ng-controller="shipmentController as shipment">
+<div ng-controller="shipmentController">
     <a href="{% url 'logout' %}" > Logout </a>
     <div class="menu-wrapper">
         <div class="menu">
@@ -20,9 +20,9 @@ logged in
                 $interpolateProvider.startSymbol('[[');
                  $interpolateProvider.endSymbol(']]');
         });
-        shipmentApp.controller('shipmentController', function() {
+        shipmentApp.controller('shipmentController', function($scope) {
                 {% autoescape off %}
-                         this.label = JSON.parse('{{ customers }}');
+                         $scope.shipment = JSON.parse('{{ customers }}');
                  {% endautoescape %}
       });
 
@@ -30,8 +30,11 @@ logged in
             var obj = JSON.parse('{{ customers }}');
            {% endautoescape %}
         </script>
-        <div  ng-repeat-start="item in shipment.label" >
+        <div  ng-repeat-start="item in shipment" >
                 [[item]]
+        </div>
+        <div>
+                [[item.fields]]
         </div>
         <div ng-repeat-end>
 

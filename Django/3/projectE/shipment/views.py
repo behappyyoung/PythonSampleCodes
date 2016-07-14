@@ -8,7 +8,7 @@ import json
 ##from rest_framework import serializers
 
 
-from shipment.models import Item, Job, 거래처, 현장, 출하
+from shipment.models import Item, Job, 거래처, 현장, 출하, 수주
 from shipment.serializers import CustomerSerializer
 
 def index(request):
@@ -27,8 +27,10 @@ def index(request):
     return render(request, 'shipment/index.html', {'shipments': shipments, 'customers': json_customers})
 
 def orders(request):
-    shipments = 출하.objects.all()
-    return render(request, 'shipment/orders.html', {'shipments': shipments})
+    orders = 수주.objects.all()
+    json_orders = serializers.serialize('json', orders)
+    print(orders)
+    return render(request, 'shipment/orders.html', {'orders': json_orders})
 
 
 def item_detail(request, id):

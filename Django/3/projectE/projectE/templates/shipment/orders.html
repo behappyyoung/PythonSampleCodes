@@ -3,19 +3,51 @@
 
 {% if user.is_active %}
 logged in to Orders
+<div ng-controller="ordersController">
+    <a href="{% url 'index' %}" > 첫화면 </a>
 
-<a href="{% url 'index' %}" > 첫화면 </a>
+    <div class="menu-wrapper">
+        <div class="menu title-wrapper">  <div class="menu-title">수 주 관 리</div></div>
 
-<div class="menu-wrapper">
-    <div class="menu title-wrapper">  <div class="menu-title">수 주 관 리</div></div>
+        <div class="menu"> 등 록 </div>
+        <div class="menu">  수 정 </div>
 
-    <div class="menu"> 등 록 </div>
-    <div class="menu">  수 정 </div>
+    </div>
 
-</div>
+    <form action="new-order" method="post">
+        <label for="order_date"> 일자 </label>
+        <input id="order_date" type="text" name="order_date" value="{{ order_date }}">
+        <label for="order_number">순번 </label>
+        <input id="order_number" type="text" name="order_number" value="{{ order_number }}">
+        <input type="submit" value="OK">
+    </form>
 
-<div>  수 주 현 황</div>
-<div>
+    <div>  수 주 현 황</div>
+    <div>
+
+    </div>
+   <script type="text/javascript">
+        var shipmentApp = angular.module('myApp', []);
+        shipmentApp.config(function($interpolateProvider) {
+                $interpolateProvider.startSymbol('[[');
+                 $interpolateProvider.endSymbol(']]');
+        });
+        shipmentApp.controller('ordersController', function($scope) {
+                {% autoescape off %}
+                         $scope.orders = JSON.parse('{{ orders }}');
+                 {% endautoescape %}
+      });
+
+        </script>
+        <div  ng-repeat-start="item in orders" >
+                [[item]]
+        </div>
+        <div>
+                [[item.fields]]
+        </div>
+        <div ng-repeat-end>
+
+        </div>
 
 </div>
 {% else %}
