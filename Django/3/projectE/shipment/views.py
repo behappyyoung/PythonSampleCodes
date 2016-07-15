@@ -8,14 +8,18 @@ import json
 ##from rest_framework import serializers
 
 
-from shipment.models import Item, Job, 거래처, 현장, 출하, 수주
+from shipment.models import Item, Job, 거래처, 현장, 출하, 수주, 규격, standard_name
 from shipment.serializers import CustomerSerializer
 
 def index(request):
     shipments = 출하.objects.all()
     customers = 거래처.objects.all()
+    standard_names = standard_name.objects.all()
+    json_stnames= json.loads(serializers.serialize('json', standard_names))
+    request.session['standard_names'] = json_stnames[0]['fields']
+##    print(json_stnames)
     json_customers = serializers.serialize('json', customers)
-    print(customers)
+##    print(customers)
 ##    serializer = CustomerSerializer(customers)
 ##    print(serializer.data)
     customers_list = list(customers)
@@ -28,9 +32,8 @@ def index(request):
 
 def orders(request):
     orders = 수주.objects.all()
-    json_orders = serializers.serialize('json', orders)
-    print(orders)
-    return render(request, 'shipment/orders.html', {'orders': json_orders})
+    jsonstring_orders = serializers.serialize('json', orders)
+    return render(request, 'shipment/orders.html', {'orders': jsonstring_orders})
 
 
 def item_detail(request, id):
@@ -49,7 +52,7 @@ def user_logout(request):
 
 
 def user_login(request):
-    print('hrere', request.user.is_authenticated)
+    ##print('hrere', request.user.is_authenticated)
     if request.user.is_active:
         print('user logged in')
         return HttpResponseRedirect('/')
@@ -75,6 +78,8 @@ def user_login(request):
                 login(request, user)
 
                 request.session['username'] = username
+              ##  standard_names = standard_name.objects.all()
+              ##  request.session['standard_names'] = serializers.serialize('json', standard_names)
                 return HttpResponseRedirect('/')
 
             else:

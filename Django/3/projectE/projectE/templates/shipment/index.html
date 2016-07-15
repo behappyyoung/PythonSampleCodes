@@ -3,6 +3,8 @@
 
 {% if user.is_active %}
 logged in
+{{request.session.username}}
+{{request.session.standard_names}}
 <div ng-controller="shipmentController">
     <a href="{% url 'logout' %}" > Logout </a>
     <div class="menu-wrapper">

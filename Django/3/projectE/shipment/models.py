@@ -10,11 +10,15 @@ class Job(models.Model):
     번호 =  models.CharField(max_length=200)
     예정량 =  models.IntegerField()
 
-class 규격명(models.Model):
+class standard_name(models.Model):
     m40= models.CharField(max_length=200, default='40mm')
     m25= models.CharField(max_length=200, default='25mm')
     m19 = models.CharField(max_length=200, default='19mm')
     m13 = models.CharField(max_length=200, default='13mm')
+    m10 = models.CharField(max_length=200, default='10mm')
+    sd= models.CharField(max_length=200, default='석분')
+    sb1 = models.CharField(max_length=200, default='SB-1')
+    sb2 = models.CharField(max_length=200, default='SB-2')
 
 class 규격(models.Model):
     규격명=models.CharField(max_length=200, default=' ')

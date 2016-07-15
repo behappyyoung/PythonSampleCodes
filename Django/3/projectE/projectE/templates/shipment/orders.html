@@ -3,6 +3,9 @@
 
 {% if user.is_active %}
 logged in to Orders
+{{request.session.username}}
+{{request.session.standard_names}}
+
 <div ng-controller="ordersController">
     <a href="{% url 'index' %}" > 첫화면 </a>
 
@@ -36,14 +39,21 @@ logged in to Orders
                 {% autoescape off %}
                          $scope.orders = JSON.parse('{{ orders }}');
                  {% endautoescape %}
+                        window.orders = $scope.orders;
       });
 
         </script>
+        <div>
+            [[orders]]
+        </div>
         <div  ng-repeat-start="item in orders" >
                 [[item]]
         </div>
         <div>
                 [[item.fields]]
+        </div>
+        <div>
+                    [[item.fields]]
         </div>
         <div ng-repeat-end>
 
