@@ -22,8 +22,14 @@ class standard_name(models.Model):
 
 class 규격(models.Model):
     규격명=models.CharField(max_length=200, default=' ')
-    단가=models.IntegerField()
-    운반비=models.IntegerField()
+    단가=models.IntegerField(default=0)
+    운반비=models.IntegerField(default=0)
+
+class standard(models.Model):
+    name=models.CharField(max_length=200, default=' ')
+    price=models.IntegerField(default=0)
+    cost=models.IntegerField(default=0)
+    standard_name=models.ForeignKey('standard_name', on_delete=models.CASCADE, default=00)
 
 class 차량(models.Model):
     차량번호=models.CharField(max_length=200, default=' ')
@@ -31,10 +37,22 @@ class 차량(models.Model):
     기사연락처=models.CharField(max_length=200, default=' ')
     적재량=models.IntegerField()
 
+class cars(models.Model):
+    number=models.CharField(max_length=200, default=' ')
+    name=models.CharField(max_length=200, default=' ')
+    number=models.CharField(max_length=200, default=' ')
+    loadage=models.IntegerField(default=0)
+
+
 class 현장(models.Model):
     현장명=models.CharField(max_length=200, default=' ')
     규격=models.ForeignKey('규격', on_delete=models.CASCADE, default=00)
 
+
+class sites(models.Model):
+    code = models.CharField(max_length=200, default='0000')
+    name=models.CharField(max_length=200, default=' ')
+    standard=models.ForeignKey('standard', on_delete=models.CASCADE, default=00)
     
 class 거래처(models.Model):
     코드= models.CharField(max_length=200, default='0000')
@@ -51,6 +69,23 @@ class 거래처(models.Model):
 
     class Meta:
         ordering = ['거래처명']
+
+
+class customers(models.Model):
+    code = models.CharField(max_length=200, default='0000')
+    name = models.CharField(max_length=200)
+    chief = models.CharField(max_length=200, default=' ')
+    address = models.CharField(max_length=200, default=' ')
+    phone = models.CharField(max_length=200, default=' ')
+    fax = models.CharField(max_length=200, default=' ')
+    manager = models.CharField(max_length=200, default=' ')
+    email = models.CharField(max_length=200, default=' ')
+    site = models.ForeignKey('sites', on_delete=models.CASCADE, default=00)
+    ##standard = models.ForeignKey('standard', on_delete=models.CASCADE, default=00)
+    ##car = models.ForeignKey('cars', on_delete=models.CASCADE, default=00)
+
+    class Meta:
+        ordering = ['name']
 
 
 class 출하(models.Model):
@@ -72,3 +107,15 @@ class 수주(models.Model):
 
     class Meta:
         ordering = ['번호']
+
+
+class contracts(models.Model):
+    number = models.CharField(max_length=200)
+    ##date= models.DateField(default=date.today)
+    date=models.CharField(max_length=20, default=date.today)
+    order_customer=  models.ForeignKey('customers', on_delete=models.CASCADE, default=00,  related_name='order_customer')
+    sub_customer = models.ForeignKey('customers', on_delete=models.CASCADE, default=00,related_name='sub_customer')
+    site = models.ForeignKey('sites', on_delete=models.CASCADE, default=00)
+
+    class Meta:
+        ordering = ['number']

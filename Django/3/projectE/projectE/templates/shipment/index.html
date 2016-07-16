@@ -5,14 +5,39 @@
 logged in
 {{request.session.username}}
 {{request.session.standard_names}}
+   <script type="text/javascript">
+        shipmentApp.controller('ordersController', function($scope) {
+                {% autoescape off %}
+                         $scope.customers = JSON.parse('{{ customers }}');
+                 {% endautoescape %}
+      });
+
+        </script>
+
+
 <div ng-controller="shipmentController">
+
     <a href="{% url 'logout' %}" > Logout </a>
+        **customers**
     <div class="menu-wrapper">
         <div class="menu">
             <a href="{% url 'orders' %}" target="_top"> 출 하- 수주등록 </a>
         </div>
         <div class="menu">
             <a href="{% url 'orders' %}" target="_top"> 출 하- 수 정 및조 회 </a>
+        </div>
+        <div class="menu">
+            <a href="{% url 'recustomers' %}" target="_blank"> 거래처 등록 </a>
+                {% comment %}
+            {% include "shipment/sub_customers.html" %}
+                {% endcomment %}
+
+        </div>
+        <div class="menu">
+            <a href="#" target="_blank"> 거래처 리스트</a>
+                <div class="" id="customer_list">
+                        {% include "shipment/sub_customers.html" %}
+                </div>
         </div>
     </div>
     <div>

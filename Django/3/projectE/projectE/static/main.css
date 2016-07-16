@@ -1,3 +1,6 @@
+body{
+    width:960px;
+}
 div.menu-wrapper{
     height:50px;
     clear:both;
@@ -32,4 +35,34 @@ div.menu a{
     text-decoration:none;
     font-weight:bolder;
     color:black;
+}
+
+form > div{
+    width:300px;
+    display:inline-block;
+}
+form label{
+    color:white;
+    background-color:#c9cace;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+form label.twoword{
+    word-spacing: 60px;
+}
+form label.threeword{
+    word-spacing: 20px;
+}
+form label.fourword{
+    word-spacing: 8px;
+}
+form input{
+    width:150px;
+}
+form input.small{
+    width:40px;
+}
+form input.med{
+    width:100px;
 }

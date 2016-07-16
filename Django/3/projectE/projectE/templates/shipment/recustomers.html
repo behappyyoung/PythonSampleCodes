@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+{{customers}}
+    <a href="{% url 'index' %} "> back to item list </a>
+    <p> customers page </p>
+
+    <h1>{{ customer.name | capfirst }}</h1>
+
+
+{% endblock content %}

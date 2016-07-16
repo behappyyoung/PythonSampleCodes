@@ -1,6 +1,5 @@
-{% load staticfiles %}
+<!doctype html>{% load staticfiles %}
 
-<!doctype html>
 <html ng-app="myApp">
 <head>
     <meta charset="utf-8">
@@ -8,8 +7,22 @@
     <meta name="description" content="" >
     <link rel="stylesheet" href="{% static 'main.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+       <script type="text/javascript">
+        var shipmentApp = angular.module('myApp', []);
+        shipmentApp.config(function($interpolateProvider) {
+                $interpolateProvider.startSymbol('**');
+                 $interpolateProvider.endSymbol('**');
+        });
+        </script>
 </head>
+{% comment %}
+for block right click
 <body oncontextmenu="return false;">
+{% endcomment %}
+<body >
     {% block content %}
     {% endblock content %}
     <script src="{% static 'main.js' %}" ></script>

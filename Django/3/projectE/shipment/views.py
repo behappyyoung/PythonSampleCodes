@@ -8,32 +8,38 @@ import json
 ##from rest_framework import serializers
 
 
-from shipment.models import Item, Job, 거래처, 현장, 출하, 수주, 규격, standard_name
+from shipment.models import Item, Job, 거래처, 현장, 출하, 수주, 규격, standard_name, contracts, customers
 from shipment.serializers import CustomerSerializer
+from django.db import connection
+
+def my_custom_sql(sql):
+    cursor = connection.cursor()
+    cursor.execute(sql)
+    row = cursor.fetchall()
+    return row
 
 def index(request):
     shipments = 출하.objects.all()
-    customers = 거래처.objects.all()
+
     standard_names = standard_name.objects.all()
     json_stnames= json.loads(serializers.serialize('json', standard_names))
     request.session['standard_names'] = json_stnames[0]['fields']
-##    print(json_stnames)
-    json_customers = serializers.serialize('json', customers)
-##    print(customers)
-##    serializer = CustomerSerializer(customers)
-##    print(serializer.data)
-    customers_list = list(customers)
-    print(customers_list)
-    for c in customers:
-        print(c.거래처명)
-    print(json_customers)
-    print(json.dumps(json_customers, ensure_ascii=False).encode("utf8"))
-    return render(request, 'shipment/index.html', {'shipments': shipments, 'customers': json_customers})
+    c_customers = customers.objects.all()
+    jsonstring_customers = serializers.serialize('json', c_customers)
+    return render(request, 'shipment/index.html', {'shipments': shipments, 'customers': jsonstring_customers})
+
+def recustomers(request):
+    c_customers = customers.objects.all()
+    jsonstring_customers = serializers.serialize('json', c_customers)
+    return render(request, 'shipment/recustomers.html', {'customers': jsonstring_customers})
 
 def orders(request):
-    orders = 수주.objects.all()
-    jsonstring_orders = serializers.serialize('json', orders)
-    return render(request, 'shipment/orders.html', {'orders': jsonstring_orders})
+    c_orders2 = my_custom_sql("SELECT c.*, oc.name, sc.name FROM shipment_contracts c join shipment_customers oc on c.order_customer_id =  oc.id join shipment_customers sc on c.sub_customer_id =  sc.id")
+    c_orders = contracts.objects.all()
+    c_customers = customers.objects.all()
+    jsonstring_orders = serializers.serialize('json', c_orders)
+    jsonstring_customers =serializers.serialize('json', c_customers)
+    return render(request, 'shipment/orders.html', {'orders': jsonstring_orders, 'customers': jsonstring_customers, 'c2' : json.dumps(c_orders2)})
 
 
 def item_detail(request, id):
