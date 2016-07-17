@@ -5,11 +5,17 @@
     <meta charset="utf-8">
     <title> inventory Project </title>
     <meta name="description" content="" >
+
+    <script src="{% static 'jquery-1.12.4.js' %}"></script>
+    <script src="{% static 'angular.min.js' %}"></script>
+
+  <script src="{% static 'jquery-ui.js' %}"></script>
+    <script src="{% static 'ui-grid.min.js' %}"></script>
+
+<link rel="stylesheet" href="{% static 'jquery-ui.css' %}">
+    <script src="{% static 'ui-grid.min.css' %}"></script>
     <link rel="stylesheet" href="{% static 'main.css' %}">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
        <script type="text/javascript">
         var shipmentApp = angular.module('myApp', []);
         shipmentApp.config(function($interpolateProvider) {

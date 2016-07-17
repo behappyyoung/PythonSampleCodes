@@ -27,8 +27,9 @@ logged in
             <a href="{% url 'orders' %}" target="_top"> 출 하- 수 정 및조 회 </a>
         </div>
         <div class="menu">
-            <a href="{% url 'recustomers' %}" target="_blank"> 거래처 등록 </a>
+            <a href="/recustomers/" >거래처 등록</a>
                 {% comment %}
+            <div onclick="window.open('/recustomers/', '','width=200,height=100,top=500,left=500,name=recustomers'); " > 거래처 등록 </div>
             {% include "shipment/sub_customers.html" %}
                 {% endcomment %}
 
