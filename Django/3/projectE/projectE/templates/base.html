@@ -8,20 +8,71 @@
 
     <script src="{% static 'jquery-1.12.4.js' %}"></script>
     <script src="{% static 'angular.min.js' %}"></script>
-
   <script src="{% static 'jquery-ui.js' %}"></script>
     <script src="{% static 'ui-grid.min.js' %}"></script>
 
 <link rel="stylesheet" href="{% static 'jquery-ui.css' %}">
-    <script src="{% static 'ui-grid.min.css' %}"></script>
+    <link rel="stylesheet" href="{% static 'ui-grid.min.css' %}">
     <link rel="stylesheet" href="{% static 'main.css' %}">
 
        <script type="text/javascript">
-        var shipmentApp = angular.module('myApp', []);
-        shipmentApp.config(function($interpolateProvider) {
+       (function (ng) {
+
+    // Used for ng-grid to update interpolation symbols
+    ng.module("ui.grid").service(
+        "$InterpolateUpdateService",
+        ['$templateCache', '$interpolate', function($templateCache, $interpolate){
+        this.changeGridInterpolate = function() {
+
+            var templates = [
+                'ui-grid/ui-grid-footer',
+                'ui-grid/ui-grid-group-panel',
+                'ui-grid/ui-grid-header',
+                'ui-grid/ui-grid-menu-button',
+                'ui-grid/ui-grid-no-header',
+                'ui-grid/ui-grid-row',
+                'ui-grid/ui-grid',
+                'ui-grid/uiGridCell',
+                <!--'ui-grid/uiGridColumnFilter',-->
+                'ui-grid/uiGridColumnMenu',
+                'ui-grid/uiGridFooterCell',
+                'ui-grid/uiGridHeaderCell',
+                'ui-grid/uiGridMenu',
+                'ui-grid/uiGridMenuItem',
+                'ui-grid/uiGridRenderContainer',
+                'ui-grid/uiGridViewport'
+            ];
+
+            var start = $interpolate.startSymbol();
+            var end = $interpolate.endSymbol();
+            for (var i = 0; i < templates.length; i++){
+                var template = templates[i];
+                var curTemplate = $templateCache.get(template);
+                console.log(template, curTemplate);
+                if (start !== "}}"){
+                    curTemplate = curTemplate.replace(/\{\{/g, start);
+                }
+                if (end !== "}}"){
+                    curTemplate = curTemplate.replace(/\}\}/g, end);
+                }
+                console.log(template, curTemplate);
+                $templateCache.put(template, curTemplate);
+            }
+        };
+    }]);
+
+    ng.module("ui.grid").run(["$InterpolateUpdateService", function($InterpolateUpdateService){
+        $InterpolateUpdateService.changeGridInterpolate();
+    }]);
+
+})(angular);
+
+        var shipmentApp = angular.module('myApp',  ['ui.grid'])
+        .config(function($interpolateProvider) {
                 $interpolateProvider.startSymbol('**');
                  $interpolateProvider.endSymbol('**');
         });
+
         </script>
 </head>
 {% comment %}

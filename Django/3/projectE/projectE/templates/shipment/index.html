@@ -5,16 +5,18 @@
 logged in
 {{request.session.username}}
 {{request.session.standard_names}}
-   <script type="text/javascript">
-        shipmentApp.controller('ordersController', function($scope) {
+
+        <script type="text/javascript">
+        shipmentApp.controller('shipmentController', function($scope) {
                 {% autoescape off %}
-                         $scope.customers = JSON.parse('{{ customers }}');
+                         $scope.shipment = JSON.parse('{{ customers }}');
                  {% endautoescape %}
       });
 
+                {% autoescape off %}
+            var obj = JSON.parse('{{ customers }}');
+           {% endautoescape %}
         </script>
-
-
 <div ng-controller="shipmentController">
 
     <a href="{% url 'logout' %}" > Logout </a>
@@ -42,24 +44,9 @@ logged in
         </div>
     </div>
     <div>
-        <script type="text/javascript">
-        var shipmentApp = angular.module('myApp', []);
-        shipmentApp.config(function($interpolateProvider) {
-                $interpolateProvider.startSymbol('[[');
-                 $interpolateProvider.endSymbol(']]');
-        });
-        shipmentApp.controller('shipmentController', function($scope) {
-                {% autoescape off %}
-                         $scope.shipment = JSON.parse('{{ customers }}');
-                 {% endautoescape %}
-      });
 
-                {% autoescape off %}
-            var obj = JSON.parse('{{ customers }}');
-           {% endautoescape %}
-        </script>
         <div  ng-repeat-start="item in shipment" >
-                [[item]]
+                **item**
         </div>
         <div>
                 [[item.fields]]

@@ -1,20 +1,53 @@
 {% extends "base.html" %}
 {% block content %}
 {{customers}}
+<style>
+    .gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 800px;
+    height: 300px;
+}
+.ui-grid-canvas .ui-grid-row:hover{
+    background-color:blue;
+}
+</style>
    <script type="text/javascript">
-        shipmentApp.controller('customerController', function($scope) {
+
+        shipmentApp.controller('customerController', ['$scope', function($scope) {
                 {% autoescape off %}
+                         $scope.fieldsList=[];
                          $scope.customers = JSON.parse('{{ customers }}');
+                         for(var i=0;i<$scope.customers.length; i++){
+                         console.log($scope.customers[i].fields);
+                                $scope.fieldsList.push($scope.customers[i].fields);
+                         }
+
+                    console.log(typeof $scope.fieldsList);
+                     $scope.myData = [{name: "Moroni", age: 50},
+                     {name: "Tiancum", age: 43},
+                     {name: "Jacob", age: 27},
+                     {name: "Nephi", age: 29},
+                     {name: "Enos", age: 34}];
+
                  {% endautoescape %}
-                  $scope.gridOptions = { data: 'customers' };
-      });
+                  $scope.gridOptions = { data: 'fieldsList',
+                     showFilter : true,
+    enableColumnResize : true,
+    columnDefs :[
+    { field: 'code',displayName: '코드', cellTemplate:'<div class="ui-grid-cell-contents"> <a href="/edit_customer/** COL_FIELD **"> ** COL_FIELD ** </a> </div>',width: 150 },
+    { field: 'name',displayName: '거래처', cellTemplate:'<div class="ui-grid-cell-contents"> <a> ** COL_FIELD ** </a> </div>',width: 150 },
+    { field: 'chief', cellTemplate:'<div class="ui-grid-cell-contents"> ** COL_FIELD ** </div>',  displayName: '대표자', width: 150 }]
+    };
+      }]);
+
 
         </script>
 <div ng-controller="customerController">
         **customers**
     <a href="{% url 'index' %} "> back to item list </a>
-
-    <div class="gridStyle" ng-grid="gridOptions"></div>
+**fieldsList**
+    **myData**
+    <div class="gridStyle" ui-grid="gridOptions"></div>
 
     <p> customers page </p>
 

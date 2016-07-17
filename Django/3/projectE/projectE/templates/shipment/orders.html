@@ -16,6 +16,7 @@ logged in to Orders
                          $scope.o2 = {{c2}};
                          $scope.customers = JSON.parse('{{ customers }}');
                  {% endautoescape %}
+                   $scope.gridOptions = { data: 'orders' };
       });
 
         </script>
@@ -27,6 +28,8 @@ logged in to Orders
 **orders**
     **o2**
     **customers**
+     <div class="gridStyle" ng-grid="gridOptions"></div>
+
     <div class="menu-wrapper">
         <div class="menu title-wrapper">  <div class="menu-title">수 주 관 리</div></div>
 

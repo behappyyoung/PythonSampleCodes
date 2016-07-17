@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+{{customer}}
+{{sites}}
+   <script type="text/javascript">
+
+        </script>
+<div ng-controller="customerController">
+    <a href="{% url 'index' %} "> back to item list </a>
+
+    <p> customers page </p>
+
+    <h1>{{ customer.name | capfirst }}</h1>
+
+      <form action="new-order" method="post" onsubmit="return false;">
+
+        <div>
+            <label for="code" class="twoword">  코  드  </label>
+            <input id="code" type="text" name="code" value="{{ customer.code }}">
+        </div>
+        <div>
+            <label for="name" class="fourword">  거  래  처  명  </label>
+            <input id="name" type="text" name="name" value="{{ customer.name }}">
+        </div>
+        <div>
+            <label for="chief" class="twoword">     대 표  </label>
+            <input id="chief" type="text" name="manger" value="{{ customer.cheif }}">
+        </div>
+        <div>
+            <label for="manger" class="threeword">    담  당  자  </label>
+            <input id="manger" type="text" name="manger" value="{{ customer.manager }}">
+        </div>
+        <div>
+            <label for="address" class="twoword">   주 소</label>
+            <input id="address" type="text" name="address" value="{{ customer.address }}">
+        </div>
+                  <div>
+            <label for="phone" class="twoword">     전 화 </label>
+            <input id="phone" type="text" name="phone" value="{{ customer.phone }}">
+        </div>
+                  <div>
+            <label for="fax" class="twoword">      팩 스 </label>
+            <input id="fax" type="text" name="fax" value="{{ customer.fax }}">
+        </div>
+                  <div>
+            <label for="email" class="twoword">     E-mil </label>
+            <input id="email" type="text" name="email" value="{{ customer.email }}">
+        </div>
+      </form>
+
+    <div>
+         <h1>  현 장</h1>
+
+
+    </div>
+</div>
+
+{% endblock content %}

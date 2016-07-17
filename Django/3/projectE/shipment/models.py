@@ -52,7 +52,9 @@ class 현장(models.Model):
 class sites(models.Model):
     code = models.CharField(max_length=200, default='0000')
     name=models.CharField(max_length=200, default=' ')
-    standard=models.ForeignKey('standard', on_delete=models.CASCADE, default=00)
+    ##standard=models.ForeignKey('standard', on_delete=models.CASCADE, default=00)
+    customer = models.ForeignKey('customers', on_delete=models.CASCADE, default=00)
+    standards = models.CharField(max_length=200, default=' ')
     
 class 거래처(models.Model):
     코드= models.CharField(max_length=200, default='0000')
@@ -80,7 +82,8 @@ class customers(models.Model):
     fax = models.CharField(max_length=200, default=' ')
     manager = models.CharField(max_length=200, default=' ')
     email = models.CharField(max_length=200, default=' ')
-    site = models.ForeignKey('sites', on_delete=models.CASCADE, default=00)
+    ##site = models.ForeignKey('sites', on_delete=models.CASCADE, default=00)
+    ##sites = models.CharField(max_length=400, default=' ')
     ##standard = models.ForeignKey('standard', on_delete=models.CASCADE, default=00)
     ##car = models.ForeignKey('cars', on_delete=models.CASCADE, default=00)
 

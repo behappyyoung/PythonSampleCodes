@@ -8,7 +8,7 @@ import json
 ##from rest_framework import serializers
 
 
-from shipment.models import Item, Job, 거래처, 현장, 출하, 수주, 규격, standard_name, contracts, customers
+from shipment.models import Item, Job, 거래처, 현장, 출하, 수주, 규격, standard_name, contracts, customers, sites
 from shipment.serializers import CustomerSerializer
 from django.db import connection
 
@@ -27,6 +27,21 @@ def index(request):
     c_customers = customers.objects.all()
     jsonstring_customers = serializers.serialize('json', c_customers)
     return render(request, 'shipment/index.html', {'shipments': shipments, 'customers': jsonstring_customers})
+
+def edit_customer(request, id):
+    try:
+        c_customer = customers.objects.get(code=id)
+        print(c_customer.id)
+        c_sites = sites.objects.filter(id=1)
+        ##c_sites = my_custom_sql("select * from shipment_sites where customer_id=" + str(c_customer.id))
+        ##c_sites = sites.objects.all()
+    except Item.DoesNotExist:
+        raise Http404('this customer does not exist')
+    print(c_customer.__dict__)
+    print(c_sites.__dict__)
+    print(c_sites)
+    ##jsonstring_customer = serializers.serialize('json', customer)
+    return render(request, 'shipment/edit_customer.html', {'customer': c_customer, 'sites' : c_sites})
 
 def recustomers(request):
     c_customers = customers.objects.all()

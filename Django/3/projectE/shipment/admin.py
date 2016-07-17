@@ -23,7 +23,10 @@ class CustomersInline(admin.TabularInline):
     model = customers
 
 class SitesAdmin(admin.ModelAdmin):
-    list_display = ['code', 'name']
+    list_display = ['code', 'name', 'customer', 'get_customer']
+
+    def get_customer(self, obj):
+        return obj.customer.name
 ##    inlines = [        CustomersInline,    ]
 
 class CustomersAdmin(admin.ModelAdmin):
