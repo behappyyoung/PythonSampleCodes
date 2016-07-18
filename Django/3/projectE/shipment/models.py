@@ -53,6 +53,8 @@ class sites(models.Model):
     code = models.CharField(max_length=200, default='0000')
     name=models.CharField(max_length=200, default=' ')
     ##standard=models.ForeignKey('standard', on_delete=models.CASCADE, default=00)
+    address = models.CharField(max_length=200, default=' ')
+
     customer = models.ForeignKey('customers', on_delete=models.CASCADE, default=00)
     standards = models.CharField(max_length=200, default=' ')
     

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+{{cid}}
+   <script type="text/javascript">
+
+        </script>
+<div ng-controller="customerController">
+    <a href="{% url 'index' %} "> back to item list </a>
+
+    <h1>  현 장  등  록 </h1>
+
+
+<form action="/addsite/{{cid}}/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input id="cid" name="cid" value="{{cid}}" type="hidden" />
+    <input type="submit" value="Submit" />
+</form>
+
+    <div>
+
+</div>
+
+{% endblock content %}

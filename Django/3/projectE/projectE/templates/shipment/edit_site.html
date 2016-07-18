@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+   <script type="text/javascript">
+
+        </script>
+<div ng-controller="customerController">
+    <a href="{% url 'index' %} "> 첫메뉴 </a>
+
+    <h1>  현 장 수 정</h1>
+
+    <h1>{{ site.name | capfirst }}</h1>
+
+    <form action="/edit_site/{{sid}}/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input id="customer" name="customer" value="{{sites.customer_id}}" type="hidden" />
+    <input type="submit" value="Submit" />
+</form>
+
+    <!--
+      <form action="/site/edit/" method="post" onsubmit="return false;">
+{% csrf_token %}
+          <input id="id" name="id" value="{{site.id}}" type="hidden" />
+        <div>
+            <label for="code" class="twoword">  코  드  </label>
+            <input id="code" type="text" name="code" value="{{ site.code }}">
+        </div>
+        <div>
+            <label for="name" class="fourword">  거  래  처  명  </label>
+            <input id="name" type="text" name="name" value="{{ site.name }}">
+        </div>
+        <div>
+            <label for="address" class="twoword">   주 소</label>
+            <input id="address" type="text" name="address" value="{{ site.address }}">
+        </div>
+
+      </form>
+-->
+    <div>
+
+</div>
+
+{% endblock content %}

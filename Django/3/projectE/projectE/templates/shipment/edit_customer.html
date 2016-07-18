@@ -13,7 +13,7 @@
     <h1>{{ customer.name | capfirst }}</h1>
 
       <form action="new-order" method="post" onsubmit="return false;">
-
+{% csrf_token %}
         <div>
             <label for="code" class="twoword">  코  드  </label>
             <input id="code" type="text" name="code" value="{{ customer.code }}">
@@ -49,7 +49,16 @@
       </form>
 
     <div>
-         <h1>  현 장</h1>
+         <h1>  현 장</h1>     <a href="/addsite/{{customer.id}}/"> add</a>
+        <table>
+        {% for site in sites %}
+            <tr>
+                <td> <a href="/edit_site/{{site.id}}/"> {{ site.code }}      </a></td>
+                <td> {{ site.name }} </td>
+                <td> {{ site.address }} </td>
+            </tr>
+        {% endfor %}
+        </table>
 
 
     </div>
