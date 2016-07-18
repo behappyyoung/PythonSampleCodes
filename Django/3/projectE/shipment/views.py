@@ -131,7 +131,6 @@ def item_detail(request, id):
 
 def user_logout(request):
     logout(request) ## user log out
-    print('logout')
     return render(request, 'shipment/index.html', {})
 
 
@@ -181,9 +180,3 @@ def user_login(request):
         # blank dictionary object...
         return render(request, 'shipment/login.html', {})
 
-def logout(request):
-    try:
-        del request.session['username']
-    except KeyError:
-        pass
-    return HttpResponse("You're logged out.")
