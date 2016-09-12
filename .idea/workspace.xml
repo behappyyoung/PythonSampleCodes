@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleCodes/FetchData/usingRequests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleCodes/FetchData/usingUrllib.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PythonSampleCodes.iws" />
@@ -25,26 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="advanced_settings.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Django/samldemo/saml/advanced_settings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Django/samldemo/saml/settings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Django/samldemo/demo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,8 +36,18 @@
       <file leaf-file-name="getUrlData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/getUrlData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-59">
               <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pulseDiv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/pulseDiv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,11 +63,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bsoup.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bsoup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/bsoup.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getPartOfHtml.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/getPartOfHtml.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -110,20 +110,20 @@
       <file leaf-file-name="readFile.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleCodes/readFile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Django/samldemo/demo/views.py">
+      <file leaf-file-name="postFile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/postFile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,12 +158,14 @@
         <option value="$PROJECT_DIR$/SampleCodes/FetchData/requests.py" />
         <option value="$PROJECT_DIR$/SampleCodes/FetchData/urllib.py" />
         <option value="$PROJECT_DIR$/SampleCodes/FetchData/bsoup.py" />
+        <option value="$PROJECT_DIR$/SampleCodes/FetchData/getPartOfHtml.py" />
+        <option value="$PROJECT_DIR$/SampleCodes/postFile.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1173" />
-    <option name="y" value="272" />
+    <option name="x" value="91" />
+    <option name="y" value="43" />
     <option name="width" value="1158" />
     <option name="height" value="713" />
   </component>
@@ -315,11 +317,11 @@
       <recent name="$PROJECT_DIR$/Algorithm/HackerRank" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SampleCodes" />
       <recent name="$PROJECT_DIR$/SampleCodes/FetchData" />
       <recent name="$PROJECT_DIR$/Flask/projectT/appT/templates" />
       <recent name="$PROJECT_DIR$/Flask" />
       <recent name="$PROJECT_DIR$/Concepts/Oauth/oauth2lib" />
-      <recent name="$PROJECT_DIR$/Flask/projectR/appR/api" />
     </key>
   </component>
   <component name="RunManager">
@@ -499,8 +501,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1173" y="272" width="1158" height="713" extended-state="0" />
-    <editor active="true" />
+    <frame x="91" y="43" width="1158" height="713" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1804836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -547,21 +549,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Concepts/__name__/one.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Concepts/__name__/importing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Concepts/Oauth/oauth2lib/tests/test_integration.py" />
     <entry file="file://$PROJECT_DIR$/Concepts/Oauth/oauth2lib/tests/test_utils.py" />
     <entry file="file://$PROJECT_DIR$/Concepts/Oauth/oauth2lib/tests/test_client.py" />
     <entry file="file://$PROJECT_DIR$/Concepts/Oauth/oauth2lib/tests/test_provider.py" />
@@ -830,14 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/readFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SampleCodes/getUrlData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -854,14 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/getUrlData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/usingRequests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -874,6 +845,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/postFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/readFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/getUrlData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/pulseDiv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/getPartOfHtml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
