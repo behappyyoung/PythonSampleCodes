@@ -1,110 +1,30 @@
-<div class="col-sm-12 panel-builder-100-col ">
-<div class="parsys panel_0"><div class="heading parbase section">
-<hgroup class="section-header standard heading-level-2">
-<h2 class="black">
-	    
-	    Stanford Medicine News
-	    
-    </h2>
-</hgroup></div>
-<div class="panel_builder parbase section">
-<div class="row ">
-<div class="col-sm-4 panel-builder-33-col panel-builder-left">
-<div class="parsys panel_0"><div class="parbase news-builder section list">
-<ul class="news">
-<li class="newsfeed-item row">
+<div class="stanford-now-pulse">
+<div class="container">
+<div class="row">
 <div class="col-sm-12">
-<div class="newsfeed-item-container newsfeed-item-image-container">
-<a href="/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto.html"><div class="image " data-alt="Cell, gene medicine lab opens" data-group="" data-picture=""><div data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.320.low.jpg"></div><div data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.320.medium.jpg"></div><div data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.320.high.jpg"></div><div data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.476.low.jpg"></div><div data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.476.medium.jpg"></div><div data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.476.high.jpg"></div><div data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.620.low.jpg"></div><div data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.620.medium.jpg"></div><div data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.620.high.jpg"></div><div data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.780.low.jpg"></div><div data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.780.medium.jpg"></div><div data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.780.high.jpg"></div><div data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.845.low.jpg"></div><div data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.845.medium.jpg"></div><div data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.845.high.jpg"></div><div data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.1024.low.jpg"></div><div data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.1024.medium.jpg"></div><div data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.1024.high.jpg"></div><div data-media="(min-width: 1025px) " data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.full.low.jpg"></div><div data-media="(min-width: 1025px) " data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.full.medium.jpg"></div><div data-media="(min-width: 1025px) " data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.full.high.jpg"></div><noscript><img alt="Cell, gene medicine lab opens" src="//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.620.high.jpg"/></noscript></div><!--[if lt IE 8]><img alt="Cell, gene medicine lab opens" src='//med.stanford.edu/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto/_jcr_content/image.img.620.high.jpg' /><![endif]--></a>
+<a href="https://stanfordhealthcare.org/stanford-health-now.html"><h4>Stanford Health Now</h4></a>
+</div>
+<article class="col-md-8">
+<a href="https://stanfordhealthcare.org/stanford-health-now.html/features.html"><h5>Features</h5></a>
+<div class="row story-image-and-content">
+<div class="image-wrapper squareThumbnail right">
+<span>
+<img alt="" class="hidden-xs" src="/content/shc/en/newsroom/articles/2016/stanford-health-care-achieves-highest-national-honor-for-nursing/_jcr_content/squareThumbnail.transform/100x100/q82/image.jpg" title="stanford-health-care-shield-logo.jpg"/>
+</span>
+<a class="presentation" data-presentation-container=".article-presentation" href="https://stanfordhealthcare.org/newsroom/articles/2016/stanford-health-care-achieves-highest-national-honor-for-nursing.html">
+</a>
+</div>
+<div class="col-sm-10 story-content">
+<h2><a class="presentation" data-presentation-container=".article-presentation" href="https://stanfordhealthcare.org/newsroom/articles/2016/stanford-health-care-achieves-highest-national-honor-for-nursing.html">Stanford Health Care Achieves Highest National Honor for Nursing Excellence</a></h2>
+<p>Stanford Health Care has again been awarded Magnet Recognition for nursing excellence by the American Nurses Credentialing Center (ANCC), the highest national honor given for nursing in the United States.</p>
 </div>
 </div>
-<div class="col-sm-12">
-<a href="/news/all-news/2016/09/stanfords-lab-for-cell-gene-medicine-opens-in-palo-alto.html"><h3 class="newsfeed-item-title">Cell, gene medicine lab opens</h3></a>
-<p class="newsfeed-item-excerpt">Making cell- or virus-based therapies for use in humans requires a rigid set of quality-control standards outlined by the Food and Drug Administration. A new Stanford facility will allow promising new therapies to be tested in the clinic.</p>
-<hr/>
-<div class="newsfeed-item-footer">
-<div class="pull-left">
-<time datetime="2016-09-06T08:00:00.000-07:00"><i class="fa fa-clock-o"></i> Sep 6, 2016</time>
+</article>
+<article class="col-md-4">
+<a href="https://stanfordhealthcare.org/stanford-health-now.html/features.html"><h5>Features</h5></a>
+<h2><a class="presentation" data-presentation-container=".article-presentation" href="https://stanfordhealthcare.org/newsroom/articles/2016/opioid-free-pain-relief-kit-10-simple-steps.html">“The Opioid-Free Pain Relief Kit: 10 Simple Steps to Ease Your Pain” Offers an Effective Alternative to Prescription Painkillers</a></h2>
+<p>Stanford pain psychologist Beth Darnall’s latest book helps patients manage chronic pain</p>
+</article>
 </div>
-<ul class="pull-right">
-<li class="brand-link brand-press-color">
-<a class="" href="/news/all-news/brands/press.html"> Press Releases <i class="fa fa-arrow-right"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-sm-4 panel-builder-33-col panel-builder-mid">
-<div class="parsys panel_1"><div class="parbase news-builder section list">
-<ul class="news">
-<li class="newsfeed-item row">
-<div class="col-sm-12">
-<div class="newsfeed-item-container newsfeed-item-image-container">
-<a href="/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states.html"><div class="image " data-alt="Brain circuit drives sleep-wake cycle" data-group="" data-picture=""><div data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.320.low.jpg"></div><div data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.320.medium.jpg"></div><div data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.320.high.jpg"></div><div data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.476.low.jpg"></div><div data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.476.medium.jpg"></div><div data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.476.high.jpg"></div><div data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.620.low.jpg"></div><div data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.620.medium.jpg"></div><div data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.620.high.jpg"></div><div data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.780.low.jpg"></div><div data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.780.medium.jpg"></div><div data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.780.high.jpg"></div><div data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.845.low.jpg"></div><div data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.845.medium.jpg"></div><div data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.845.high.jpg"></div><div data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.1024.low.jpg"></div><div data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.1024.medium.jpg"></div><div data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.1024.high.jpg"></div><div data-media="(min-width: 1025px) " data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.full.low.jpg"></div><div data-media="(min-width: 1025px) " data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.full.medium.jpg"></div><div data-media="(min-width: 1025px) " data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.full.high.jpg"></div><noscript><img alt="Brain circuit drives sleep-wake cycle" src="//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.620.high.jpg"/></noscript></div><!--[if lt IE 8]><img alt="Brain circuit drives sleep-wake cycle" src='//med.stanford.edu/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states/_jcr_content/image.img.620.high.jpg' /><![endif]--></a>
-</div>
-</div>
-<div class="col-sm-12">
-<a href="/news/all-news/2016/09/investigators-identify-brain-circuit-that-drives-sleep-wake-states.html"><h3 class="newsfeed-item-title">Brain circuit drives sleep-wake cycle</h3></a>
-<p class="newsfeed-item-excerpt">Inhibiting the firing of nerve cells in a brain area long known to guide goal-directed behavior makes mice build nests and fall asleep, a new study shows. Stimulating the circuit roused the mice and kept them awake.</p>
-<hr/>
-<div class="newsfeed-item-footer">
-<div class="pull-left">
-<time datetime="2016-09-05T08:00:00.000-07:00"><i class="fa fa-clock-o"></i> Sep 5, 2016</time>
-</div>
-<ul class="pull-right">
-<li class="brand-link brand-press-color">
-<a class="" href="/news/all-news/brands/press.html"> Press Releases <i class="fa fa-arrow-right"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-sm-4 panel-builder-33-col panel-builder-right">
-<div class="parsys panel_2"><div class="parbase news-builder section list">
-<ul class="news">
-<li class="newsfeed-item row">
-<div class="col-sm-12">
-<div class="newsfeed-item-container newsfeed-item-image-container">
-<a href="/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness.html"><div class="image " data-alt="Project to explore wellness" data-group="" data-picture=""><div data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.320.low.jpg"></div><div data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.320.medium.jpg"></div><div data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.320.high.jpg"></div><div data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.476.low.jpg"></div><div data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.476.medium.jpg"></div><div data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.476.high.jpg"></div><div data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.620.low.jpg"></div><div data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.620.medium.jpg"></div><div data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.620.high.jpg"></div><div data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.780.low.jpg"></div><div data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.780.medium.jpg"></div><div data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.780.high.jpg"></div><div data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.845.low.jpg"></div><div data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.845.medium.jpg"></div><div data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.845.high.jpg"></div><div data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.1024.low.jpg"></div><div data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.1024.medium.jpg"></div><div data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.1024.high.jpg"></div><div data-media="(min-width: 1025px) " data-quality="low" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.full.low.jpg"></div><div data-media="(min-width: 1025px) " data-quality="medium" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.full.medium.jpg"></div><div data-media="(min-width: 1025px) " data-quality="high" data-src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.full.high.jpg"></div><noscript><img alt="Project to explore wellness" src="//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.620.high.jpg"/></noscript></div><!--[if lt IE 8]><img alt="Project to explore wellness" src='//med.stanford.edu/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness/_jcr_content/image.img.620.high.jpg' /><![endif]--></a>
-</div>
-</div>
-<div class="col-sm-12">
-<a href="/news/all-news/2016/09/stanfords-wellness-living-laboratory-to-explore-wellness.html"><h3 class="newsfeed-item-title">Project to explore wellness</h3></a>
-<p class="newsfeed-item-excerpt">An international clinical research project that Stanford launched on Sept. 12 aims to find out how to enhance health and overall wellness.</p>
-<hr/>
-<div class="newsfeed-item-footer">
-<div class="pull-left">
-<time datetime="2016-09-12T08:00:00.000-07:00"><i class="fa fa-clock-o"></i> Today</time>
-</div>
-<ul class="pull-right">
-<li class="brand-link brand-press-color">
-<a class="" href="/news/all-news/brands/press.html"> Press Releases <i class="fa fa-arrow-right"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div><!-- row -->
-<script>
-    (function(w){
-      w.init.add(function(){
-        if(w.SM.components.PanelBuilder !== undefined) {
-          w.SM.components.PanelBuilder.init();
-        }
-      });
-    }(window));
-</script></div>
 </div>
 </div>
