@@ -1,0 +1,11 @@
+{% extends "tracker/tracker_base.html" %}
+{% block content %}
+
+<div>
+            <form action="/order/new/" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="  Add " />
+            </form>
+</div>            
+{% endblock content %}

@@ -1,0 +1,413 @@
+{% extends "tracker/tracker_base.html" %}
+{% block content %}
+<style type="text/css">
+.main-block{
+  min-height: 500px;
+}
+  .current{
+    max-height: 500px;
+    overflow: auto;
+    margin: 20px auto;
+  }
+  .current .td-hpocode{
+    text-align: center;
+    width: 200px;
+  }
+  .actions{
+    clear: both;
+    margin: 10px auto;
+    width: 500px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .sub-title span{
+    text-transform: none;
+  }
+  .selectList{
+    position: absolute;
+    background-color: white;
+    width: 96%;
+    padding: 5px;
+    z-index: 10;
+    overflow: auto;
+    max-height: 500px;
+  }
+  .selectList .list-hpo:hover, .selectList .list-disease:hover{
+    background-color: wheat;
+  }
+
+.tab input{
+  width: 100%;
+}
+.submenu {
+  display: none;
+  z-index: 88;
+    position: absolute;
+    left: 400px;
+    top: -100px;
+ background-color: #ccc;
+}
+.submenu table{
+  table-layout: fixed;
+}
+.submenu div {
+  width: 600px;
+  z-index: 88;
+    position: relative;
+    margin: 15px;
+    border: solid 2px #337ab7;
+    border-radius: 10px;
+    padding:5px;
+    max-height: 400px;
+    overflow: auto;
+}
+.submenu div .title{
+  font-weight: bolder;
+  font-size: 14px;
+}
+.submenu div.display-disease, .submenu div.definition {
+    background-color: white;
+}
+.submenu div.actions{
+  /*background-color: transparent;*/
+}
+
+
+</style>
+<script type="text/javascript">
+
+gimpdevApp.controller('trackerController', ['$scope','$http', function($scope, $http) {
+                {% autoescape off %}
+                           
+ 
+                 {% endautoescape %}
+
+                  $scope.HPOSelectLists = [];
+                  $scope.DSelectLists=[];
+                  $scope.DsecondText = '';
+                  $scope.HPOsecondText ='';
+                  $scope.HPOthirdText='';
+                  $scope.current_index =0;
+                  $scope.current_Dindex =0;
+                  $scope.current_selected;
+                  $scope.data_disease =[];
+                  $scope.clearData = function(){
+                    $scope.HPOSearchText='';
+                    $scope.DSearchText='';
+                    $scope.HPOSelectLists = [];
+                    $scope.DSelectLists=[];
+                    $scope.DsecondText = '';
+                    $scope.HPOsecondText ='';
+                    $scope.HPOthirdText='';
+                    $scope.current_index =0;
+                    $scope.current_Dindex =0;
+                    $scope.current_selected;
+                    $scope.data_disease =[];
+                    $('#HPOsubmenu').css('display', 'none');
+                  }
+                  $scope.searchDisease = function(){
+                    $('#HPOsubmenu').css('display', 'none');
+console.log(event.keyCode, $scope.DSearchText);
+                      if($scope.DSearchText.length > 1){
+                        if($scope.DSearchText.indexOf(' ')<=0){     // with no space - update search
+                          postData ={'str': $scope.DSearchText};
+                              $http({
+                                headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded'
+                              },
+                                method:'POST', url:'/mybackend/getdiseaselist/', 
+                                data:$.param(postData),
+                              }).then(function(response){
+                                  console.log('disease list', response.data, typeof response.data);
+                                  $scope.DSelectLists = response.data;
+
+                              });
+                        }else{                                      //   with space - more than two words
+                          $scope.DsecondText = $scope.DSearchText.split(' ')[1];
+                        }
+
+                      }else{
+                         $scope.DSelectLists=[];
+                      }
+                  }
+
+                  $scope.searchHPO = function(){
+
+                    if(event.keyCode ==40 ){
+                      removeCSS('HPOwrapper');
+                      $scope.current_index = ($scope.current_index < $scope.HPOSelectLists.length ) ? $scope.current_index +1 : 0;
+                       updateCSS($scope.current_index);
+                    }else if(event.keyCode ==38 ){
+                      removeCSS('HPOwrapper');
+                      $scope.current_index =  ($scope.current_index >= 0 ) ? $scope.current_index - 1: -1;
+                       updateCSS($scope.current_index);
+                    }else if(event.keyCode ==13 ){
+                       //$scope.selectHPO(); 
+                    }else if(event.keyCode ==27 ){
+                       //$scope.HPOSelectLists='';
+                    }else{                            // no arrow 
+                        if($scope.HPOSearchText.length > 1){
+                          var cText, temp;
+                          if($scope.HPOSearchText.indexOf(' ')<=0){     // with no space - update search
+                              cText = $scope.HPOSearchText;
+                          }else{                                      //   with space - more than two words
+                            temp =   $scope.HPOSearchText.split(' ');
+                            cText = temp[0];
+                            $scope.HPOsecondText = temp[1];
+                            $scope.HPOthirdText = temp[2];
+                          }
+                            postData ={'str': cText};
+                                $http({
+                                  headers: {
+                                  'Content-Type': 'application/x-www-form-urlencoded'
+                                },
+                                  method:'POST', url:'/mybackend/gettermlist/', 
+                                  data:$.param(postData),
+                                }).then(function(response){
+
+                                    $scope.HPOSelectLists = response.data;
+    {% if 'gims-dev.shc.org' in request.environ.HTTP_HOST %}
+                    console.log('HPOSelectLists', $scope.HPOSelectLists);
+    {% endif %}                                 
+
+                                });
+                          
+
+                        }else{
+                           $scope.HPOSelectLists=[];
+                        }
+                    }
+
+                  }
+
+
+                  $scope.selectHPO = function(hlist){
+                       $scope.current_selected = hlist;
+
+console.log('selectHPO', $scope.current_selected , $scope.current_index);
+                       updateCSS($scope.current_index);
+                      // $scope.HPOSearchText='[ ' + hlist.acc +  ' ] ' + hlist.term;
+                       //$scope.HPOSelectLists = [];
+                        $http({
+                                headers: {
+                                  'Content-Type': 'application/x-www-form-urlencoded'
+                                },
+                                  method:'GET', url:'/mybackend/getterm_details/'+$scope.current_selected.tid+'/', 
+                                 
+                                }).then(function(response){
+console.log($scope.current_selected, response.data);                                  
+                                    if(response.data){
+                                      $('#HPOsubmenu .definition .data').html(response.data.definition); 
+                                      $scope.data_disease = response.data.disease;
+                                    }
+                                });
+
+                       $('#HPOsubmenu').css('display', 'block');
+                  }
+                  $scope.selectD = function(dlist){
+                      $scope.current_selected = dlist;
+console.log('selectD', $scope.current_selected , $scope.current_index);
+//                         $http({
+//                                 headers: {
+//                                   'Content-Type': 'application/x-www-form-urlencoded'
+//                                 },
+//                                   method:'GET', url:'/mybackend/getterms_by_disease/'+$scope.current_selected.tid+'/', 
+                                 
+//                                 }).then(function(response){
+// console.log($scope.current_selected, response.data);                                  
+//                                     if(response.data){
+//                                       $('#HPOsubmenu .definition .data').html(response.data.definition); 
+//                                       $scope.data_disease = response.data.disease;
+//                                     }
+//                                 });
+
+                       $('#Dsubmenu').css('display', 'block');
+                  }
+                  $scope.HPOmouseover = function(cindex){
+                    $scope.current_index = cindex;
+                    //removeCSS('HPOwrapper');
+                  }
+                  $scope.Dmouseover = function(cindex){
+                    $scope.current_Dindex = cindex;
+                    //removeCSS('Dwrapper');
+                  }
+                  $scope.addPhenotype = function(){
+                      var postData ={'acc': $scope.current_selected.acc, 'name': $scope.current_selected.name };
+                       $http({
+                                headers: {
+                                  'Content-Type': 'application/x-www-form-urlencoded'
+                                },
+                                  method:'POST', url:'/order/{{order.id}}/addphenotype/', 
+                                   data:$.param(postData),
+                                }).then(function(response){
+                                    if(response.data){
+console.log(response.data);               
+                                      if(response.data !='duplicated'){
+                                            window.location.href=window.location.href;
+                                      }else{
+                                            alert($scope.current_selected.acc + ' is Already in the list ');
+                                      }
+                                    }
+                                });
+                      
+                  }
+                  $scope.deletePhenotype =function(oid, acc){
+                      if( confirm('Are you sure to delete [ '+acc+' ] from the list ?' )){
+                        
+console.log(oid, acc);
+                        var postData ={'acc': acc};
+                        $http({
+                                headers: {
+                                  'Content-Type': 'application/x-www-form-urlencoded'
+                                },
+                                  method:'POST', url:'/order/{{order.id}}/editphenotype/', 
+                                   data:$.param(postData),
+                                }).then(function(response){
+                                    if(response.data){
+console.log(response.data);               
+                                      if(response.data =='deleted'){
+                                            window.location.href=window.location.href;
+                                      }else{
+                                            alert(acc + response.data);
+                                      }
+                                    }
+                                });
+                      }
+                  }
+                  $scope.showGraph = function(acc){
+                      window.open('/PhenoType/'+acc+'/HPOgraph/', 'Graph', 'width=1000, height=830, left=0, top=0');
+                  }
+}]);
+
+
+  jQuery(document).ready(function() {
+      $('#tabs').tabs();
+      $("#HPOsubmenu").draggable();
+  });
+
+ function updateCSS(curLoc){
+                   var selChild = $('#HPOwrapper').children();            
+                   for(var i=0;i<selChild.length;i++){
+                      if(i==curLoc){
+                           selChild[i].style.backgroundColor = 'wheat';
+                      }else{
+                         selChild[i].style.backgroundColor = 'transparent';
+                      }
+                   }
+    }
+ function removeCSS(wrapper){
+                   var selChild = $('#'+wrapper).children();
+                   for(var i=0;i<selChild.length;i++){
+                         selChild[i].style.backgroundColor = 'transparent';
+                   }
+    }
+</script>
+
+<div ng-controller="trackerController" class="tracker">
+<div class="sub-title"> 
+Patient [ <a href="/patient/{{order.patient_id}}/"> {{order.patient_id}} </a> ]'<span>s</span> Phenotypes <span>for</span> the Order : [ <a href="/order/{{order.id}}/"> {{order.order_name}} </a> ]
+     </div>
+
+
+<div class="sub-sub-title"> Search / Add PhenoTypes </div>
+
+      <div class="tabs" id="tabs">
+      <button class="btn btn-sm btn-default right-button" ng-click="clearData()"> Clear </button>
+          <ul>
+            <li><a href="#hpoterm" class="hpoterm" ng-click="clearData()"> HPO Terms </a></li>
+            <li><a href="#deseases" class="deseases" ng-click="clearData()"> Deseases  </a></li>
+
+          </ul> 
+
+      
+        <div class="tab" id="hpoterm">
+              <input type="text" id="searchHPO" name="searchHPO" ng-keyup="searchHPO()" ng-model="HPOSearchText" placeholder="Search HPO Terms" />
+              <!-- <div class="helpText"> Type in Terms  </div> -->
+               <!-- <span style="margin-left: 10px;"><button  type="button" class="btn btn-sm"> Clear </button></span> -->
+               <div class="selectList hpo" id="HPOwrapper">
+                  <div id="HPOSelectList" ng-repeat="hlist in HPOSelectLists | filter: HPOsecondText| filter: HPOthirdText" >
+                    <div class="list-hpo" ng-click="selectHPO(hlist)" id="hpo-{$ $index $}" ng-mouseover="HPOmouseover($index)">
+                      <span class="acc"> [ {$ hlist.acc $}  ]  </span>
+                      <span class="name"  >{$ hlist.term $} </span>
+                    </div>
+                  </div>
+                  
+               </div>
+               <div class="submenu" id="HPOsubmenu">
+                          <div class="actions menu btn btn-sm btn-primary" ng-click="addPhenotype()"> Add to Patient-Order </div>  
+                          <div class="definition"> <span class="title"> Definition : </span> <span class="data"> </span></div>
+                          <div class="display-disease" ><span class="title"> Associated Disease : </span> 
+                            <table class="data-table table">  
+                              <tr><td width="160px">Disease ID</td><td>Name</td></tr>
+                              <tr  ng-repeat="d in data_disease" >
+                                  <td > [ {$ d.db_name $} : {$ d.disease_id $} ] </td>
+                                  <td> {$ d.disease_title $}</td>
+                              </tr> 
+                            </table>  
+                          </div>    
+                            
+                </div>  
+
+
+        </div> 
+        <div class="tab" id="diseases">
+              <input type="text" id="searchDisease" name="searchDisease" ng-keyup="searchDisease();" ng-model="DSearchText" placeholder="Search Disease" />
+
+               <div class="selectList disease" id="Dwrapper" >
+                 <div id="DeasesSelectList" ng-repeat=" dlist in DSelectLists |filter : DsecondText">
+                   <div class="list-disease" ng-click="selectD(dlist)" id="d-{$ $index $}" ng-mouseover="Dmouseover($index)">
+                      <span class="acc"> [ {$ dlist.dbname $} : {$ dlist.did $} ]  </span>
+                      <span class="name" >{$ dlist.name $} </span>
+                    </div>
+                 </div>
+               </div>   
+               <div class="submenu" id="Dsubmenu" >
+                          <div class="long-title">
+                             <span class="title"> long title : </span> <span class="data"> </span>
+                          </div>
+                          <div class="display-disease" ><span class="title"> Associated HPO Classes : </span> 
+                            <table class="data-table table">  
+                              <tr><td width="160px">HPO ID</td><td>Name</td></tr>
+                              <tr  ng-repeat="h in data_hpo" >
+                                  <td > [ {$ h.acc $} ] </td>
+                                  <td> {$ h.name $}</td>
+                              </tr> 
+                            </table>  
+                          </div>   
+               </div>
+        </div>
+      </div>
+     
+
+  <div class="current ">
+  <div class="sub-sub-title">  Current Phenotypes</div>
+  <table class="table table-bordered table-striped table-hover">
+    <tr>
+          <th class="td-hpocode"> HPO CODE</th>
+          <th> name ( HPO Term )</th>
+          <th> Actions </th>
+
+    </tr>
+    {% for plist in phenolists %}
+    <tr>
+      <td class="td-hpocode">{{plist.acc}}</td>
+      <td>{{plist.name}} </td>
+      <td style="text-align: center;"> 
+          <button class="button btn btn-sm btn-default" ng-click="Details('{{plist.acc}}')">
+           <a href="/PhenoType/{{plist.acc}}/HPOdetails/" target="_hpo">  Details  </a> 
+           </button>
+         <button class="button btn btn-sm btn-default" ng-click="showGraph('{{plist.acc}}')">
+            <!-- <a href="/PhenoType/{{plist.acc}}/HPOgraph/"  target="_hpo"> Graph View  </a> -->
+            Graph View
+            </button>
+         <button class="button btn btn-sm btn-default" ng-click="deletePhenotype('{{plist.order_id}}', '{{plist.acc}}')"> Delete</button>
+      </td>
+    </tr>
+   {% endfor %}    
+  </table>
+</div>   
+     
+
+
+</div>
+{% endblock content %}

@@ -1,0 +1,43 @@
+
+
+                <div class="panel">
+                    <div class="title"> {{user}}</div>
+
+                          <ul class="messages">
+                            <li> You have (1) new message </li>
+                              {% if messages %}
+
+                            {% for message in messages %}
+                            <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+
+                            {% endfor %}
+                              {% endif %}
+                        </ul>
+
+                </div>
+                <div class="panel">
+                    <div class="title"> Quick Link </div>
+                    <div class="menu"> <a href="/orders/"> Order List </a>
+                    </div>
+                </div>                
+                <div class="panel dash-list">
+                    <div class="title"> available widget / report </div>
+                    <ul>
+                        <li class="listitem show" data-id="status" data-show=true> Queue Status </li>
+                        <li class="listitem show" data-id="order_completion" data-show=true> order / completion </li>
+                        <li class="listitem show" data-id="order_by_type" data-show=true>  order by Type </li>
+                        <li class="listitem show" data-id="processing_time_by_ordertype" data-show=true>  processing time by Order Type </li>
+                        <li class="listitem show" data-id="processing_time_by_step" data-show=true>  processing time by Steps </li>
+                            <li class="listitem show" data-id="completion_rate" data-show=true> Completion Rate  </li>
+                    </ul>
+                </div>
+
+                <div class="panel">
+                    <div class="title"> News </div>
+                </div>
+                <div class="panel">
+                    <div class="title"> Meetings </div>
+                </div>
+
+
+           

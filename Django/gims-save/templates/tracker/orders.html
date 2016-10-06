@@ -1,0 +1,104 @@
+{% extends "tracker/tracker_base.html" %}
+{% block content %}
+
+<style type="text/css">
+.orderlist:hover{
+  cursor: pointer;
+}
+
+</style>
+
+<script type="text/javascript">
+	  gimpdevApp.controller('trackerController', ['$scope', function($scope) {
+                {% autoescape off %}
+                            $scope.orders = {{orders}};
+if(window.location.hostname =='gims-dev.shc.org'){
+                 console.log('orders', $scope.orders);
+ }
+                 {% endautoescape %}
+                     $scope.onRowClick= function(entity){
+                     	if($scope.current == entity){
+                     		console.log($scope.current);
+                     	}
+                     	$scope.current=entity;
+  
+                    };  
+                    $scope.onOrderClick= function(oid){
+                        window.location.href ='/order/'+oid+'/';
+                    };                  
+
+                  $scope.gridOptions = { data: 'orders',
+                     showFilter : true,
+                    enableColumnResize : true,
+                    columnDefs :[
+                        { field: 'order_name',cellTemplate:'<div class="ui-grid-cell-contents " ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', displayName: 'order id', width: 80 },
+                        { field: 'order_date',cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 100 },     
+                        { field: 'due_date',cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 100 },     
+                        { field: 'status_name', displayName: 'status', cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 100 },        
+                        { field: 'asn', displayName:'sample', cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onSampleClick(row.entity.sample_id);"> {$ COL_FIELD $}  </div>', width: 100 },                                     
+                        { field: 'source', cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 80 },                            
+                        { field: 'type_name', displayName:'Type', cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 80 },  
+                        { field: 'status_name',  displayName:'Status', cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 100 },  
+                        { field: 'provider', cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 100 }, 
+                        { field: 'doctor', cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 100 },
+                        { field: 'facility', cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 100 },     
+{% if 'Admin' in  request.session.role %}
+                        { field: 'patient_id', displayName: 'patient id', cellTemplate:'<div class="ui-grid-cell-contents" ng-click="grid.appScope.onRowClick(row.entity);"> {$ COL_FIELD $}  </div>', width: 100 },    
+{% endif %}                                                                                                    
+                    ],
+                    rowSelection: 'single',
+                    // onSelectionChanged: onSelectionChanged,
+                   };
+    }]);
+
+</script>
+
+<div ng-controller="trackerController" class="tracker">
+
+
+
+    <div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-orders.gif" /> <span>Orders</span>  </div>
+	<div class="menu-search"> <input type="text" ng-model="searcho"> <button> Search </button></div>
+	<table class="table table-bordered table-striped table-hover">
+		<tr>
+			<th>  <a href="#" ng-click="sortType = 'order_name'; sortReverse = !sortReverse"> Name 
+        <span ng-show="sortType == 'order_name' && !sortReverse" class="fa fa-caret-down"></span>
+        <span ng-show="sortType == 'order_name' && sortReverse" class="fa fa-caret-up"></span> </a> </th>
+			<th>  <a href="#" ng-click="sortType = 'order_date'; sortReverse = !sortReverse"> Date 
+        <span ng-show="sortType == 'order_date' && !sortReverse" class="fa fa-caret-down"></span>
+        <span ng-show="sortType == 'order_date' && sortReverse" class="fa fa-caret-up"></span> </a>  </th>
+			<th> Due Date </th>
+			<th> <a href="#" ng-click="sortType = 'status_name'; sortReverse = !sortReverse"> Status 
+        <span ng-show="sortType == 'status_name' && !sortReverse" class="fa fa-caret-down"></span>
+        <span ng-show="sortType == 'status_name' && sortReverse" class="fa fa-caret-up"></span> </a> </th>
+			<th> <a href="#" ng-click="sortType = 'type'; sortReverse = !sortReverse"> Type 
+        <span ng-show="sortType == 'type' && !sortReverse" class="fa fa-caret-down"></span>
+        <span ng-show="sortType == 'type' && sortReverse" class="fa fa-caret-up"></span> </a> </th>
+            <th> Provider </th>
+            <th> Physician </th>
+            <th> Facility </th>
+        
+            <th> Patient ID </th>
+          
+		</tr>
+		<tr ng-repeat="o in orders | filter:searcho | orderBy:sortType:sortReverse "  id='{$ o.order_id $}' class="orderlist" ng-click="onOrderClick(o.order_id);">
+			<td>{$ o.order_name $}</td>
+			<td>{$ o.order_date $}</td>
+			<td>{$ o.due_date $}</td>
+			<td>{$ o.status_name $}</td>
+            <td>{$ o.type $}</td>
+            <td>{$ o.provider $}</td>
+            <td>{$ o.doctor  $}</td>
+            <td>{$ o.facility $}</td>
+         
+            <td>{% if 'Interpretation'  in  request.session.role or 'Manager'  in  request.session.role  %}  
+                <a href="/patient/{$ s.patient_id $}/"> {$ o.patient_id $} </a>
+            {% else %}
+                    --
+            {% endif %} </td>
+           
+		</tr>
+	</table>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,104 @@
+
+<script type="text/javascript">
+
+ jQuery(document).ready(function() {
+        $('#select-processing-time').change(function(){     // when period updated
+         console.log(this.value);
+         options='test';
+            if(this.value =='day'){
+
+            }else if(this.value =='week'){
+
+            }else{
+
+            }
+            draw_processing_time(options);
+        });
+    draw_processing_time();      // default
+ });
+</script>
+<div class="chart-wrapper" >
+    <h3>  Report  </h3>
+    <div class="period" >
+         <select id="select-processing-time">
+            <option> Last 6 Month </option>
+            <option> Last Month </option>
+            <option> Last Year </option>
+         </select>
+     </div>
+
+
+<div id="bar_processing_time" class="chart-bar" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+</div>
+
+<script type="text/javascript">
+
+    draw_processing_time = function(options){
+
+
+        var pchart = $('#bar_processing_time').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Processing time by Order type '
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                categories: ['DNA1', 'DNA2', 'DNA3', 'DNA4', 'blood'],
+                title: {
+                    text: null
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Processing Time ( days )',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+                valueSuffix: ' days'
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -40,
+                y: 80,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+                shadow: true
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: 'July 2016',
+                data: [107, 31, 35, 103, 2]
+            }, {
+                name: 'Jun 2016',
+                data: [33, 56, 47, 108, 6]
+            }]
+        });
+        window.pchart = pchart;
+         console.log(options, pchart);
+    }
+
+
+
+</script>

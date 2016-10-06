@@ -1,0 +1,412 @@
+{% extends "tracker/tracker_base.html" %}
+{% block content %}
+
+
+<style type="text/css">
+
+
+    .tree.trio {
+        margin:auto;
+        position:relative;
+        height: 500px;
+        display: none;
+
+    }
+.samplelist {
+    cursor: pointer;
+}
+ button{
+    margin: 5px auto;
+    float: right;
+}
+.relation-tree{
+    width: 500px;
+
+    position: relative;
+    height: 400px;
+    margin: 50px auto;
+
+}
+.relation-tree > div {
+    position: absolute;
+    /*background-color: wheat;*/
+    width: 100px;
+    height: 100px;
+    border: 2px solid #dddddd;
+    /*background: #eee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;*/
+    color: #333333;
+    border-radius: 10px;
+}
+.relation-tree > div:hover{
+    border: 3px solid rgba(191,186,7,1);
+}
+.relation-tree .image{
+  border-radius: 10px;   
+    width: 50px;
+    height:60px;
+    background-size: cover;
+    border:solid 1px #ccc;
+}
+.line-ver{
+
+}
+.relation-tree .sample, .relation-tree .patient{
+    font-size: 13px;
+    border-radius: 5px;
+    width: 90px;
+    height: 20px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: 5px auto;
+}
+.father-wrapper{
+    left: 0;
+    top: 0;
+   
+}
+.father-wrapper .image{
+    background-image: url('/static/IMAGES/f.png');
+
+
+}
+#line-to-father-ver{
+    position: absolute;
+    border: solid 2px black;
+    width: 50px;
+    height: 2px;
+    left: 100px;
+    top: 50px
+}
+#line-to-father-hor{
+    position: absolute;
+    border: solid 2px black;
+    width: 2px;
+    height: 100px;
+    left: 150px;
+    top: 50px;
+}
+.mother-wrapper{
+    left: 300px;
+    top: 0;
+}
+.mother-wrapper .image{
+    background-image: url('/static/IMAGES/m.png');
+
+}
+#line-to-mother-ver{
+    position: absolute;
+    border: solid 2px black;
+    width: 150px;
+    height: 2px;
+    left: 150px;
+    top: 50px;
+}
+#line-to-sibling-ver{
+    position: absolute;
+    border: solid 2px black;
+    width: 50px;
+    height: 2px;
+    left: 200px;
+    top: 200px
+}
+.proband{
+    top: 150px;
+    left: 100px;
+
+}
+.proband .image{
+    background-image: url('/static/IMAGES/p.png');
+
+}
+.sibling{
+    top:150px;
+    left: 250px;
+
+}
+.sibling .image{
+        background-image: url('/static/IMAGES/s.png');
+
+}
+.sibling2 {
+    left: 360px;    
+}
+.relation-tree .line{
+    position: absolute;
+    border: solid 2px black;
+}
+.line-to-father-ver{
+    width: 50px;
+    left: 150px;
+
+}
+.genelist .name{
+    text-transform: capitalize;
+}
+</style>
+
+<script type="text/javascript">
+	  gimpdevApp.controller('trackerController', ['$scope', function($scope) {
+                {% autoescape off %}
+                            $scope.orders = {{orders}};
+                        //    $scope.phenolists = {{phenolists}};
+                            // var cList = {{c_list}};
+                       //     $scope.checkInput = (cList.checkInput =="") ? [] : cList.checkInput.split(',');
+                       //     $scope.textInput = JSON.parse(cList.textInput);
+                           $scope.workflowList = [];
+
+                         $scope.workflows = JSON.parse('{{ workflows }}');
+                         for(var i=0;i<$scope. workflows.length; i++){
+                                $scope.workflows[i].fields.id = $scope.workflows[i].pk;
+                                $scope.workflowList.push($scope. workflows[i].fields);
+                         }                           
+                 {% endautoescape %}
+
+                     $scope.onSampleClick= function(sid){
+                     	window.location.href = '/sample/'+sid+'/';
+                    };  
+				$scope.filter_father = function(order) {
+					return order.relation_id == "2";
+				};
+ 
+				$scope.father=[];
+				$scope.mother=[];
+                $scope.sibling=[];
+				$scope.siblings=[];
+				$scope.proband='';
+
+				for(var i=0; i< $scope.orders.length;i++){
+					if($scope.orders[i].rel == 'FATHER'){
+						$scope.father.push($scope.orders[i]);
+					}
+					else if($scope.orders[i].rel == 'MOTHER'){
+						$scope.mother.push($scope.orders[i]);
+                    }else if($scope.orders[i].rel == 'SIBLING'){
+                        $scope.sibling.push($scope.orders[i]);
+					}else if($scope.orders[i].rel == 'PROBAND'){
+						$scope.proband = $scope.orders[i];
+                        console.log(i, $scope.orders[i], $scope.proband);
+					}
+				}
+
+                if($scope.father.length <=0){
+
+                    $('.father').css('display', 'none');
+                }else{
+                    $scope.father[0].url = '/sample/'+$scope.father[0].id+'/';  
+                    $scope.father[0].label = "Father";
+                    $('.father').css('display', 'block');
+                    $('.father .patient').html($scope.father[0].patient_id);
+                }
+                if($scope.mother  <=0){
+                    $('.mother').css('display', 'none');
+                }else{
+                    $scope.mother[0].url = '/sample/'+$scope.mother[0].id+'/';  
+                    $('.mother .patient').html($scope.mother[0].patient_id);   
+                }
+                if($scope.sibling  <=0){
+                    $('.sibling').css('display', 'none');
+                }else{
+                    $('.sibling1 .patient').html($scope.sibling[0].patient_id);
+                    if(typeof s[1] == 'undefined'  ){
+                         $('.sibling2').css('display', 'none');
+                    }else{
+                        $('.sibling2 .patient').html($scope.sibling[1].patient_id);
+                    }
+                }
+                if($scope.proband  <=0){
+
+                    $('.proband').css('display', 'none');
+                }else{
+                    $scope.proband.url = '/sample/'+$scope.proband.id+'/';
+                    $('.proband .patient').html($scope.proband.patient_id); 
+                }
+if(window.location.hostname =='gims-dev.shc.org'){
+                console.log('orders', $scope.orders, 'phenolists', $scope.phenolists, 'f', $scope.father, 'm', $scope.mother,'proband', $scope.proband, 'sibling', $scope.sibling);
+
+ }				
+
+        
+
+    }]);
+	  
+         
+
+
+</script>
+
+<div ng-controller="trackerController" class="tracker orders details">
+
+
+
+    <div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-orders.gif" />  Order : {$ orders[0].order_name $} </div>
+    <div class="details-top">
+        <div class="main-left text-center">
+            <div> <div class="label"> Type </div> <div class="value">{$ orders[0].type $} </div></div>
+            <!-- <div> <div class="label"> Create  Date </div> <div class="value">{$ orders[0].order_date $} </div></div> -->
+            <div> <div class="label"> Due  Date </div> <div class="value">{$ orders[0].due_date $}</div></div>
+            <div> <div class="label"> Status </div> <div class="value">{$ orders[0].status_name $}</div> </div>
+        </div>
+        <div class="main-right text-ceneter">
+            <div> <div class="label"> Ordering Provider </div> <div class="value">{$ orders[0].provider $} </div></div>
+            <div> <div class="label"> Ordering Facility </div> <div class="value">{$ orders[0].facility $}</div></div>
+            <div> <div class="label"> Ordering Physician  </div> <div class="value">{$ orders[0].doctor $}</div> </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-left">
+            <div  class="sub-sub-title"> Related Samples 
+                {% if 'Interpretation' in  request.session.role or 'Manager' in  request.session.role%}            
+                         <a href="{% url 'add_SampleOrderRel' %}?oid={$ orders[0].orderid $}"><button class="btn btn-primary btn-sm"> Add Samples </button> </a> 
+
+                {% endif %}
+            </div>
+        	<table class="table table-bordered table-striped table-hover">
+        		<tr>
+        			<th> Sample </th>
+                    <th> Source </th>
+                    <th> Relations </th>
+                    <th> Patient ID </th>
+        		</tr>
+        		<tr ng-repeat="o in orders"  id='{$ o.id $}' class="samplelist">
+
+        			<td><a href="/sample/{$ o.sample_id $}/">{$ o.asn $}</a></td>
+                    <td>{$ o.source $}</td>
+                    <td> 
+                    <a href="{% url 'add_SampleOrderRel' %}?oid={$ orders[0].orderid $}&sid={$ o.sample_id $}&rid={$ o.relation_id $}">{$ o.rel_name $} </a>
+
+                    </td>
+                    <td>
+{% if 'Interpretation'  in  request.session.role or 'Manager'  in  request.session.role  %}  
+                        <a href="/patient/{$ o.patient_id $}"> {$ o.patient_id$} </a>
+{% endif %} 
+
+
+        		</tr>
+        	</table>
+            <div class="relation-tree">
+                <div class="father-wrapper father"> 
+                    <div class="patient"> </div>
+                    <div class="image"> </div> 
+                     
+                   
+                </div>
+                     <div id="line-to-father-ver"  class="line-ver father"></div>
+                    <div id="line-to-father-hor" class="line-hor father "></div>
+                    <div id="line-to-father-hor" class="line-hor  mother"></div>
+                    <div id="line-to-mother-ver"  class="line-ver mother"></div>
+                     <div id="line-to-sibling-ver"  class="line-ver sibling"></div>
+                <div class="mother mother-wrapper"> 
+                    <div class="patient"> </div> 
+                    <div class="image"> </div> 
+                    
+                </div>
+                <div class="sibling sibling1"> 
+                     <div class="patient"> </div>  
+                     <div class="image"> </div> 
+                </div>
+                <div class="sibling sibling2"> 
+                    <div class="patient"> </div>  
+                    <div class="image"> </div> 
+                </div>
+                <div class="proband">
+                     <div class="patient"> </div>  
+                     <div class="image"> </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+       <div class="main-right">
+
+            <div>
+                <div  class="sub-sub-title">  Phenotypes 
+                    {% if 'Interpretation' in  request.session.role or 'Manager' in  request.session.role%}            
+                             <a href="/order/{$ orders[0].orderid $}/phenotypes/"><button class="btn btn-primary btn-sm"> Add Phenotypes </button> </a> 
+
+                    {% endif %}
+                </div>
+                        <table class="table table-bordered table-striped table-hover">
+                        <tr>
+                            <th> HPO Code </th>
+                            <th> Name </th>
+                        </tr>
+
+
+                         {% for plist in phenolists %}
+                        <tr >
+                            <td>{{plist.acc}}  </td>
+                            <td>
+
+                               {{plist.name}}
+                                        
+                               
+          
+                            </td>
+
+                        </tr>
+
+                        {% endfor %}
+                        </table>
+            </div>
+            <div class="genelist">
+
+                <div  class="sub-sub-title">  Genelists 
+                        {% if 'Interpretation' in  request.session.role or 'Manager' in  request.session.role%}            
+                                 <a href="/PatientOrderGeneList/{$ orders[0].orderid $}/"><button class="btn btn-primary btn-sm"> Edit Genelist </button> </a> 
+
+                        {% endif %}
+                    </div>
+                       
+
+
+                       <table class="table table-bordered table-striped table-hover">
+                        <tr>
+                            <th> Name </th>
+                            <th> Lists </th>
+                            <th> Memo</th>
+                        </tr>
+
+
+
+                              {% for glist in genelists %}
+                        <tr>
+                            <td class="name"> {{glist.genelist.name}}   </td>
+                            <td class="lists"> {{glist.genelist.list | truncatechars:100}}      </td>
+                            <td class="desc">{{glist.genelist.desc}}</td>
+                        </tr>
+
+                        {% endfor %}
+                        </table>
+
+                                            
+                                    
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+	<div class="sub-sub-title"> Related Analyses </div>	
+                     <table class="table table-bordered table-striped table-hover">
+                    <tr>
+
+                        <th> Analysis ID </th>
+                        <th> Workflow ID </th>
+                        <th> Run Time </th>
+                        <th> Related Samples </th>
+                         <!-- <th> Result </th> -->
+
+                    </tr>
+                    <tr ng-repeat="wf in workflowList "  id='{$ wf.id $}' class="order">
+                        <td><a href="{{LOOMURL}}run-requests/{$ wf.analysisID $}/">{$ wf.analysisID $}</a></td>
+                        <td><a href="{{LOOMURL}}abstract-workflows/{$ wf.workflowID.split('@')[1] $}/">{$ wf.workflowID $}</a></td>
+                        <td>{$ wf.acc_time $}</td>
+                        <td>{$ wf.relSample $}</td>
+                         <!-- <td>{$ wf.loomResponse $}</td> -->
+                    </tr>
+                </table>
+    </div>
+
+</div>
+{% endblock content %}  

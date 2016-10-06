@@ -1,0 +1,172 @@
+{% extends "window_base.html" %}
+{% block content %}
+
+  <script type="text/javascript" src="/static/JS/vis.js"></script>
+  <link href="/static/CSS/vis.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+table {
+	table-layout: fixed;
+}
+.title {
+	margin: 10px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+ .title {
+	width: 200px;
+}
+.detail > div {
+	margin: 5px 0;
+}
+    #treeView {
+      width: 1000px;
+      height: 800px;
+      border: 1px solid lightgray;
+    }
+</style>
+<script type="text/javascript">
+
+ jQuery(document).ready(function(){
+ 	 	                {% autoescape off %}
+
+                           var relations = JSON.parse('{{ relations }}');
+
+                                             
+                 {% endautoescape %}
+
+
+	                 
+	  var nodes = [ {id: '{{acc}}', label: '{{ details.0.name }}', level:1, color: 'green', 
+	  	 font:{color:'white', size:'16'}, title:'{{acc}} {{ details.0.name }} '}];
+	  var edges =[];
+	  var children = (relations[0]['children']) ? relations[0]['children'].split(',') : [];
+	  var parents = (relations[0]['parents'])? relations[0]['parents'].split(',') : [];
+
+
+	 var temp; 
+	 var level = 2;
+	 var display = 0;
+	 var show = 2;
+	 var nodeSpacing = 600;
+	 if(children.length > 10){
+	 	show = 1;
+	 	nodeSpacing = 200;
+	 }
+
+	 for(i=0; i<children.length; i++){
+	 	
+	 	temp = children[i].split('/');
+	 	if(display >= show){
+	 		level = 0.2  + level;
+	 		display =0;
+	 	}else{
+	 		display++;
+	 	}
+	 	
+	 	nodes.push({'id':temp[0], 'label':temp[1], 'level':level, title:temp[0] + ' : ' + temp[1], color:{highlight:{background:'white'}} }); 
+	 	edges.push({'from':'{{acc}}', 'to':temp[0], arrows:'from'});
+	 }
+	 for(i=0; i<parents.length; i++){
+	 	temp = parents[i].split('/');
+	 	level = i/children.length;
+	 	nodes.push({'id':temp[0], 'label':temp[1], 'level':0, title:temp[0]+ ' : ' + temp[1]}); 
+	 	edges.push({'from':temp[0], 'to':'{{acc}}', arrows:'from'});
+	 }
+
+
+  // create a network
+ 
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+	  var options = {
+	  	autoResize : true,
+		layout: {
+			 improvedLayout:true,
+	          hierarchical: {
+	            sortMethod: "directed",
+	            nodeSpacing:nodeSpacing,
+	            // treeSpacing: 500,
+	      		// blockShifting: true,
+	      		// edgeMinimization: true,
+	      		levelSeparation: 200,
+	      		// parentCentralization: true,
+	          
+	        },
+	        
+		},
+		physics: {
+    		enabled: true,
+   			 hierarchicalRepulsion: {
+			        centralGravity: 0.0,
+			        springLength: 100,
+			        springConstant: 0.01,
+			        nodeDistance: 200,
+
+    },
+   			// solver: 'hierarchicalRepulsion'
+		}
+
+  	};
+
+
+ var container = document.getElementById('treeView');
+  var network = new vis.Network(container, data, options);
+ network.on("click", function (params) {
+        params.event = "[original event]";
+        console.log(params, params.nodes[0]);
+
+        //window.location.href = '/PhenoType/'+params.nodes[0]+'/HPOgraph/';
+    });
+    network.on("doubleClick", function (params) {
+        params.event = "[original event]";
+        if(params.nodes[0]){
+        	window.location.href = '/PhenoType/'+params.nodes[0]+'/HPOgraph/';
+        }
+        
+    });
+{% if 'gims-dev.shc.org' in request.environ.HTTP_HOST %}
+	                console.log('relations', relations, 'children' ,children, 'nodes', nodes);
+
+{% endif %}
+ }) ;   
+</script>
+
+<div  class="tracker">
+
+<div class="sub-title"> [ {{acc}} ]  {{ details.0.name }} 
+	<!-- <button class="button btn btn-sm btn-default right-button"> <a href="/PhenoType/{{acc}}/HPOdetails/"> Details   </a>   </button> -->
+</div>
+
+<!-- 	<div>
+			<table class="table main-table">
+				<tr>
+						<td class="title">  Synonyms  </td>  
+						<td class="detail"> 
+								 {% for detail in details %}
+									<div> {{ detail.term_synonym }} </div>
+								{% endfor %}
+					    </td>
+				</tr>
+				<tr> 
+				    <td class="title">  Definition  </td> 
+					<td class="detail">{{ details.0.term_definition }} </td>
+				</tr>
+              </table>  
+				<div>
+
+						<div id="treeView"></div>
+                 </div>
+  
+  </div>  -->
+				<div>
+
+						<div id="treeView"></div>
+                 </div>  
+</div>
+<script type="text/javascript">
+  // create an array with nodes
+
+</script>
+{% endblock content %}

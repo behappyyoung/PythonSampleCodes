@@ -1,0 +1,109 @@
+{% extends "base_with_side.html" %}
+{% block content %}
+{% load staticfiles %}
+
+
+  <link rel="stylesheet" href="{% static 'CSS/daterangepicker.css' %}">
+<script type="text/javascript" src="{% static 'JS/charts_loader.js' %}"></script>
+ <script src="{% static 'JS/moment.js' %}" ></script>
+ <script src="{% static 'JS/daterangepicker.js' %}" ></script>
+ <script src="{% static 'JS/highcharts.js' %}" ></script>
+ <script src="{% static 'JS/dashboard.js' %}" ></script>
+
+<style>
+    .panel.dashboard {
+        justify-content: center;
+        background-color: transparent;
+    }
+    .panel.dashboard .panel-dash{
+        flex:1;
+        width: 100%;
+    }
+    .panel.analysis{
+    background-color: transparent;
+    display: flex;
+    margin-top: 0;
+}
+.panel-menu {
+    width: 220px;
+    height:150px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    border-top: solid 5px blue;
+}
+.panel-menu button{
+    width: 150px;
+    margin: 5px auto;
+        background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e8e8e8));
+    background-image: -webkit-linear-gradient(top,#fff,#e8e8e8);
+    background-image: -o-linear-gradient(top,#fff,#e8e8e8);
+    background-image: linear-gradient(to bottom,#fff,#e8e8e8);
+    color: black;
+}
+</style>
+
+<div class="panel analysis">
+    <div  class="panel panel-menu">
+        <div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-workflows.png" />  Workflows </div>
+        <a href="{% url 'workflows' %}" id="dash-btn-workflows"><button class="btn menu btn-sm "> View Workflows</button> </a> 
+{% if 'Admin' in  request.session.role or 'Manager' in  request.session.role%}            
+         <a href="{% url 'define_workflows' %}"><button class="btn menu btn-sm "> Define Workflows</button> </a> 
+{% endif %}         
+    </div>
+    <div class="panel panel-menu"> <a href="{% url 'samples' %}"> 
+        <div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-samples.png" />  Samples </div></a> 
+         <a href="{% url 'samples' %}"><button class="btn menu btn-sm "> View Samples</button> </a> 
+         <a href="{% url 'orders' %}"><button class="btn menu btn-sm "> View Orders</button> </a> 
+    </div>
+    <div class="panel panel-menu"> 
+        <div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-analyze.png" /> Analyses </div> 
+         <a href="{% url 'analyses' %}"><button class="btn menu btn-sm "> View Analyses</button> </a> 
+{% if 'Interpretation' in  request.session.role or 'Manager' in  request.session.role %}            
+         <a href="{% url 'run_analysis' %}"><button class="btn menu btn-sm "> Run Analysis </button> </a>
+{% endif %}          
+    </div>
+</div>
+
+<div class="panel dashboard">
+    <div class="panel panel-dash" id="dash-status">
+        <span class="glyphicon glyphicon-chevron-down dashhide" data-id="status" aria-hidden="true"> </span>
+        {% include "com/com_status.html" %}
+    </div>
+
+    <div class="panel panel-dash" id="dash-order_completion">
+        <span class="glyphicon glyphicon-chevron-down dashhide" data-id="order_completion" aria-hidden="true"> </span>
+        <div id="panel-main">
+            {% include "com/order_completion.html" %}
+        </div>
+    </div>
+
+    <div class="panel panel-dash" id="dash-order_by_type">
+        <span class="glyphicon glyphicon-chevron-down dashhide" data-id="order_by_type" aria-hidden="true"> </span>
+    {% include "com/order_by_type.html" %}
+    </div>
+    <div class="panel panel-dash" id="dash-processing_time_by_ordertype">
+        <span class="glyphicon glyphicon-chevron-down dashhide" data-id="processing_time_by_ordertype" aria-hidden="true"> </span>
+    {% include "com/processing_time_by_ordertype.html" %}
+    </div>
+     <div class="panel panel-dash" id="dash-processing_time_by_step">
+        <span class="glyphicon glyphicon-chevron-down dashhide" data-id="processing_time_by_step" aria-hidden="true"> </span>
+    {% include "com/processing_time_by_step.html" %}
+    </div>
+        <div class="panel panel-dash" id="dash-completion_rate">
+            <span class="glyphicon glyphicon-chevron-down dashhide" data-id="completion_rate" aria-hidden="true"> </span>
+        {% include "com/completion_rate.html" %}
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+

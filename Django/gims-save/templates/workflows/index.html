@@ -1,0 +1,54 @@
+{% extends "index_base.html" %}
+
+{% block content %}
+
+
+
+<style>
+.panel.analysis{
+    background-color: transparent;
+    display: flex;
+}
+.panel-menu {
+    width: 300px;
+    height:300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+</style>
+<script type="text/javascript">
+	gimpdevApp.controller('workflowsController', ['$scope', function($scope) {
+                {% autoescape off %}
+
+                         // $scope.fieldsList=[];
+                         // $scope.orders = JSON.parse('{{ orders }}');
+                         // for(var i=0;i<$scope. orders.length; i++){
+                         //        $scope.orders[i].fields.id = $scope.orders[i].pk;
+                         //        $scope.fieldsList.push($scope. orders[i].fields);
+                         // }
+                 {% endautoescape %}
+    }]);
+    $(document).ready(function(){
+    	
+    });
+</script>
+<div ng-controller="workflowsController" class="workflows">
+
+<div class="panel analysis">
+    <div  class="panel panel-menu"> <a href="{% url 'workflows' %}">
+        <div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-workflows.png" />  Workflows </div></a> 
+    </div>
+    <div class="panel panel-menu"> <a href="{% url 'samples' %}"> 
+        <div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-samples.png" />  Samples </div></a> 
+    </div>
+    <div class="panel panel-menu"> <a href="{% url 'analysis' %}"> 
+        <div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-analyze.png" /> Analyses </div>  </a> 
+    </div>
+</div>
+
+</div>
+ <!-- <div> {{ running }}</div> -->
+<!--  <div> {{ fileData }}</div>
+ <div> {{ data }}</div> -->
+{% endblock %}

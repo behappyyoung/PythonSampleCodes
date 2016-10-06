@@ -1,0 +1,104 @@
+
+<script type="text/javascript">
+
+ jQuery(document).ready(function() {
+        $('#select-processing-time-by-step').change(function(){     // when period updated
+         console.log(this.value);
+         options='test';
+            if(this.value =='day'){
+
+            }else if(this.value =='week'){
+
+            }else{
+
+            }
+            draw_processing_time_by_step(options);
+        });
+    draw_processing_time_by_step();      // default
+ });
+</script>
+<div class="chart-wrapper" >
+    <h4> Processing time by  Steps  </h4>
+    <div class="period" >
+         <select id="select-processing-time-by-step">
+            <option> Last 6 Month </option>
+            <option> Last Month </option>
+            <option> Last Year </option>
+         </select>
+     </div>
+
+
+<div id="bar_processing_time_by_step" class="chart-bar" style="min-width: 610px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+</div>
+
+<script type="text/javascript">
+
+    draw_processing_time_by_step = function(options){
+
+
+        var process_by_step_chart = $('#bar_processing_time_by_step').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: '  '
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                categories: ['Biofx', 'Review', 'Interpretation', 'Lab', 'Report'],
+                title: {
+                    text: null
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Processing Time ( days )',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+                valueSuffix: ' days'
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -40,
+                y: 80,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+                shadow: true
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: 'Total',
+                data: [37, 31, 35, 103, 5]
+            }, {
+                name: 'Period Average',
+                data: [33, 56, 47, 108, 6]
+            }]
+        });
+        window.pchart = process_by_step_chart;
+         console.log(options, process_by_step_chart);
+    }
+
+
+
+</script>

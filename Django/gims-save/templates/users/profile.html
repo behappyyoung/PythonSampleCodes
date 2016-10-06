@@ -1,0 +1,70 @@
+{% extends "index_base.html" %}
+
+{% block content %}
+
+
+
+<style>
+    .elem td.key {
+        width:200px;
+    }
+    .elem td.val {
+            width:300px;
+    }
+    .elem .key {
+        text-transform: uppercase;
+        font-weight: bold;
+    }    
+
+</style>
+<div class="">
+    <table class="table table-stripped table-bordered " style="margin:auto;width:1000px;">
+        {% for u in c_user %}
+
+        <tr class="elem">
+                <td class="key"> username</td>
+                <td class="val"> <strong> {{ u.username }} </strong></td>
+                <td class="key"> email</td>
+                <td class="val"> {{ u.email }}</td>
+        </tr>
+        <tr class="elem">
+                <td class="key"> first name</td>
+                <td class="val"> {{ u.first_name }}</td>
+                <td class="key"> last name</td>
+                <td class="val"> {{ u.last_name }}</td>
+        </tr>
+        <tr class="elem">
+                <td class="key"> group</td>
+                <td class="val"> {{ u.group }}</td>
+                <td class="key"> title</td>
+                <td class="val"> {{ u.title }}</td>
+        </tr>     
+        <tr class="elem">
+                <td class="key"> role</td>
+                <td class="val"> {{ u.role }}</td>
+                <td class="key"> last login</td>
+                <td class="val"> {{ u.last_login }}</td>
+        </tr>            
+        <tr class="elem">
+                <td class="key"> widgetlist</td>
+                <td class="val"> {{ u.widgetlist }}</td>
+
+        </tr>         
+        {% endfor %}
+    </table>
+
+</div>
+{% if 'gims-dev.shc.org' in request.environ.HTTP_HOST %}
+    {{request.environ}}
+    {% for s in request.session.itervalues %}
+            <div> {{ s }}</div>
+    {% endfor %}
+    <script type="text/javascript">
+        if(window.location.hostname =='gims-dev.shc.org'){
+            console.log('user profile', '{{ c_user }}', 'session', '{{request.session}}');
+        }
+    </script>    
+{% endif %}
+
+
+{% endblock %}

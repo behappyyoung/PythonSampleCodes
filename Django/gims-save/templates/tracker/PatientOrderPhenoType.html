@@ -1,0 +1,138 @@
+{% extends "tracker/tracker_base.html" %}
+{% block content %}
+<style type="text/css">
+	.form-wrapper{
+		margin: auto;
+	}
+	form {
+		width: 1200px;
+		margin: 50px auto;
+	}
+	form label, form input, form select{
+		width: 45%;
+    height: 20px;
+	}
+  form button, form textarea {
+    width: 45%;
+  }
+	form .set{
+    padding: 10px;
+        width: 50%;
+    float: left;
+	}
+	form .list-title{
+		font-size: 18px;
+    border-top: solid 1px;
+    padding: 5px 0;
+    margin: 0;
+    font-weight: bold;
+	 }
+
+	form .actions button{
+		text-transform: capitalize;
+	}
+  .actions{
+    clear: both;
+    margin: 10px auto;
+    width: 500px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .sub-title span{
+    text-transform: none;
+  }
+</style>
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+          {% autoescape off %}
+            var cList = {{c_list}};
+        {% endautoescape %}
+      if(window.location.hostname =='gims-dev.shc.org'){
+                       console.log('clist', cList);
+       }   
+       console.log(cList.checkInput.length);
+          if(cList.checkInput.length > 0 ){
+             var checkInput = cList.checkInput.split(',');
+             for(var i=0;i<checkInput.length;i++){
+                $('#'+checkInput[i]).prop('checked', true);
+            }      
+          }
+         
+          var textInput = JSON.parse(cList.textInput);
+          for( var prop in textInput){
+            $('#'+prop).val(textInput[prop]);
+          }
+
+        });
+        function submitForm(){
+          var checkInput = $('#phenoform input[type=checkbox]');
+          var checkList = [];
+          for(var i=0; i<checkInput.length;i++){
+            if(checkInput[i].checked){
+              checkList.push(checkInput[i].id);
+            }
+          }
+          var textInput = $('#phenoform .text');
+          var textList = [];
+          var newobj = new Object();
+          for(var i=0;i<textInput.length;i++){
+            if($(textInput[i]).val()){
+              newobj[textInput[i].id]= $(textInput[i]).val();
+            }
+          }
+          postData = { 'checkList' :checkList.toString(), 'textInput': JSON.stringify(newobj) };
+          console.log(postData);
+          $.post("/PatientOrderPhenoType/{{order.id}}/", postData, function(data){
+                  console.log(data, data['reURL'], typeof data);
+            if(data.reURL){
+              window.location.href = data.reURL;
+            }
+
+          }, 'json');
+  }
+</script>
+<div class="tracker">
+<div class="sub-title"> 
+Patient [ <a href="/patient/{{order.patient_id}}/"> {{order.patient_id}} </a> ]'<span>s</span> Phenotypes <span>for</span> the Order : [ <a href="/order/{{order.id}}/"> {{order.order_name}} </a> ]
+     </div>
+
+<div class="form-wrapper">
+            <form action="/PatientOrderPhenoType/" method="post" id="phenoform">
+                {% csrf_token %}
+                <div class="">	
+                  {% for plist in phenolists %}
+                  
+                  		 {% ifchanged plist.category.name %}
+                            </div> <div class="set"> 
+        					           {{plist.index}}	<div class="list-title">{{ plist.category.name }} </div>
+
+    				        	{% endifchanged %}
+
+                  		{% if 'CHECK' == plist.type.name %}
+                  			 <label for="{{plist.id}}"> {{plist.name}} </label><input type="checkbox" value="" name="{{plist.id}}" id="{{plist.id}}" /> 
+                  		{% elif plist.type.name == 'TEXT' %}
+                  			 <label for="{{plist.id}}"> {{plist.name}} </label> <input class="text" type="text" name="{plist.id}}" id="{{plist.id}}" /> 
+                      {% elif plist.type.name == 'TEXTAREA' %}
+                         <label for="{{plist.id}}"> {{plist.name}} </label> <textarea class="text" name="{{plist.id}}" id="{{plist.id}}" ></textarea>    
+                  		{% else %}
+                  			type : {{plist.type}}
+                  		{% endif %}
+
+   
+                  
+                  {% endfor %}
+                  </div>
+
+
+
+               
+            </form>
+            <div class="actions">
+                <button type="button" class="btn btn-primary btn-sm" onclick="submitForm();" >  Save </button>
+                <button type="button" class="btn btn-sm" > <a href="/order/{{order.id}}/"> Cancel </a> </button>
+            </div>
+</div>
+        
+
+</div>
+{% endblock content %}

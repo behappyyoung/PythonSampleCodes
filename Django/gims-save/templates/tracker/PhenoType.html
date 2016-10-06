@@ -1,0 +1,70 @@
+{% extends "tracker/tracker_base.html" %}
+{% block content %}
+<style type="text/css">
+table {
+	table-layout: fixed;
+}
+.title {
+	margin: 10px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+ .title {
+	width: 200px;
+}
+.detail > div {
+	margin: 5px 0;
+}
+.data-table {
+	max-height: 500px;
+	overflow: auto;
+}
+</style>
+<script type="text/javascript">
+var showGraph = function(acc){
+         window.open('/PhenoType/'+acc+'/HPOgraph/', 'Graph', 'width=1000, height=830, left=0, top=0');
+}
+
+</script>
+<div class="tracker">
+
+<div class="sub-title"> [ {{acc}} ]  {{ details.0.name }} 
+	<button class="button btn btn-sm btn-primary right-button" onclick="showGraph('{{acc}}');"> Graph View   </button>
+</div>
+
+	<div>
+			<table class="table main-table">
+				<tr>
+						<td class="title">  Synonyms  </td>  
+						<td class="detail"> 
+								 {% for detail in details %}
+									<div> {{ detail.term_synonym }} </div>
+								{% endfor %}
+					    </td>
+				</tr>
+				<tr> 
+				    <td class="title">  Definition  </td> 
+					<td class="detail">{{ details.0.term_definition }} </td>
+				</tr>
+              </table>  
+				<div>
+                	<div class="title" >  Associated Disease  </div>
+                	<div class="detail data-table">
+                            <table class=" table table-striped">  
+                              <tr><td width="160px">Disease ID</td><td>Name</td></tr>
+                               {% for d in disease %}
+                              	<tr >
+                                  <td > [ {{ d.db_name }} : {{ d.disease_id }} ] </td>
+                                  <td> {{ d.disease_title }}</td>
+                              </tr>
+                               {% endfor %}
+                            </table>  
+                     </div>
+                     <div class="title" >  Associated Genes  </div>
+                	<div>
+                	</div>
+                 </div>
+  
+  </div> 
+</div>
+{% endblock content %}

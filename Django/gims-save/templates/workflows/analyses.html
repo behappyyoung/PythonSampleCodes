@@ -1,0 +1,119 @@
+{% extends "workflows/workflows_base.html" %}
+
+{% block content %}
+
+
+
+<style>
+.table-wrapper{
+	height: 600px;
+	overflow: auto;
+}
+
+table tr td, table tbody tr th {
+    padding: 5px;
+      min-width: 150px;
+        word-break: break-word;
+
+}
+.menu-search{
+	margin: 10px 0;
+	display: flex;
+
+}
+
+</style>
+
+<script type="text/javascript">
+	gimpdevApp.controller('workflowsController', ['$scope', function($scope) {
+                {% autoescape off %}
+
+                          // $scope.workflows = {{ workflows }};
+                          // for(var i=0;i<$scope.workflows.length;i++){
+                          // 	if($scope.workflows[i].inputs){
+                          // 		$scope.workflows[i].inputsJson = JSON.parse($scope.workflows[i].inputs);
+                          // 	}else{
+                          // 		$scope.workflows[i].inputsJson = [];
+                          // 	}
+                          	
+                          // }
+                          var None = 'none';
+                          $scope.runrequests = {{running}};
+                         // $scope.sampleList=[];
+                         // $scope.samples = {{ samples }};
+                         // $scope.samplefiles = {{ samplefiles }};
+
+
+                 {% endautoescape %}
+if(window.location.hostname =='gims-dev.shc.org'){
+                console.log('samples', $scope.samples, 'samplefiles', $scope.samplefiles, 'workflows', $scope.workflows, 'run_requests', $scope.runrequests);
+ }
+
+    $scope.displayTimes =  function(dtime){
+	var newdtime = new Date(dtime);
+	return newdtime.toString()
+}
+
+
+    }]);
+
+</script>
+<div ng-controller="workflowsController" class="workflows analyses">
+
+	<div class="sub-title">  <img class="icon" src="/static/IMAGES/icon-analyze.png" />  Analyses 
+	{% if 'Interpretation' in  request.session.role or 'Manager' in  request.session.role %}   
+			<a href="{% url 'run_analysis' %}"><button class="btn btn-primary btn-sm right-button "> Run New Analysis </button> </a> 
+	{% endif %}
+	</div>
+	<div class="">
+		<div class="clearfix">
+		 <div class="menu-search"> <input type="text" ng-model="searchw"> <button>  Search </button></div>
+		 </div>
+		 <div class="table-wrapper">
+			<table class="table table-bordered table-striped table-hover">
+				<tr>
+					<th style="width:200px;"> Analysis ID </th>
+					<th style="width:200px;"> Workflow name </th>
+					<th style="width:150px;"> Created </th>
+					<th style="width:300px;"> Inputs</th>
+					<th style="width:150px;"> Steps / Status </th>
+				</tr>
+				<tr ng-repeat="r in runrequests | filter:{ run : '!none' } | filter : searchw | orderBy:'-datetime_created' ">
+
+					<td style="width:200px;"><a href="/analysis/{$ r.id $}/"> {$ r.template $} </a></td>					
+					<td style="width:200px;"> {$ r.name $}</td>
+
+					<td style="width:150px;"> {$ displayTimes(r.datetime_created) $}</td>
+					<td style="width:250px;"> 							
+							<div ng-repeat="input in r.inputs">
+								<div>
+									{$ input.channel $}  : <div style="overflow:hidden;white-space:nowrap;width:250px;text-overflow:ellipsis;">{$ input.value $} </div>
+								</div>
+							</div>
+					</td>	
+					<td>
+			
+						<!-- 	<div ng-repeat="output in r.run.outputs" " ng-show="output.value">
+									<div > {$ output.channel $}  : {$ output.value $}  </div>
+									
+							</div>
+							<div ng-hide="output.value"> running  </div> -->
+							<div ng-repeat="step in r.run.step_runs">
+								<div>
+									 {$ step.name $}  - 
+									 <span ng-show="step.outputs[0].value">  Done </span>
+									 <span ng-show="!step.outputs[0].value">  Running </span>
+								</div>
+							</div>
+
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+ <!-- <div> {{ running }}</div> -->
+<!--  <div> {{ fileData }}</div>
+ <div> {{ data }}</div> -->
+{% endblock %}

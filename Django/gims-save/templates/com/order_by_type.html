@@ -1,0 +1,43 @@
+<script type="text/javascript">
+            var pieData = [
+             ['Type', 'orders'],
+             ['Blood',  10 ],
+             ['DNA',  9 ],
+             ['DNA2',  3 ],
+             ['Others',  8 ]
+          ];
+          var options = {'options': {
+                    title : 'Period Order / Type  ',
+                    is3D: true,
+            }, 'extra':'extra'};
+        
+
+        var fac_data = [[ 'facility', 'orders'], ['facility1', 10], ['facility2', 20]];
+        var fac_options = {'options': {
+                    title : 'Period Order / Facility  ',
+                    is3D: true,
+                    colors: ['green', 'blue'],
+                     backgroundColor: 'transparent'
+            }, 'extra':'extra'};
+        
+    draw_order_by_type = function(){
+        pieChart('pie_order_com', pieData, options);
+        pieChart('pie_facility', fac_data, fac_options);
+    }
+
+ jQuery(document).ready(function() {
+    draw_order_by_type();
+ });
+</script>
+<h4>  Order by Type / Facility   </h4>
+<div class="chart-wrapper" >
+        <div class="period" > 
+            <select id="order-complete"> 
+            <option value="month"> Monthly </option>
+            <option value="week"> Weekly </option>
+            <option value="day"> Daily </option></select> 
+        </div>
+       <div id="pie_order_com"  class="chart-pie" ></div>
+
+       <div id="pie_facility"  class="chart-pie" ></div>
+</div>

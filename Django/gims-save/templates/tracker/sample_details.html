@@ -1,0 +1,148 @@
+{% extends "tracker/tracker_base.html" %}
+{% block content %}
+
+<style type="text/css">
+ button{
+    margin: 5px auto;
+    float: right;
+}
+table.files.table{
+	background-color: transparent;
+	    font-size: small;
+}
+.files td{
+	overflow-wrap: break-word;
+	word-break: break-all;
+}
+</style>
+
+<script type="text/javascript">
+	  gimpdevApp.controller('trackerController', ['$scope', function($scope) {
+                {% autoescape off %}
+                         $scope.samples = {{ samples }};
+                         $scope.samplefiles = {{ samplesfiles }};
+                          $scope.workflowList = [];
+
+                         $scope.workflows = JSON.parse('{{ workflows }}');
+                         for(var i=0;i<$scope. workflows.length; i++){
+                                $scope.workflows[i].fields.id = $scope.workflows[i].pk;
+                                $scope.workflowList.push($scope. workflows[i].fields);
+                         }
+
+                 {% endautoescape %}
+  if(window.location.hostname =='gims-dev.shc.org'){
+                 console.log('sample', $scope.samples, 'samplefiles' , $scope.samplefiles, 'workflows', $scope.workflows, 'workflowList', $scope.workflowList);
+ }
+    }]);
+
+</script>
+
+<div ng-controller="trackerController" class="tracker details">
+
+
+    <div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-samples.png" />  Sample : {$ samples[0].name $} </div>
+    <div class="details-top">
+	        <div class="main-left text-center">
+	            <div> <div class="label"> ASN </div> <div class="value">{$ samples[0].asn $} </div></div>
+				<div> <div class="label"> Patient ID </div> 
+					<div class="value"> 
+					
+{% if 'Interpretation'  in  request.session.role or 'Manager'  in  request.session.role  %}  
+						<a href="/patient/{$ samples[0].patient_id $}">	{$ samples[0].patient_id $} </a>
+{% else %}
+		--
+{% endif %} 
+				 </div> 
+				</div>
+	        </div>
+	        <div class="main-right text-ceneter">
+	            <div> <div class="label"> Source  </div> <div class="value">{$ samples[0].source $} </div></div>
+	            <div> <div class="label"> Type </div> <div class="value">{$ samples[0].type $}</div></div>
+	            
+	        </div>
+  	</div>
+    <div class="main">
+	    <div class="orders">
+	        <div  class="sub-sub-title"> Related Orders 
+{% if 'Interpretation' in  request.session.role or 'Manager' in  request.session.role%}            
+         <a href="{% url 'add_SampleOrderRel' %}?sid={$ samples[0].id $}"><button class="btn btn-primary btn-sm"> Add Orders </button> </a> 
+
+{% endif %}
+	        </div>
+
+				<table class="table table-bordered table-striped table-hover">
+					<tr>
+
+			            <th> Order </th>
+			            <th> Order Type </th>
+			            <th> relation </th>
+			            <th> Registered Files</th>
+					</tr>
+					<tr ng-repeat="s in samples "  id='{$ w.id $}' class="sample">
+			            <td><a href="/order/{$ s.order_id $}/">{$ s.order_name $}</a></td>
+			            <td>{$ s.order_type $}</td>
+			            <td>{$ s.relation $}</td>
+			            <td>
+
+					 	  		<table class="table table-bordered  files">
+					 	  			<tr>
+
+							            <th> File Name </th>
+							            <th> Loom ID </th>
+
+									</tr>
+									<tr ng-repeat="sf in samplefiles | filter:order_id=s.order_id "   class="sample">
+
+							            <td>{$ sf.file_name $}</td>
+							            <td>{$ sf.loom_id $}</td>
+
+									</tr>
+								</table>
+
+			            </td>
+					</tr>
+				</table>
+		</div>
+<!-- 	   <div class="main-right">
+	 	  	<div class="sub-sub-title"> Related Files </div>	
+	 	  		<table class="table table-bordered table-striped table-hover files">
+	 	  			<tr>
+
+			            <th> Order </th>
+			            <th> File Name </th>
+			            <th> Loom ID </th>
+
+					</tr>
+					<tr ng-repeat="sf in samplefiles "  id='{$ w.id $}' class="sample">
+			            <td><a href="/order/{$ sf.order_id $}/">{$ sf.ordername $}</a></td>
+			            <td>{$ sf.file_name $}</td>
+			            <td>{$ sf.loom_id $}</td>
+
+					</tr>
+				</table>
+    	</div> -->
+    	<div class="clearfix"></div>
+    	<div class="sub-sub-title "> Related Analyses </div>	
+    		 	 <table class="table table-bordered table-striped table-hover">
+	 	  			<tr>
+
+	 	  				<th> Analysis ID </th>
+			            <th> Workflow ID </th>
+			            <th> Run Time </th>
+			            <th> Related Orders </th>
+			            <!-- <th> Result </th> -->
+
+					</tr>
+					<tr ng-repeat="wf in workflowList "  id='{$ wf.id $}' class="sample">
+			            <td><a href="{{LOOMURL}}run-requests/{$ wf.analysisID $}/">{$ wf.analysisID $}</a></td>
+			            <td><a href="{{LOOMURL}}abstract-workflows/{$ wf.workflowID.split('@')[1] $}/">{$ wf.workflowID $}</a></td>
+			            <td>{$ wf.acc_time $}</td>
+			            <td>{$ wf.relOrder $}</td>
+			            <!-- <td>{$ wf.loomResponse $}</td> -->
+					</tr>
+				</table>
+	</div>
+
+
+</div>
+{% endblock content %}

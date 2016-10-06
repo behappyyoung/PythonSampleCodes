@@ -1,0 +1,191 @@
+  <style>
+
+        .report{
+            position:relative;
+         }
+         .report .datarange{
+            position: absolute;
+            left:200px;
+            top:10px;
+         }
+         input#daterange{
+            font-size: 16px;
+            border-radius: 5px;
+            padding: 5px;
+            width: 200px;
+        }
+
+        .activity{
+            display: inline-block;
+            margin: 10px;
+            width:300px;
+            text-align:center;
+        }
+        .activity .chart{
+            margin-left:60px;
+        }
+
+
+        .logbox{
+            width: 430px;
+        }
+
+        .content{
+            clear: both;
+        }
+
+
+        .activity .actual{
+            position: relative;
+            top: -100px;
+        }
+        .activity .actual span{
+            font-size: 20px;
+        }
+
+
+    </style>
+<script>
+       function calcPath (value, total, R) {
+            var center;
+            var alpha = 360 / total * value,
+                    a = (90 - alpha) * Math.PI / 180,
+                     x = 80 + R * Math.cos(a),
+                    y = 80 - R * Math.sin(a),
+                    path;
+            if (total == value) {
+                path = "M"+ 70 +","+ (90 - R) +" A"+ R+","+ R+","+ 0+","+ 1+","+ 1+","+ 69.99+","+ 70 - R;
+            } else {
+                if(alpha > 180) {
+                    center = 1;
+                } else {
+                    center = 0;
+                }
+                path = "M"+ 80+","+ (80 - R) +" A"+ R+","+ R+","+ 0+"," + center +","+ 1+","+ x+","+ y;
+            }
+
+            return path;
+        }
+       function calcPath3 (value, total, R) {
+            var center;
+            var alpha = 360 / total * value,
+                a = (90 - alpha) * Math.PI / 180,
+                x = 80 + R * Math.cos(a),
+                y = 80 - R * Math.sin(a),
+                path;
+            if (total == value) {
+                path = "M"+ 70 +","+ (90 - R) +" A"+ R+","+ R+","+ 0+","+ 1+","+ 1+","+ 69.99+","+ 70 - R;
+            } else {
+                if(alpha > 180) {
+                    center = 1;
+                } else {
+                    center = 0;
+                }
+                path = "M"+ 80+","+ (80 - R) +" A"+ R+","+ R+","+ 0+"," + center +","+ 1+","+ x+","+ y;
+            }
+            return path;
+        }
+
+        function updatePath_1(progress_id,  value, total, color){
+            if(value<total){
+                path = calcPath(value, total, 60);
+            }else{
+                path = calcPath(total-0.1, total, 60);
+            }
+            $('#progress_'+progress_id).html('<svg xmlns="http://www.w3.org/2000/svg" version="1.1">' +
+                '<path d="M80,20 A60,60 0 1,1  79.99,20"   fill="none" stroke="#DFDFDF" stroke-width="20" />' +
+                ' <path d="'+path+'"   fill="none" stroke="'+color+'" stroke-linejoin="round"   stroke-width="20" stroke-dasharray="10,2"/> </svg>');
+
+//            $('#pathlog_'+progress_id).html($('#pathlog_'+progress_id).html() + '<br /> '+ path);
+            $('#actual_'+progress_id).html(Number(value/total * 100).toFixed(0));
+
+        }
+        function updatePath(progress_id,  value, total){
+            if(value<total){
+                path = calcPath(value, total, 60);
+            }else{
+                path = calcPath(total-0.1, total, 60);
+            }
+            var current_percent =  Number(value/total * 100).toFixed(0);
+            if(current_percent < 30){
+                color = '#FF3333';
+            }else if(current_percent <60){
+                color = '#FFDD33';
+            }else{
+                color = '#007DC0';
+            }
+
+            $('#progress_'+progress_id).html('<svg xmlns="http://www.w3.org/2000/svg" version="1.1">' +
+                '<path d="M80,20 A60,60 0 1,1  79.99,20"   fill="none" stroke="#DFDFDF" stroke-width="20" />' +
+                ' <path d="'+path+'"   fill="none" stroke="'+color+'" stroke-linejoin="round"   stroke-width="20" /> </svg>');
+
+//            $('#pathlog_'+progress_id).html($('#pathlog_'+progress_id).html() + '<br /> '+ path);
+            $('#actual_'+progress_id).html(Number(value/total * 100).toFixed(0));
+
+        }
+
+
+  jQuery(document).ready(function() {
+
+            var my_value=0;
+            var value_1 = 0
+            var actual_1 = 35;
+            var actual_value = 180;
+            var my_intvar_1 = setInterval(myUpdate_1, 100);
+            var my_intvar = setInterval(myUpdate, 100);
+
+            function myUpdate_1(){
+                value_1 = value_1 +10;
+                updatePath(1, Number(value_1).toFixed(2), 200);
+                if(value_1>actual_1){
+                    clearInterval(my_intvar_1);
+                }
+            }
+
+            function myUpdate(){
+                my_value = my_value +10;
+                updatePath(2, Number(my_value).toFixed(2), 200);
+                if(my_value>actual_value){
+                    clearInterval(my_intvar);
+                    updatePath(2, actual_value, 200);
+                }
+            }
+
+        });
+</script>
+
+  <div class="report">
+        <h3>  Report  </h3>
+        <div  class="pull-right datarange">
+         For Period : <input type="text" name="daterange" id='daterange' value="07/15/2016 - 08/15/2016">
+        </div>
+        <div class="activity">
+           <h4>  Order Processing rate  </h4>
+            <div class="chartbox">
+             <div class="data">  35 / 200 </div>
+                <div class="chart">
+                    <span class="" id="progress_1" ></span>
+                </div> <br />
+                <div class="actual"><span id="actual_1" ></span> %</div>
+
+            </div>
+
+
+        </div>
+
+        <div class="activity">
+            <h4>  Order Completion Rate </h4>
+            <div class="chartbox">
+             <div class="data">  180 / 200 </div>
+                <div class="chart">
+                    <span class="" id="progress_2" ></span>
+                </div> <br />
+                <div class="actual"><span id="actual_2" ></span> %</div>
+
+            </div>
+
+        </div>
+
+
+
+</div>

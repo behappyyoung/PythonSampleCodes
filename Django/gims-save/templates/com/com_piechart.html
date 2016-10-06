@@ -1,0 +1,36 @@
+<script type="text/javascript">
+            var pieData = [
+             ['Month', 'orders', 'completion'],
+             ['2016/04',  10,      4            ],
+             ['2016/05',  9,      10            ],
+             ['2016/06',  8,      10        ],
+             ['2016/07',  10,      10],
+                      ['2016/04',  10,      4            ],
+             ['2016/05',  9,      10            ],
+             ['2016/06',  8,      10        ],
+             ['2016/07',  10,      10]
+          ];
+          var options = {'options': {
+                    title : 'Monthly Order / Completion  ',
+            }, 'extra':'extra'};
+        pieChart('pie_order_com', pieData, options);
+        var fac_data = [[ 'facility', 'orders'], ['facility1', 10], ['facility2', 20]];
+        var fac_options = {'options': {
+                    title : 'Period Order /Facility  ',
+                    is3D: true,
+                    colors: ['green', 'blue'],
+                     backgroundColor: 'transparent'
+            }, 'extra':'extra'};
+        pieChart('pie_facility', fac_data, fac_options);
+ jQuery(document).ready(function() {
+
+ });
+</script>
+<h3>  Report  </h3>
+<div class="chart-wrapper" >
+       <div id="pie_facility"  class="chart-pie" ></div>
+</div>
+<div class="chart-wrapper" >
+
+       <div id="pie_order_com"  class="chart-pie" ></div>
+</div>
