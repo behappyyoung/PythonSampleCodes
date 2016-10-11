@@ -11,19 +11,22 @@ table {
 }
  .title {
 	width: 200px;
+	margin-top: 30px;
 }
 .detail > div {
 	margin: 5px 0;
 }
 .data-table {
-	max-height: 500px;
+	max-height: 400px;
 	overflow: auto;
+	border: solid 2px #bfbfd2;
 }
 </style>
 <script type="text/javascript">
 var showGraph = function(acc){
          window.open('/PhenoType/'+acc+'/HPOgraph/', 'Graph', 'width=1000, height=830, left=0, top=0');
 }
+
 
 </script>
 <div class="tracker">
@@ -59,12 +62,24 @@ var showGraph = function(acc){
                               </tr>
                                {% endfor %}
                             </table>  
-                     </div>
-                     <div class="title" >  Associated Genes  </div>
-                	<div>
+                    </div>
+                    <div class="title" >  Associated Genes  </div>
+                    <div class="detail data-table">
+                            <table class=" table table-striped">  
+                              <tr>
+                              	<td width="80px"> DB </td><td width="80px"> ID </td> <td>Title</td><td>Gene Symbols</td></tr>
+                               {% for g in genes %}
+                              	<tr >
+                              		<td> OMIM </td>
+                                  <td > {{ g.id }} </td>
+                                  <td > {{ g.title }} </td>
+                                  <td> {{ g.symbols }}</td>
+                              </tr>
+                               {% endfor %}
+                            </table>  
                 	</div>
-                 </div>
+                </div>
+      </div>
   
-  </div> 
 </div>
 {% endblock content %}

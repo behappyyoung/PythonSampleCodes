@@ -44,42 +44,30 @@
   }
 </style>
 <script type="text/javascript">
-jQuery(document).ready(function() {
-          {% autoescape off %}
-             var geneList = {{genelists}};
-        {% endautoescape %}
-      if(window.location.hostname =='gims-dev.shc.org'){
-                       console.log('genelist', geneList);
-       }   
+// jQuery(document).ready(function() {
+      //     {% autoescape off %}
+      //        var geneList = {{genelists}};
+      //   {% endautoescape %}
+      // if(window.location.hostname =='gims-dev.shc.org'){
+      //                  console.log('genelist', geneList);
+      //  }   
 
-});
+// });
 
-function submitForm(){
-          var checkInput = $('#phenoform input[type=checkbox]');
-          var checkList = [];
-          for(var i=0; i<checkInput.length;i++){
-            if(checkInput[i].checked){
-              checkList.push(checkInput[i].id);
-            }
-          }
-          var textInput = $('#phenoform .text');
-          var textList = [];
-          var newobj = new Object();
-          for(var i=0;i<textInput.length;i++){
-            if($(textInput[i]).val()){
-              newobj[textInput[i].id]= $(textInput[i]).val();
-            }
-          }
-          postData = { 'checkList' :checkList.toString(), 'textInput': JSON.stringify(newobj) };
-          console.log(postData);
-          $.post("/PatientOrderPhenoType/{{order.id}}/", postData, function(data){
-                  console.log(data, data['reURL'], typeof data);
-            if(data.reURL){
-              window.location.href = data.reURL;
-            }
+function formSubmit(action, gid){
+  if( action =='delete' && confirm('are you sure to delete?')){
+    $('select[name="genelist"]').val(gid);
+    $('select[name="order"]').val('{{order.id}}');
+    $('#genelistform').find("input[name=action]").val(action);  
+    $('#genelistform').submit();
+  }else{
+    $('#genelistform').find("input[name=action]").val(action);
+    $('#genelistform').submit();
+  }
 
-          }, 'json');
 }
+
+
 </script>
 <style type="text/css">
 .genelist {
@@ -99,7 +87,8 @@ Patient [ <a href="/patient/{{order.patient_id}}/"> {{order.patient_id}} </a> ]'
                         <tr>
                             <th> Name </th>
                             <th> Lists </th>
-                            <th> Memo</th>
+                            <!-- <th> Memo</th> -->
+                            <th></th>
                         </tr>
 
 
@@ -108,7 +97,8 @@ Patient [ <a href="/patient/{{order.patient_id}}/"> {{order.patient_id}} </a> ]'
                         <tr>
                             <td class="name"> {{glist.genelist.name}}   </td>
                             <td class="lists"> {{glist.genelist.list | truncatechars:200}}      </td>
-                            <td class="desc">{{glist.genelist.desc}}</td>
+                            <!-- <td class="desc">{{glist.genelist.desc}}</td> -->
+                            <td> <input type="text"  name="action"  value='delete' onclick="formSubmit('delete', '{{glist.genelist.id}}' );" class="btn btn-default btn-sm"  />   </td>
                         </tr>
 
                         {% endfor %}
@@ -134,6 +124,7 @@ Patient [ <a href="/patient/{{order.patient_id}}/"> {{order.patient_id}} </a> ]'
             <div class="actions">
 
                 <button type="submit" class="btn btn-primary btn-sm">  Add </button>
+                <input type="hidden"  name="action"  value='add' />
                 <button type="button" class="btn btn-sm" > <a href="/order/{{order.id}}/"> Cancel </a> </button>
             </div>
                
@@ -141,7 +132,7 @@ Patient [ <a href="/patient/{{order.patient_id}}/"> {{order.patient_id}} </a> ]'
 
 </div>
 
-<a class="btn btn-primary btn-lg" href="/GeneLists/" >  All Gene Lists </a> 
+<a class="btn btn-primary btn-lg" href="/GeneLists/" target="_new" >  All Gene Lists </a> 
 
 </div>
 {% endblock content %}

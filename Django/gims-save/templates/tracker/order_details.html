@@ -355,7 +355,7 @@ if(window.location.hostname =='gims-dev.shc.org'){
 
                 <div  class="sub-sub-title">  Genelists 
                         {% if 'Interpretation' in  request.session.role or 'Manager' in  request.session.role%}            
-                                 <a href="/PatientOrderGeneList/{$ orders[0].orderid $}/"><button class="btn btn-primary btn-sm"> Edit Genelist </button> </a> 
+                                 <a href="/PatientOrderGeneList/{$ orders[0].orderid $}/"><button class="btn btn-primary btn-sm"> Add Genelist </button> </a> 
 
                         {% endif %}
                     </div>
@@ -366,7 +366,7 @@ if(window.location.hostname =='gims-dev.shc.org'){
                         <tr>
                             <th> Name </th>
                             <th> Lists </th>
-                            <th> Memo</th>
+                            <!-- <th> Memo</th> -->
                         </tr>
 
 
@@ -375,7 +375,7 @@ if(window.location.hostname =='gims-dev.shc.org'){
                         <tr>
                             <td class="name"> {{glist.genelist.name}}   </td>
                             <td class="lists"> {{glist.genelist.list | truncatechars:100}}      </td>
-                            <td class="desc">{{glist.genelist.desc}}</td>
+                            <!-- <td class="desc">{{glist.genelist.desc}}</td> -->
                         </tr>
 
                         {% endfor %}

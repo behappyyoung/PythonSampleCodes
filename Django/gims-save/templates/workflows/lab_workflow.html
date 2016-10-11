@@ -14,14 +14,49 @@ td, th {
 
 </style>
 <script type="text/javascript">
-	gimpdevApp.controller('workflowsController', ['$scope', function($scope) {
+gimpdevApp.controller('workflowsController', ['$scope', function($scope) {
                 {% autoescape off %}
-                            $scope.workflows = {{ workflows }};
+                            $scope.workflows = [];
                  {% endautoescape %}
 {% if 'gims-dev.shc.org' in request.environ.HTTP_HOST %}
                  console.log('workflows', $scope.workflows);
  {% endif %}
-    }]);
+ 		var today = new Date();
+ 		if(window.location.search.substr(1)){
+                    var inputdate = window.location.search.substr(1).split('/');
+                    sdate = inputdate[0];
+                    edate = inputdate[1];
+
+        }else{
+        	if(today.getDate() < 7){
+        		var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+        		if( today.getMonth()<1){
+					sdate = (today.getFullYear()-1)+'-'+'12'+'-'+('0' + (today.getDate()+25) ).substr(-2);
+        		}else{
+        			sdate = today.getFullYear()+'-'+('0'+( parseInt(today.getMonth()) )).substr(-2)+'-'+('0' + (today.getDate()+(lastDayOfMonth-6)) ).substr(-2);
+        		}
+        	}else{
+        		sdate = today.getFullYear()+'-'+('0'+( parseInt(today.getMonth())+1 )).substr(-2)+'-'+('0' + today.getDate() ).substr(-2);
+        	}
+                edate = today.getFullYear()+'-'+('0'+( parseInt(today.getMonth())+1 )).substr(-2)+'-'+('0' + today.getDate() ).substr(-2);
+                  
+        }
+ 		$( "#datepicker_start" ).val(sdate).datepicker({
+                    dateFormat: 'yy-mm-dd',
+                    defaultDate: sdate,
+                    setDate: sdate,
+                });
+        $( "#datepicker_end" ).val(edate).datepicker({
+                    dateFormat: 'yy-mm-dd',
+                    defaultDate: edate,
+                    setDate: edate,
+                    onSelect: function(dateText) {
+                        window.location = '?'+$('#datepicker_start').val()+"/"+dateText+"/";
+                    }
+        });    
+ }]);
+
+
 </script>
 <div ng-controller="workflowsController" class="workflows">
 
@@ -30,23 +65,33 @@ td, th {
 
 
 	<div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-microscope.png" />Lab Workflows 
-         <a href="{% url 'define_workflows' %}" class="right-button btn btn-primary btn-sm"> New Workflows </a> 
+         <a href="{% url 'new_labwork' %}" class="right-button btn btn-primary btn-sm"> New Work </a> 
 	</div>  
-	<div class="menu-search"> <input type="text" ng-model="searchw"> <button > Search </button></div>
+	  
+	<div class="search"> 
+		<div class="date_search" style="float: left;">
+	     	 <div style="display: inline-block;"> Start Date: <input type="text" id="datepicker_start"> </div>
+	      	<div style="display: inline-block;"> End Date: <input type="text" id="datepicker_end"> </div>
+	      </div>
+	     <div class="right-button">
+			<input type="text" ng-model="searchw"> <button > Search </button>
+		</div>
+	</div>
 	<table class="table table-bordered table-striped table-hover">
 		<tr>
-			<th> name </th>
 			<th> ID </th>
-			<th> version </th>
+			<th> start date </th>
+			
+			<th> status </th>
 			<th> type </th>
 			<th> desc </th>
 			<th> </th>
-			<!-- <th> run </th> -->
+
 		</tr>
 		<tr ng-repeat="w in workflows | filter:searchw"  id='{$ w.id $}' class="wf">
-			<td>{$ w.name $}</td>
-			<td><a href="/workflow/{$ w.workflow_id $}/">{$ w.workflow_id $} </a></td>
-			<td>{$ w.version $}</td>
+			<td></td>
+			<td>{$ w.date $}</td>
+			<td>{$ w.status $}</td>
 			<td>{$ w.tname $}</td>
 			<td>{$ w.desc $}</td>
 			<td> <a href="/editworkflow/{$ w.id $}" >
