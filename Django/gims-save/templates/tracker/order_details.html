@@ -1,10 +1,7 @@
 {% extends "tracker/tracker_base.html" %}
 {% block content %}
 
-
 <style type="text/css">
-
-
     .tree.trio {
         margin:auto;
         position:relative;
@@ -131,6 +128,9 @@
 .sibling2 {
     left: 360px;    
 }
+.sibling3 {
+    left: 470px;    
+}
 .relation-tree .line{
     position: absolute;
     border: solid 2px black;
@@ -208,10 +208,16 @@
                     $('.sibling').css('display', 'none');
                 }else{
                     $('.sibling1 .patient').html($scope.sibling[0].patient_id);
-                    if(typeof s[1] == 'undefined'  ){
+                    if(typeof $scope.sibling[1] == 'undefined'  ){
                          $('.sibling2').css('display', 'none');
                     }else{
                         $('.sibling2 .patient').html($scope.sibling[1].patient_id);
+                    }
+                    if(typeof $scope.sibling[2] == 'undefined'  ){
+                         $('.sibling3').css('display', 'none');
+                    }else{
+                        $('.sibling3 .patient').html($scope.sibling[2].patient_id);
+                        $('.relation-tree').css('margin-left', '0');
                     }
                 }
                 if($scope.proband  <=0){
@@ -310,6 +316,10 @@ if(window.location.hostname =='gims-dev.shc.org'){
                     <div class="patient"> </div>  
                     <div class="image"> </div> 
                 </div>
+                <div class="sibling sibling3"> 
+                    <div class="patient"> </div>  
+                    <div class="image"> </div> 
+                </div>
                 <div class="proband">
                      <div class="patient"> </div>  
                      <div class="image"> </div>
@@ -330,7 +340,7 @@ if(window.location.hostname =='gims-dev.shc.org'){
                 </div>
                         <table class="table table-bordered table-striped table-hover">
                         <tr>
-                            <th> HPO Code </th>
+                            <th> HPO ID </th>
                             <th> Name </th>
                         </tr>
 

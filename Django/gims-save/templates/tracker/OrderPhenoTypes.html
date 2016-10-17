@@ -437,10 +437,31 @@ Patient [ <a href="/patient/{{order.patient_id}}/"> {{order.patient_id}} </a> ]'
          <button class="button btn btn-sm btn-default" ng-click="deletePhenotype('{{plist.order_id}}', '{{plist.acc}}')"> Delete</button>
       </td>
     </tr>
-   {% endfor %}    
+   {% endfor %}  
+
   </table>
+
+
 </div>   
-     
+   <div class="sub-sub-title">  Sorted Disease Lists </div>
+
+    <table class="table table-bordered table-striped table-hover">
+    <tr>
+
+          <th> Disease ID</th>
+          <th> Disease Title</th>
+          <th> Score </th>
+
+    </tr>
+    {% for slist in sortedlists %}
+    <tr>
+      <td> {{ slist.id}}</td>
+      <td> {{ slist.title}}</td>
+      
+      <td> {{ slist.score }}</td>
+    </tr>
+    {% endfor %}
+    </table>  
 
 
 </div>

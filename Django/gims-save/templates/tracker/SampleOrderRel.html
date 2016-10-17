@@ -69,11 +69,11 @@ Sample Order Relationship </div>
 
               {% if 'add' in action %}
                 <input type="submit"  name="action"  value='Add' class="btn btn-primary btn-sm"  />   
-                 <input type="button" class="btn btn-sm" value='cancel' onclick="window.history.back();" />   
+                 <input type="button" class="btn btn-sm" value='Cancel' onclick="window.history.back();" />   
                 {% else %}
 
-                 <input type="text"  name="action"  value='edit' onclick="formSubmit('edit');" class="btn btn-primary btn-sm"  />   
- 				<input type="button" class="btn btn-sm" value='cancel' onclick="window.history.back();" />   
+                 <input type="text"  name="action"  value='Save' onclick="formSubmit('edit');" class="btn btn-primary btn-sm"  />   
+ 				<input type="button" class="btn btn-sm" value='Cancel' onclick="window.history.back();" />   
                  <input type="text" value="Delete" onclick="formSubmit('delete');" class="btn btn-primary btn-sm"  />   
                {% endif %}
                

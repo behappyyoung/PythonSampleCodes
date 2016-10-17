@@ -23,16 +23,92 @@ table {
 }
 </style>
 <script type="text/javascript">
-var showGraph = function(acc){
-         window.open('/PhenoType/'+acc+'/HPOgraph/', 'Graph', 'width=1000, height=830, left=0, top=0');
-}
+
+gimpdevApp.controller('trackerController', ['$scope','$http', function($scope, $http) {
+                {% autoescape off %}
+                           $scope.dblist = {{dblist}};
+                 {% endautoescape %}
+    {% if 'gims-dev.shc.org' in request.environ.HTTP_HOST %}
+                    // console.log('dblist', $scope.dblist);
+    {% endif %}        
+                $scope.genesObj = {};
+                $scope.getGeneLists = function(mimNumberStr) {
+                  var postData={'str':mimNumberStr};
+                $http({
+                              
+                              headers: {
+                                  'Content-Type': 'application/x-www-form-urlencoded'
+                                },
+                                  method:'POST', 
+                                  url:'/mybackend/getomimgenes/', 
+                                   data:$.param(postData),
+                                }).then(function(response){
+                                    if(response.data){
+ console.log('response.data', response.data);
+                                      for(var k=0;k<response.data.length;k++){
+                                        var symbols = response.data[k].symbols.split(',');
+                                        for(var i=0;i<symbols.length;i++){
+                                          if($scope.genesObj[symbols[i].trim()]){
+                                               $scope.genesObj[symbols[i].trim()]['did'].push(' OMIM:'+response.data[k].id+ ' ( '+response.data[k].title+' )');
+                                          }else{
+                                              $scope.genesObj[symbols[i].trim()] = {};
+                                              $scope.genesObj[symbols[i].trim()]['id'] = symbols[i].trim();
+                                              $scope.genesObj[symbols[i].trim()]['did'] = [ 'OMIM:'+response.data[k].id + ' ( '+response.data[k].title+' )'];
+                                              // $scope.genesObj[symbols[i].trim()]['title'] =  response.data[k].title;
+                                          }
+                                         
+                                        }   
+                                      }
+
+                                      var keys = [];
+
+                                      for(var k in $scope.genesObj){
+                                        if ($scope.genesObj.hasOwnProperty(k)) {
+                                          keys.push(k);
+                                        }
+                                      }
+
+                                      keys.sort();
+                                      $scope.arrFromMyObj =[];
+
+                                      for(var i = 0; i < keys.length; i++) {
+                                        k = keys[i];
+                                        $scope.arrFromMyObj.push($scope.genesObj[k]);
+                                      }
+
+                              }
+                  });           
+                }
+                var mimstr= '';
+                var count = 1;
+                for(var i=0; i<$scope.dblist.length;i++){
+                  if($scope.dblist[i].dbname =='OMIM'){
+                     mimstr += '&mimNumber='+ $scope.dblist[i].id;
+                     count++;
+                     if(count>19 || count == $scope.dblist.length-1 ){
+                        $scope.getGeneLists(mimstr);
+                        count=1;
+                        mimstr='';
+                     }
+                  }
+                }
+                
+                
+                  $scope.showGraph = function(acc){
+                      window.open('/PhenoType/'+acc+'/HPOgraph/', 'Graph', 'width=1000, height=830, left=0, top=0');
+                  }
+}]).filter('to_trusted', ['$sce', function($sce){
+        return function(text) {
+            return $sce.trustAsHtml(text);
+        };
+}]);                 
 
 
 </script>
-<div class="tracker">
+<div ng-controller="trackerController" class="tracker">
 
 <div class="sub-title"> [ {{acc}} ]  {{ details.0.name }} 
-	<button class="button btn btn-sm btn-primary right-button" onclick="showGraph('{{acc}}');"> Graph View   </button>
+	<button class="button btn btn-sm btn-primary right-button" ng-click="showGraph('{{acc}}');"> Graph View   </button>
 </div>
 
 	<div>
@@ -54,7 +130,7 @@ var showGraph = function(acc){
                 	<div class="title" >  Associated Disease  </div>
                 	<div class="detail data-table">
                             <table class=" table table-striped">  
-                              <tr><td width="160px">Disease ID</td><td>Name</td></tr>
+                              <tr><th width="200px">Disease ID</th><th>Name</th></tr>
                                {% for d in disease %}
                               	<tr >
                                   <td > [ {{ d.db_name }} : {{ d.disease_id }} ] </td>
@@ -64,20 +140,22 @@ var showGraph = function(acc){
                             </table>  
                     </div>
                     <div class="title" >  Associated Genes  </div>
-                    <div class="detail data-table">
+
+                    <div class="detail data-table genes">
                             <table class=" table table-striped">  
                               <tr>
-                              	<td width="80px"> DB </td><td width="80px"> ID </td> <td>Title</td><td>Gene Symbols</td></tr>
-                               {% for g in genes %}
-                              	<tr >
-                              		<td> OMIM </td>
-                                  <td > {{ g.id }} </td>
-                                  <td > {{ g.title }} </td>
-                                  <td> {{ g.symbols }}</td>
-                              </tr>
-                               {% endfor %}
+                                <th width="200px"> Gene Symbols </th><th> Associated Disease ID </th> </tr>
+                                <tr ng-repeat=" (key, value) in arrFromMyObj | orderBy :value.id  "  >
+                                    <td> {$ value.id $}</td>
+                                     <td class="did">
+                                          <div ng-repeat="d in value.did">  {$ d  $} </div> 
+                                        
+                                      </td>
+                                </tr>
+
                             </table>  
-                	</div>
+                            </div>
+                  
                 </div>
       </div>
   

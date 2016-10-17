@@ -15,8 +15,6 @@
     gimpdevApp.controller('trackerController', ['$scope', function($scope) {
                 {% autoescape off %}
 
-                         $scope.patients = {{ patients }};
-                          $scope.spatients = {{ spatients }};
                            $scope.opatients = {{ opatients }};
                             $scope.phpatients = {{ phpatients }};
 
@@ -24,18 +22,10 @@
                  {% endautoescape %}
 
 {% if 'gims-dev.shc.org' in request.environ.HTTP_HOST %}
-                  console.log('patients', $scope.patients, 'spatients', $scope.spatients, 'opatients', $scope.opatients, 'phpatients', $scope.phpatients);
+                  console.log(  'opatients', $scope.opatients, 'phpatients', $scope.phpatients);
  {% endif %}                 
                     $scope.current ={};
                     $scope.searchText = '';
-                    $scope.filterOptions = { filterText: ''    };
-                     $scope.gridOptions = { data: 'patients',
-                        enableFiltering:true,
-                        // filterOptions: $scope.filterOptions,
-                        enableColumnResize : true,
-                         excludeProperties: ['id'],
-                   };
-
                     
 
     }]);
@@ -44,18 +34,18 @@
 
 <div ng-controller="trackerController" class="tracker patients details">
 
-    <div class="sub-title"> Patient: {$ patients[0].pid $} </div>
+    <div class="sub-title"> Patient: {{ patient.pid }} </div>
     <div class="details-top">
         <div class="main-left text-center">
-            <div> <div class="label"> Medical Record Number </div> <div class="value">{$ patients[0].mrn $}</div></div>
-            <div> <div class="label"> First Name </div> <div class="value">{$ patients[0].first_name $} </div></div>
-            <div> <div class="label"> Last Name </div> <div class="value">{$ patients[0].last_name $}</div></div>
+            <div> <div class="label"> Medical Record Number </div> <div class="value">{{ patient.mrn }}</div></div>
+            <div> <div class="label"> First Name </div> <div class="value">{{ patient.first_name }} </div></div>
+            <div> <div class="label"> Last Name </div> <div class="value">{{ patient.last_name }}</div></div>
         </div>
         <div class="main-right text-ceneter">
 
-            <div> <div class="label"> Gender   </div> <div class="value">{$ patients[0].sex $}</div> </div>
-            <div> <div class="label"> Birth Date  </div> <div class="value">{$ patients[0].dob $}</div> </div>
-            <div> <div class="label"> Ethnicity   </div> <div class="value">{$ patients[0].race $}</div> </div>
+            <div> <div class="label"> Gender   </div> <div class="value">{{ patient.sex }}</div> </div>
+            <div> <div class="label"> Birth Date  </div> <div class="value">{{ patient.dob }}</div> </div>
+            <div> <div class="label"> Ethnicity   </div> <div class="value">{{ patient.race }}</div> </div>
         </div>
     </div>
     <div class="main">
@@ -70,18 +60,22 @@
                         <th> Type </th>
 
                     </tr>
-                    <tr ng-repeat="p in spatients"   class="samplelist">
+                    {% for s in samples %}
+                    <tr class="samplelist">
 
-                        <td><a href="/sample/{$ p.sample_id $}/">{$ p.asn $}</a></td>
-                        <td>{$ p.source $}</td>
+                        <td><a href="/sample/{{ s.id }}/">{{ s.asn }}</a></td>
+                        <td>{{ s.source }}</td>
          
-                        <td>{$ p.type $}</td>
+                        <td>{{ s.type }}</td>
 
                     </tr>
+                    {% endfor %}
+
                 </table>
         </div>
        <div class="">
                         <div  class="sub-sub-title"> Related Orders </div>
+
                 <table class="table table-bordered table-striped table-hover">
                     <tr>
 
@@ -91,35 +85,33 @@
                         <th> Phenotypes </th>
 
                     </tr>
-                    <tr ng-repeat="p in opatients "   class="orderlist">
-                        <td><a href="/order/{$ p.order_id $}/">{$ p.order_name $}</a></td>
-                        <td>{$ p.order_type $}</td>
-                        <td>{$ p.status $}</td>
-                        <td>
-                                <table class="table table-bordered table-striped table-hover">
-                                <tr>
-
+                    {% for o in orders %}
+                    <tr>
+                        <td><a href="/order/{{ o.id }}/">{{ o.order_name }}</a></td>
+                        <td>{{ o.type.type_name }}</td>
+                        <td>{{ o.status.status_name }}</td>
+                        <td> 
+                         <table class="table table-bordered table-striped table-hover">
+                                <tr> <th> HPO ID </th>
                                     <th> Name </th>
-                                    <th> Date </th>
-
-                                    <th> Type </th>
-                             
-                                    <th> Desc </th>
-                     
                                 </tr>
-                                <tr ng-repeat="p in phpatients | filter:order_id=p.order_id"   class="phenolist">
+                                {% for p in phenotypes %}
 
-                                    <td>{$ p.name $}</td>
-                                    <td>{$ p.date $}</td>
-                     
-                                    <td>{$ p.type $}</td>
-                             
-                                    <td>{$ p.desc  $}</td>
+                                    {% if p.order_id == o.id %}
+                                    <tr class="phenolist">
 
-                                </tr>
+                                        <td>{{p.acc}}</td>
+                                        <td>{{p.name}}</td>
+
+                                    </tr>
+                                    {% endif %}
+                                {% endfor %}
                                 </table>
+
                         </td>
                     </tr>
+                    {% endfor %}
+
                 </table>
         </div>
  <!--                    <div  class="sub-sub-title">  Phenotypes 
