@@ -2,15 +2,12 @@
 
 
 def  maxXor( l,  r):
-    max = 0
+    cmax = 0
     for lnum in range(l, r+1):
         for rnum in range(l, r+1):
-            max = lnum ^ rnum if lnum ^ rnum > max else max
-##            print '%d ^ %d  =>  %d , %d\n ' % (lnum, rnum,  lnum ^ rnum, max)
+            cmax = lnum ^ rnum if lnum ^ rnum > cmax else cmax
 
-    return max
-
-    
+    return cmax
 
 _l = int(raw_input())
 _r = int(raw_input())

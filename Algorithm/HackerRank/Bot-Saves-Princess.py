@@ -1,9 +1,9 @@
 #!/bin/python
 
 
-def displayPathtoPrincess(n,grid):
-    mloc=()
-    ploc=()
+def displayPathtoPrincess(n, grid):
+    mloc = ()
+    ploc = ()
     for ri, r in enumerate(grid):
         for ci, c in enumerate(r):
             if c == 'm':
@@ -31,6 +31,4 @@ grid = []
 for i in xrange(0, m):
     grid.append(raw_input().strip())
 
-displayPathtoPrincess(m,grid)
-
-
+displayPathtoPrincess(m, grid)
