@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 from __future__ import print_function
 from DatabaseConnection import DatabaseConnector
-from django.db import connection
 from operator import itemgetter
 import math
+import requests
 # package: lca
 class LoadOntology(object):
 
@@ -13,6 +13,8 @@ class LoadOntology(object):
     hpoToDiseaseMap = None
     diseaseToHpoMap = None
     lcaParentMap = None
+    diseaseList = None
+    hpoTermsList = None
     rootNode = -1
     totalDiseases = 0
     totalHPOTerms = 0
@@ -31,6 +33,8 @@ class LoadOntology(object):
         self.hpoToDiseaseMap = {}
         self.diseaseToHpoMap = {}
         self.lcaParentMap = {}
+        self.diseaseList = []
+        self.hpoTermsList = []
         self.loadChildren()
         self.loadParents()
         self.loadDiseaseToHpo()
@@ -42,15 +46,15 @@ class LoadOntology(object):
 
     def loadDiseaseToHpo(self):
 
-        # dbConnector = DatabaseConnector()
+        dbConnector = DatabaseConnector()
         hpoID = 0
         diseaseID = None
         prevDiseaseID = None
         hpoTermsList = None
         totalDiseases = 0
         try:
-            # dbConnection = dbConnector.getConnection()
-            cursor = connection.cursor()
+            dbConnection = dbConnector.getConnection()
+            cursor = dbConnection.cursor()
             sql = "select t.id, eod.disease_id FROM term t, annotation a, external_object_disease eod " + " WHERE t.id = a.term_id AND a.external_object_disease_id = eod.external_object_id AND " + " t.subontology = 'O' AND t.is_obsolete = 0 " + " order by eod.disease_id "
             cursor.execute(sql)
 
@@ -60,6 +64,8 @@ class LoadOntology(object):
                 if not (diseaseID == prevDiseaseID):
                     if not (prevDiseaseID is None):
                         self.diseaseToHpoMap[prevDiseaseID] = hpoTermsList
+                        self.diseaseList.append(prevDiseaseID)
+
                     hpoTermsList = []
                     prevDiseaseID = diseaseID
                     totalDiseases += 1
@@ -68,6 +74,8 @@ class LoadOntology(object):
 
             if diseaseID != None and hpoTermsList != None:
                 self.diseaseToHpoMap[diseaseID] = hpoTermsList
+                self.diseaseList.append(diseaseID)
+
             print("Total diseases = ")
             print(totalDiseases)
             self.totalDiseases = totalDiseases
@@ -76,15 +84,15 @@ class LoadOntology(object):
 
     def loadHpoToDiseases(self):
 
-        # dbConnector = DatabaseConnector()
+        dbConnector = DatabaseConnector()
         hpoID = 0
         diseaseID = None
         prevHpoID = -1
         diseaseList = None
         totalDiseases = 0
         try:
-            # dbConnection = dbConnector.getConnection()
-            cursor = connection.cursor()
+            dbConnection = dbConnector.getConnection()
+            cursor = dbConnection.cursor()
             sql = "select t.id, eod.disease_id FROM term t, annotation a, external_object_disease eod " + " WHERE t.id = a.term_id AND a.external_object_disease_id = eod.external_object_id AND " + " t.subontology = 'O' AND t.is_obsolete = 0 " + " order by t.id "
             cursor.execute(sql)
 
@@ -94,6 +102,8 @@ class LoadOntology(object):
                 if hpoID != prevHpoID:
                     if prevHpoID != -1:
                         self.hpoToDiseaseMap[prevHpoID]=  diseaseList
+                        self.hpoTermsList.append(prevHpoID)
+
                     diseaseList = []
                     prevHpoID = hpoID
                 if diseaseList != None:
@@ -103,13 +113,14 @@ class LoadOntology(object):
 
             if hpoID != 0 and diseaseList != None:
                 self.hpoToDiseaseMap[hpoID] = diseaseList
+                self.hpoTermsList.append(hpoID)
             #print("Total diseases = " + totalDiseases);
         except Exception as ex:
             raise ex
 
     def loadChildren(self):
 
-        # dbConnector = DatabaseConnector()
+        dbConnector = DatabaseConnector()
         hpoID = 0
         hpoChildID = 0
         is_root = 0
@@ -118,9 +129,9 @@ class LoadOntology(object):
         totalHPOTerms = 0
         recordsRetrieved = 0
         try:
-            # dbConnection = dbConnector.getConnection()
+            dbConnection = dbConnector.getConnection()
             sql = "select t.id, t.name, t.acc, t.is_root, t2t.term2_id FROM term t, term2term t2t " + " WHERE t.id = t2t.term1_id AND " + " t.subontology = 'O' AND t.is_obsolete = 0 " + " order by t.id "
-            cursor = connection.cursor()
+            cursor = dbConnection.cursor()
             cursor.execute(sql)
             for results in cursor:
                 hpoID = results[0]
@@ -154,7 +165,7 @@ class LoadOntology(object):
 
     def loadParents(self):
 
-        # dbConnector = DatabaseConnector()
+        dbConnector = DatabaseConnector()
         hpoID = 0
         hpoParentID = 0
         is_root = 0
@@ -163,9 +174,9 @@ class LoadOntology(object):
         totalHPOTerms = 0
         recordsRetrieved = 0
         try:
-            # dbConnection = dbConnector.getConnection()
+            dbConnection = dbConnector.getConnection()
             sql = "select t.id, t.name, t.acc, t.is_root, t2t.term1_id FROM term t, term2term t2t " + " WHERE t.id = t2t.term2_id AND " + " t.subontology = 'O' AND t.is_obsolete = 0 " + " order by t.id "
-            cursor = connection.cursor()
+            cursor = dbConnection.cursor()
             cursor.execute(sql)
 
             for results in cursor:
@@ -202,8 +213,8 @@ class LoadOntology(object):
         listedDisease = self.hpoToDiseaseMap.get(node)
         if listedDisease == None or len(listedDisease) == 0:
             return ic
-        print(" total diseases = " )
-        print(len(listedDisease))
+        #print(" total diseases = " )
+        #print(len(listedDisease))
         if len(listedDisease) > self.totalDiseases:
             raise Exception("Invalid Ontology - Disease associated for listed HPO term is greater than total number of Diseases/Disorder in Ontology")
         ic = -1 * math.log(float(len(listedDisease)) / self.totalDiseases)
@@ -213,40 +224,50 @@ class LoadOntology(object):
     # 	 *
     #
     def getDiseaseFromHPO(self, hpoID):
-        """ generated source for method getDiseaseFromHPO """
+
         listedDisease = None
         listedDisease = self.hpoToDiseaseMap.get(hpoID)
         return listedDisease
 
-    def getSortedDiseaseList(self, queryHpoList):
+    def getSortedDiseaseList(self, queryHpoList, inputDiseaseID):
 
         sum = 0
         totalQueryTerms = 0
+        totalDiseaseHpoTerms = 0
         maxIC = -1.0
         ic = 0
         lca = -1
         avgQDScore = 0.0
+        avgDQScore = 0.0
         currentQueryHpoID = 0
         currentDiseaseHpoID = 0
         diseaseID = None
         diseaseHpoList = None
         unsortedDiseaseList = {}
+        scoreList = []
+
         if queryHpoList == None or not queryHpoList:
             return unsortedDiseaseList
         # get disease list for all HPO terms
-        diseaseList = self.getDiseaseListFromHpoList(queryHpoList)
+        if inputDiseaseID is None:
+            diseaseList = self.getDiseaseListFromHpoList(queryHpoList)
+        else:
+            diseaseList = []
+            diseaseList.append(inputDiseaseID)
+
         # loop through all possible disease id
-        #diseaseIterator = diseaseList.iterator()
-        #diseaseHpoIterator = None
+
         for diseaseID in diseaseList:
-            #diseaseID = diseaseIterator.next()
             diseaseHpoList = self.diseaseToHpoMap.get(diseaseID)
             # reset summary variables
             sum = 0
             totalQueryTerms = 0
-            #queryHpoIterator = queryHpoList.iterator()
+            totalDiseaseHpoTerms = 0
+            scoreList = []
+
             for currentQueryHpoID in queryHpoList :
                 totalQueryTerms += 1
+                maxIC = -1
                 #currentQueryHpoID = queryHpoIterator.next()
                 # get HPO terms associated with diseaseID
                 # there has to be alteast one HPO term for all diseases in the list as we retrieved disease by HPO term
@@ -259,17 +280,35 @@ class LoadOntology(object):
                     # find max IC
                     if ic > maxIC:
                         maxIC = ic
+
+                scoreList.append(maxIC)
                 sum += maxIC
             avgQDScore = sum / totalQueryTerms
-            #diseaseScore = DiseaseScore(diseaseID, avgQDScore)
-            unsortedDiseaseList[diseaseID] = avgQDScore
 
-        #Collections.sort(sortedDiseaseList)
+            for currentDiseaseHpoID in diseaseHpoList:
+                totalDiseaseHpoTerms += 1
+                maxIC = -1
+                for currentQueryHpoID in queryHpoList:
+                    lca = self.computeLCA(currentDiseaseHpoID, currentQueryHpoID)
+                    ic = self.getInformationContent(lca)
+                    if ic > maxIC:
+                        maxIC = ic
+                sum += maxIC
+            avgDQScore = sum/totalDiseaseHpoTerms
+
+
+            finalScoreList = []
+            finalScoreList.append((avgDQScore + avgQDScore)/2)
+            finalScoreList.extend(scoreList)
+
+            unsortedDiseaseList[diseaseID] = finalScoreList
+
+
         sortedDiseaseList = sorted(unsortedDiseaseList.items(), key=itemgetter(1))
         return sortedDiseaseList
 
     def getDiseaseListFromHpoList(self, hpoList):
-        """ generated source for method getDiseaseListFromHpoList """
+
         listedDisease = []
         tempDiseaseList = None
         if hpoList == None or not hpoList:
@@ -283,7 +322,7 @@ class LoadOntology(object):
         return listedDisease
 
     def getHpoFromDisease(self, diseaseID):
-        """ generated source for method getHpoFromDisease """
+
         hpoList = None
         if diseaseID == None:
             return None
@@ -291,7 +330,7 @@ class LoadOntology(object):
         return hpoList
 
     def getHpoFromDiseaseList(self, diseaseIDList):
-        """ generated source for method getHpoFromDiseaseList """
+
         hpoList = []
         diseaseID = None
         hpoID = 0
@@ -308,7 +347,7 @@ class LoadOntology(object):
         return hpoList
 
     def computeLCA(self, node1, node2):
-        """ generated source for method computeLCA """
+
         lcaNode = self.rootNode
         parentNode = 0
         currentNode = 0
@@ -355,17 +394,20 @@ class LoadOntology(object):
 
         # now start with node2
         parentExists = False
+        level = 0
         if node2 in visitedNodesMap:
             lcaNode = node2
         else:
             parentsList = self.ontologyMap.get(node2)
             allParentsList = []
+            level = level + 1
             if parentsList != None:
                 #size = 0
                 for parentNode in parentsList:
                     #parentNode = parentsList.get(size)
                     if parentNode in visitedNodesMap:
                         lcaNode = parentNode
+                        #lcaNode = 118
                         return lcaNode
                     allParentsList.append(parentNode)
                     if parentNode in self.ontologyMap:
@@ -375,6 +417,7 @@ class LoadOntology(object):
                     currentList = allParentsList
                     parentExists = False
                     allParentsList = []
+                    level = level + 1
                     #size = 0
                     for currentNode in currentList:
                         #currentNode = currentList.get(size)
@@ -386,10 +429,14 @@ class LoadOntology(object):
                                 allParentsList.append(parentNode)
                                 if parentNode in visitedNodesMap:
                                     lcaNode = parentNode
+                                    if (level > 2):
+                                        lcaNode = 118
                                     return lcaNode
                                 if parentNode in self.ontologyMap:
                                     parentExists = True
 
+        if level > 2:
+            lcaNode = 118
 
         return lcaNode
 
@@ -397,20 +444,7 @@ class LoadOntology(object):
     def main(cls, args):
 
         loader = LoadOntology()
-        #loader.loadParents()
-        #loader.loadChildren()
-        #try:
-        #    loader.loadDiseaseToHpo()
-        #except Exception as e1:
-        #
-        #     print(e1)
-        # try:
-        #     loader.loadHpoToDiseases()
-        # except Exception as e1:
-        #
-        #     print(e1)
 
-        #loader.totalDiseases = len(loader.diseaseToHpoMap)
         loader.rootNode = 118
         # loader.totalLevels = loader.findNumberLevels(loader.rootNode);
         print( loader.totalLevels)
@@ -425,12 +459,24 @@ class LoadOntology(object):
             print("Information Content of LCA is ")
             print( ic)
             queryTermsList = []
-            queryTermsList.append(2263)
-            queryTermsList.append(4758)
-            sortedDisease = loader.getSortedDiseaseList(queryTermsList)
+            queryTermsList.append(93)
+            queryTermsList.append(100)
+            queryTermsList.append(969)
+            queryTermsList.append(1319)
+            queryTermsList.append(2133)
+            queryTermsList.append(2151)
+            queryTermsList.append(11968)
+            queryTermsList.append(100704)
+            sortedDisease = loader.getSortedDiseaseList(queryTermsList, None)
             if (sortedDisease != None):
                for key in sortedDisease:
                     print(key)
+
+            #resp = requests.get('https://monarchinitiative.org/disease/OMIM:614652')
+            #if resp.status_code != 200:
+            #    print('GET /tasks/ {}'.format(resp.status_code))
+            #for todo_item in resp.json():
+            #    print('{} {}'.format(todo_item['id'], todo_item['summary']))
 
         except Exception as e:
             print(e)
