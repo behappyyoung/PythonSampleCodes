@@ -1,38 +1,39 @@
-n,m = raw_input().strip().split(' ')
-n,m = [int(n),int(m)]
-pairs=0
-def isPrime(x):
-	if x < 3:
-		return True
-	for i in range(3, x, 2):
-		if x % i == 0:
-			return False
-	return True
 
-if (n % 2) == 0:
-	startn = n + 1
-else:
-	startn = n
-next_true = False
-iterable = iter(xrange(startn, m-1, 2))
-for i in iterable:
-	# print next_true, i
-	if next_true:
-		if isPrime(i+2):
-			pairs += 1
-			next_true = True
+def sub_num(num, count):        #width self
+	# print 'num :' , num, 'count :', count
+	if num == count:
+		nums = []
+		for i in xrange(1, num + 1):
+			nums.append(str(i))
+		return [','.join(nums)]
+	elif count == 1:
+		nums = []
+		for i in xrange(1, num+1):
+			nums.append(i)
+		return nums
+	elif count > num :
+		return False
+
+	if num >= count:
+		sub1 = sub_num(num - 1, count - 1)
+		if isinstance(sub1, str):
+			sub1 = [str(num) + ',  ' +sub1]
 		else:
-			next_true = False
-			next(iterable)
+			subsub = []
+			for i in sub1:
+				subsub.append(str(i) + ',' + str(num))
+			sub1 = subsub
 	else:
-		if isPrime(i):
-			if isPrime(i+2):
-				pairs += 1
-				next_true = True
-			else:
-				next_true = False
-				next(iterable)
+		sub1 = []
+	return sub1
 
 
 
-print pairs
+def get_subs(num, count):
+	for i in xrange(num, count-1, -1):
+		subs = sub_num(i, count)
+		print i, count, subs
+		for i in subs:
+			print i
+
+get_subs(4, 2)
