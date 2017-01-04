@@ -1,14 +1,12 @@
-import sys
-import re
-
+from __future__ import division
 n = int(raw_input().strip())
-arr = []
-for i in range(0, n):
-	arr.append(raw_input().strip())
-
-print n, arr
-
-for i in range(0,n):
-   print arr[i]
-   print  bool(re.search(r'^[+-]?\d+\.\d+', arr[i]))
+arr = map(int, raw_input().strip().split(' '))
+weigh_arr = map(int, raw_input().strip().split(' '))
+sum = 0
+wsum = 0
+for i in xrange(n):
+    sum += arr[i]*weigh_arr[i]
+    wsum += weigh_arr[i]
+wmean = sum / wsum
+print ("%.1f"%wmean)
 
