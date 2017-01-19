@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="" />
+    <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/InterQuartile_Range.py" afterPath="$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/InterQuartile-Range.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithm/temp.py" afterPath="$PROJECT_DIR$/Algorithm/temp.py" />
+    </list>
     <ignored path="PythonSampleCodes.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -31,7 +35,7 @@
       <file leaf-file-name="Mean-Median-Mode.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/Mean-Median-Mode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
+            <state relative-caret-position="165">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="31" />
               <folding />
             </state>
@@ -58,21 +62,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterQuartile_Range.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/InterQuartile_Range.py">
+      <file leaf-file-name="InterQuartile-Range.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/InterQuartile-Range.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="150">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Balanced-Brackets.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/CrackingCodeInterview/Balanced-Brackets.py">
+      <file leaf-file-name="Standard-Deviation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/Standard-Deviation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="450">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+              <folding>
+                <element signature="e#60#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithm/temp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -138,8 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Django/samldemo/venv/lib/python2.7/site-packages/onelogin/saml2/settings.py" />
-        <option value="$PROJECT_DIR$/Django/samldemo/saml/settings.json" />
         <option value="$PROJECT_DIR$/Django/samldemo/templates/base.html" />
         <option value="$PROJECT_DIR$/Django/samldemo/demo/urls.py" />
         <option value="$PROJECT_DIR$/SampleCodes/getUrlData.py" />
@@ -182,13 +196,15 @@
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/CrackingCodeInterview/Sorting-Comparator.py" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/CrackingCodeInterview/Icream-Palor.py" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/CrackingCodeInterview/DFS-Connected-Cell.py" />
-        <option value="$PROJECT_DIR$/Algorithm/temp.py" />
         <option value="$PROJECT_DIR$/Algorithm/Sort-Merge.py" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/MergeSort-Couning-Inversions.py" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/Mean-Median-Mode.py" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/test.py" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/Quartiles.py" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/InterQuartile_Range.py" />
+        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/Standard-Diviation.py" />
+        <option value="$PROJECT_DIR$/Algorithm/temp.py" />
+        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/Standard-Deviation.py" />
       </list>
     </option>
   </component>
@@ -199,9 +215,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1632" />
+    <option name="x" value="-2009" />
     <option name="y" value="61" />
-    <option name="width" value="1623" />
+    <option name="width" value="2009" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -266,8 +282,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -357,19 +373,19 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics" />
-      <recent name="$PROJECT_DIR$/Algorithm" />
-      <recent name="$PROJECT_DIR$/Algorithm/HackerRank/CrackingCodeInterview/input" />
-      <recent name="$PROJECT_DIR$/Algorithm/HackerRank/Code26" />
-      <recent name="$PROJECT_DIR$/Algorithm/HackerRank" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Algorithm/HackerRank/CrackingCodeInterview" />
       <recent name="$PROJECT_DIR$/Algorithm" />
       <recent name="$PROJECT_DIR$/Algorithm/HackerRank/Code26" />
       <recent name="$PROJECT_DIR$/Algorithm/HackerRank/Inputs" />
       <recent name="$PROJECT_DIR$/Flask/projectT/appT/static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics" />
+      <recent name="$PROJECT_DIR$/Algorithm" />
+      <recent name="$PROJECT_DIR$/Algorithm/HackerRank/CrackingCodeInterview/input" />
+      <recent name="$PROJECT_DIR$/Algorithm/HackerRank/Code26" />
+      <recent name="$PROJECT_DIR$/Algorithm/HackerRank" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Algorithm">
@@ -695,15 +711,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1632" y="61" width="1623" height="1053" extended-state="0" />
-    <editor active="true" />
+    <frame x="-2009" y="61" width="2009" height="1053" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2055661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21301474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39500734" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39438087" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28407907" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="19" y="33" width="1256" height="710" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -775,13 +791,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Inputs/Bot-Saves-Princess.input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
@@ -1020,13 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/CrackingCodeInterview/Sorting-Comparator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -1111,7 +1113,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/Mean-Median-Mode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
+        <state relative-caret-position="165">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="31" />
           <folding />
         </state>
@@ -1133,11 +1135,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/InterQuartile_Range.py">
+    <entry file="file://$PROJECT_DIR$/Algorithm/temp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="75">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/InterQuartile-Range.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/HackerRank/Basic-Statistics/Standard-Deviation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="e#60#91#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
