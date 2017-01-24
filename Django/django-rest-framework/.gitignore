@@ -9,7 +9,8 @@
 /build/
 /dist/
 /*.egg-info/
-/env/
+/env
+/venv
 /wvenv
 MANIFEST
 coverage.*
