@@ -1,0 +1,82 @@
+<!doctype html>
+<html ng-app="dishApp">
+    
+<head>
+
+<title> Dish </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+
+</head>
+<body ng-controller="dishController">
+<h1> dish </h1>
+{#  escape from Jinja code for angularjs code #}
+{% raw %} 
+<div >
+{{searchName}}
+<ul class="list-group">
+   <input type="text" ng-model="searchName">  
+  <li class="list-group-item"      ng-repeat="(name,ind) in filterName(dish) ">
+    <a href="/dish/{{name}}"> {{name}} </a>
+        <ul class="list-group">
+              <li class="list-group-item"     ng-repeat="(what,dtype) in ind">
+                    <div ng-if="what=='재료'">
+                        {{what}}
+                         <ul class="list-group">
+                      <li class="list-group-item"     ng-repeat="(detail,quality) in dtype">
+                          {{detail}} : {{quality}}
+                      </li>
+                         </ul>
+                   </div>  
+                  <div ng-if="what=='레서피'">
+                            {{what}} - {{dtype}}
+                   </div>
+                
+              </li>
+        </ul>
+  </li>
+<ul>
+</div>
+{% endraw %}
+<ul>
+</ul>
+ 
+{{ obj}}
+
+
+
+    <script>
+        (function () {
+
+
+
+  angular.module('dishApp', [])
+
+  .controller('dishController', ['$scope', function($scope) {
+    $scope.init = function() {
+        $scope.searchName = "재료";
+            $scope.dish  = JSON.parse("{{obj}}".replace(/&#34;/g, '"'));
+            console.log("test", $scope.dish);
+    window.dish = $scope.dish;
+    };
+    
+    $scope.init();
+        $scope.filterName = function(items) {
+        var result = {};
+        angular.forEach(items, function(value, key) {
+            if (value.hasOwnProperty( $scope.searchName)) {
+                result[key] = value;
+            }
+        });
+          console.log($scope.searchName, result);
+        return result;
+    }  
+  }
+
+  ]);
+
+}());
+
+        </script>
+        
+</body>
+</html>
