@@ -1,0 +1,6 @@
+[2017-04-25 11:20:06,601: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2017-04-25 11:20:06,619: INFO/MainProcess] mingle: searching for neighbors
+[2017-04-25 11:20:07,651: INFO/MainProcess] mingle: all alone
+[2017-04-25 11:20:07,669: INFO/MainProcess] celery@Lap11496m ready.
+[2017-04-25 11:20:31,880: INFO/MainProcess] Received task: celeryProject.tasks.longcal[7804fbca-10f4-456d-a166-f02f37cd1cc5]  
+[2017-04-25 11:20:33,600: INFO/PoolWorker-1] Task celeryProject.tasks.longcal[7804fbca-10f4-456d-a166-f02f37cd1cc5] succeeded in 0.918067086954s: 4.9999995e+13

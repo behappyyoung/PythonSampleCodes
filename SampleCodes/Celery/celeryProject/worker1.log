@@ -1,0 +1,133 @@
+[2017-04-25 10:56:52,710: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2017-04-25 10:56:52,714: DEBUG/MainProcess] | Worker: Building graph...
+[2017-04-25 10:56:52,715: DEBUG/MainProcess] | Worker: New boot order: {Beat, StateDB, Timer, Hub, Pool, Autoscaler, Consumer}
+[2017-04-25 10:56:52,736: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2017-04-25 10:56:52,736: DEBUG/MainProcess] | Consumer: Building graph...
+[2017-04-25 10:56:52,751: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Heart, Mingle, Gossip, Tasks, Control, Agent, event loop}
+[2017-04-25 10:56:52,772: DEBUG/MainProcess] | Worker: Starting Hub
+[2017-04-25 10:56:52,773: DEBUG/MainProcess] ^-- substep ok
+[2017-04-25 10:56:52,773: DEBUG/MainProcess] | Worker: Starting Pool
+[2017-04-25 10:56:52,858: DEBUG/MainProcess] ^-- substep ok
+[2017-04-25 10:56:52,859: DEBUG/MainProcess] | Worker: Starting Consumer
+[2017-04-25 10:56:52,860: DEBUG/MainProcess] | Consumer: Starting Connection
+[2017-04-25 10:56:52,883: DEBUG/MainProcess] Start from server, version: 0.9, properties: {'information': 'Licensed under the MPL.  See http://www.rabbitmq.com/', 'product': 'RabbitMQ', 'copyright': 'Copyright (C) 2007-2016 Pivotal Software, Inc.', 'capabilities': {'exchange_exchange_bindings': True, 'connection.blocked': True, 'authentication_failure_close': True, 'direct_reply_to': True, 'basic.nack': True, 'per_consumer_qos': True, 'consumer_priorities': True, 'consumer_cancel_notify': True, 'publisher_confirms': True}, 'cluster_name': 'rabbit@Lap11496m', 'platform': 'Erlang/OTP', 'version': '3.6.9'}, mechanisms: [u'PLAIN', u'AMQPLAIN'], locales: [u'en_US']
+[2017-04-25 10:56:52,885: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2017-04-25 10:56:52,886: DEBUG/MainProcess] ^-- substep ok
+[2017-04-25 10:56:52,886: DEBUG/MainProcess] | Consumer: Starting Events
+[2017-04-25 10:56:52,900: DEBUG/MainProcess] Start from server, version: 0.9, properties: {'information': 'Licensed under the MPL.  See http://www.rabbitmq.com/', 'product': 'RabbitMQ', 'copyright': 'Copyright (C) 2007-2016 Pivotal Software, Inc.', 'capabilities': {'exchange_exchange_bindings': True, 'connection.blocked': True, 'authentication_failure_close': True, 'direct_reply_to': True, 'basic.nack': True, 'per_consumer_qos': True, 'consumer_priorities': True, 'consumer_cancel_notify': True, 'publisher_confirms': True}, 'cluster_name': 'rabbit@Lap11496m', 'platform': 'Erlang/OTP', 'version': '3.6.9'}, mechanisms: [u'PLAIN', u'AMQPLAIN'], locales: [u'en_US']
+[2017-04-25 10:56:52,901: DEBUG/MainProcess] ^-- substep ok
+[2017-04-25 10:56:52,902: DEBUG/MainProcess] | Consumer: Starting Heart
+[2017-04-25 10:56:52,902: DEBUG/MainProcess] using channel_id: 1
+[2017-04-25 10:56:52,905: DEBUG/MainProcess] Channel open
+[2017-04-25 10:56:52,906: DEBUG/MainProcess] ^-- substep ok
+[2017-04-25 10:56:52,906: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2017-04-25 10:56:52,906: INFO/MainProcess] mingle: searching for neighbors
+[2017-04-25 10:56:52,907: DEBUG/MainProcess] using channel_id: 1
+[2017-04-25 10:56:52,908: DEBUG/MainProcess] Channel open
+[2017-04-25 10:56:52,927: DEBUG/MainProcess] Start from server, version: 0.9, properties: {'information': 'Licensed under the MPL.  See http://www.rabbitmq.com/', 'product': 'RabbitMQ', 'copyright': 'Copyright (C) 2007-2016 Pivotal Software, Inc.', 'capabilities': {'exchange_exchange_bindings': True, 'connection.blocked': True, 'authentication_failure_close': True, 'direct_reply_to': True, 'basic.nack': True, 'per_consumer_qos': True, 'consumer_priorities': True, 'consumer_cancel_notify': True, 'publisher_confirms': True}, 'cluster_name': 'rabbit@Lap11496m', 'platform': 'Erlang/OTP', 'version': '3.6.9'}, mechanisms: [u'PLAIN', u'AMQPLAIN'], locales: [u'en_US']
+[2017-04-25 10:56:52,928: DEBUG/MainProcess] using channel_id: 1
+[2017-04-25 10:56:52,929: DEBUG/MainProcess] Channel open
+[2017-04-25 10:56:53,939: INFO/MainProcess] mingle: all alone
+[2017-04-25 10:56:53,939: DEBUG/MainProcess] ^-- substep ok
+[2017-04-25 10:56:53,940: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2017-04-25 10:56:53,940: DEBUG/MainProcess] using channel_id: 2
+[2017-04-25 10:56:53,941: DEBUG/MainProcess] Channel open
+[2017-04-25 10:56:53,945: DEBUG/MainProcess] ^-- substep ok
+[2017-04-25 10:56:53,945: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2017-04-25 10:56:53,951: DEBUG/MainProcess] ^-- substep ok
+[2017-04-25 10:56:53,951: DEBUG/MainProcess] | Consumer: Starting Control
+[2017-04-25 10:56:53,951: DEBUG/MainProcess] using channel_id: 3
+[2017-04-25 10:56:53,952: DEBUG/MainProcess] Channel open
+[2017-04-25 10:56:53,956: DEBUG/MainProcess] ^-- substep ok
+[2017-04-25 10:56:53,956: DEBUG/MainProcess] | Consumer: Starting event loop
+[2017-04-25 10:56:53,957: INFO/MainProcess] worker1@Lap11496m ready.
+[2017-04-25 10:56:53,957: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2017-04-25 10:56:53,958: DEBUG/MainProcess] basic.qos: prefetch_count->16
+[2017-04-25 10:56:56,826: INFO/MainProcess] Received task: celeryProject.tasks.add[27561745-af5d-4fea-b966-fddb9c943d3e]  
+[2017-04-25 10:56:56,826: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x103083410> (args:('celeryProject.tasks.add', '27561745-af5d-4fea-b966-fddb9c943d3e', {'origin': 'gen18411@Lap11496m', 'lang': 'py', 'task': 'celeryProject.tasks.add', 'group': None, 'root_id': '27561745-af5d-4fea-b966-fddb9c943d3e', u'delivery_info': {u'priority': 0, u'redelivered': False, u'routing_key': u'celery', u'exchange': u''}, 'expires': None, u'correlation_id': '27561745-af5d-4fea-b966-fddb9c943d3e', 'retries': 0, 'timelimit': [None, None], 'argsrepr': '(2, 3)', 'eta': None, 'parent_id': None, u'reply_to': 'e46df2d0-d055-3ac0-989c-9acf6fb0107f', 'id': '27561745-af5d-4fea-b966-fddb9c943d3e', 'kwargsrepr': '{}'}, u'[[2, 3], {}, {"chord": null, "callbacks": null, "errbacks": null, "chain": null}]', 'application/json', 'utf-8') kwargs:{})
+[2017-04-25 10:56:56,919: DEBUG/MainProcess] Task accepted: celeryProject.tasks.add[27561745-af5d-4fea-b966-fddb9c943d3e] pid:19110
+[2017-04-25 10:57:13,960: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:57:13,961: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: None/None, now - 29/61, monotonic - 463057.090826, last_heartbeat_sent - 463057.09082, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:57:33,962: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:57:33,963: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 29/61, now - 29/91, monotonic - 463077.092069, last_heartbeat_sent - 463057.09082, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:57:53,968: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:57:53,968: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 29/91, now - 29/121, monotonic - 463097.096792, last_heartbeat_sent - 463057.09082, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:58:13,970: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:58:13,970: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 29/121, now - 29/151, monotonic - 463117.098454, last_heartbeat_sent - 463057.09082, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:58:13,971: DEBUG/MainProcess] heartbeat_tick: sending heartbeat for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:58:33,977: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:58:33,977: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 29/151, now - 30/181, monotonic - 463137.104411, last_heartbeat_sent - 463137.104393, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:58:53,982: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:58:53,983: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 30/181, now - 30/211, monotonic - 463157.109184, last_heartbeat_sent - 463137.104393, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:59:13,988: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:59:13,988: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 30/211, now - 30/241, monotonic - 463177.113992, last_heartbeat_sent - 463137.104393, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:59:33,991: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:59:33,992: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 30/241, now - 30/271, monotonic - 463197.116609, last_heartbeat_sent - 463137.104393, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:59:33,992: DEBUG/MainProcess] heartbeat_tick: sending heartbeat for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:59:53,998: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 10:59:53,998: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 30/271, now - 31/301, monotonic - 463217.1222, last_heartbeat_sent - 463217.122195, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:00:14,001: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:00:14,001: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 31/301, now - 31/331, monotonic - 463237.12427, last_heartbeat_sent - 463217.122195, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:00:34,002: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:00:34,002: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 31/331, now - 31/361, monotonic - 463257.124917, last_heartbeat_sent - 463217.122195, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:00:54,006: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:00:54,006: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 31/361, now - 31/391, monotonic - 463277.128263, last_heartbeat_sent - 463217.122195, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:00:54,007: DEBUG/MainProcess] heartbeat_tick: sending heartbeat for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:01:14,011: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:01:14,013: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 31/391, now - 32/421, monotonic - 463297.133729, last_heartbeat_sent - 463297.13371, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:01:34,018: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:01:34,018: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 32/421, now - 32/451, monotonic - 463317.138557, last_heartbeat_sent - 463297.13371, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:01:50,675: ERROR/MainProcess] Received unregistered task of type 'celeryProject.tasks.midcal'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+u'[[], {}, {"chord": null, "callbacks": null, "errbacks": null, "chain": null}]' (77b)
+Traceback (most recent call last):
+  File "/Users/s0199669/github/PythonSampleCodes/SampleCodes/Celery/venv/lib/python2.7/site-packages/celery/worker/consumer/consumer.py", line 559, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'celeryProject.tasks.midcal'
+[2017-04-25 11:01:54,024: DEBUG/MainProcess] heartbeat_tick : for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:01:54,025: DEBUG/MainProcess] heartbeat_tick : Prev sent/recv: 32/451, now - 33/484, monotonic - 463337.144173, last_heartbeat_sent - 463337.144163, heartbeat int. - 60 for connection 29272c84eedf42d39574cd9a8e8ed00f
+[2017-04-25 11:02:12,831: DEBUG/MainProcess] | Worker: Closing Hub...
+[2017-04-25 11:02:12,832: DEBUG/MainProcess] | Worker: Closing Pool...
+[2017-04-25 11:02:12,832: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2017-04-25 11:02:12,832: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Closing Events...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Closing Control...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2017-04-25 11:02:12,833: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2017-04-25 11:02:12,836: DEBUG/MainProcess] Closed channel #3
+[2017-04-25 11:02:12,837: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2017-04-25 11:02:12,837: DEBUG/MainProcess] Canceling task consumer...
+[2017-04-25 11:02:12,838: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2017-04-25 11:02:12,840: DEBUG/MainProcess] Closed channel #2
+[2017-04-25 11:02:12,841: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2017-04-25 11:02:12,841: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2017-04-25 11:02:12,841: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2017-04-25 11:02:12,841: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2017-04-25 11:02:12,842: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2017-04-25 11:02:13,870: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2017-04-25 11:02:13,870: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2017-04-25 11:02:13,870: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2017-04-25 11:02:13,870: DEBUG/MainProcess] Canceling task consumer...
+[2017-04-25 11:02:13,870: DEBUG/MainProcess] Closing consumer channel...
+[2017-04-25 11:02:13,870: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2017-04-25 11:02:13,870: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2017-04-25 11:02:13,870: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2017-04-25 11:02:13,871: DEBUG/MainProcess] Closed channel #1
+[2017-04-25 11:02:13,872: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2017-04-25 11:02:13,872: DEBUG/MainProcess] Closed channel #1
+[2017-04-25 11:02:13,882: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
