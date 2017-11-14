@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+<style>
+
+td, th {
+    padding: 5px;
+
+}
+
+
+</style>
+<script type="text/javascript">
+	gimsApp.controller('workflowsController', ['$scope', function($scope) {
+                {% autoescape off %}
+                            $scope.workflows = {{ workflows }};
+                 {% endautoescape %}
+{% if 'gims-dev.shc.org' in request.environ.HTTP_HOST %}
+                 console.log('workflows', $scope.workflows);
+ {% endif %}
+    }]);
+</script>
+<div ng-controller="workflowsController" class="workflows">
+
+<div class="">
+
+
+
+	<div class="sub-title"> <img class="icon" src="/static/IMAGES/icon-workflows.png" /> Workflows 
+
+	</div>  
+	<div class="menu-search"> <input type="text" ng-model="searchw"> <button > Search </button></div>
+	<table class="table table-bordered table-striped table-hover">
+		<tr>
+			<th> name </th>
+			<th> ID </th>
+			<th> version </th>
+			<th> type </th>
+			<th> desc </th>
+			<th> </th>
+			<!-- <th> run </th> -->
+		</tr>
+		<tr ng-repeat="w in workflows | filter:searchw"  id='{$ w.id $}' class="wf" ng-show="w.type=='workflow'">
+			<td>{$ w.name $}</td>
+			<td><a href="/workflow/{$ w.uuid $}/">{$ w.uuid $} </a></td>
+			<td>{$ w.version $}</td>
+			<td>{$ w.ordertype $}</td>
+			<td>{$ w.desc $}</td>
+			<td> <a href="/editworkflow/{$ w.uuid $}" >
+			<button type="button" class="btn btn-secondary "> Edit </button>   </a></td>
+		</tr>
+	</table>
+
+
+
+</div>
+
+</div>
+
+{% endblock %}

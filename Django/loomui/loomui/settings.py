@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'loomui',
     'workflow',
 ]
 
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'loomui.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'loomui', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -71,6 +72,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'loomui.wsgi.application'
 
+LOOM_IP = '10.142.6.5'
+LOOMURL = 'https://%s/api/'%LOOM_IP
+LOOMURLS = {'base': LOOMURL, 'files': LOOMURL+'data-objects/', 'workflows': LOOMURL+'templates/?labels=display', 'data': LOOMURL+'data-nodes/',
+            'runs': LOOMURL+'runs/', 'analyses': LOOMURL+'runs/?parent_only', 'runrequest': LOOMURL+'runs/',  'workflow': LOOMURL+'templates/'}
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
@@ -120,3 +125,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+GIT_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir))
+try:
+    from git import Repo
+    GIT_BRANCH = Repo(GIT_ROOT).active_branch.name
+except:
+    GIT_BRANCH = ''

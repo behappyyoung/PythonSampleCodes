@@ -1,0 +1,7 @@
+Django==1.11.7
+django-mysql==2.1.1
+gitdb2==2.0.3
+GitPython==2.1.7
+MySQL-python==1.2.5
+pytz==2017.3
+smmap2==2.0.3

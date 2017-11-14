@@ -1,0 +1,103 @@
+<!-- base html for after login -->
+<!doctype html>
+{% load staticfiles %}
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow"/>
+
+    <title> GIMS - {{title}} </title>
+    <meta name="description" content="" >
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/ui-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/main.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/jjsonviewer.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+
+    <script src="{% static 'JS/jquery-2.2.4.min.js' %}" ></script>
+    <script src="{% static 'JS/angular.min.js' %}" ></script>
+    <script src="{% static 'JS/bootstrap.min.js' %}" ></script>
+    <script src="{% static 'JS/jquery-ui.min.js' %}" ></script>
+    <script src="{% static 'JS/ui-grid.min.js' %}"></script>
+     <script src="{% static 'JS/main.js' %}?v=1017"></script>
+    <script src="{% static 'JS/workflows.js' %}?v=0928"></script>
+    <script type="text/javascript" src="{% static 'JS/jjsonviewer.js' %}"></script>
+    <script type="text/javascript">
+           var gimsApp = angular.module('myApp',  [])               // for use of AngularJs with Django
+                                   .config(function($interpolateProvider) {
+                                          $interpolateProvider.startSymbol('{$');
+                                          $interpolateProvider.endSymbol('$}');
+                                    }
+                            );
+       (function (ng) {
+
+    // Used for ng-grid to update interpolation symbols
+        ng.module("ui.grid").service(
+            "$InterpolateUpdateService",
+            ['$templateCache', '$interpolate', function($templateCache, $interpolate){
+            this.changeGridInterpolate = function() {
+
+                var templates = [
+                    'ui-grid/ui-grid-footer',
+                    'ui-grid/ui-grid-group-panel',
+                    'ui-grid/ui-grid-header',
+                    'ui-grid/ui-grid-menu-button',
+                    'ui-grid/ui-grid-no-header',
+                    'ui-grid/ui-grid-row',
+                    'ui-grid/ui-grid',
+                    'ui-grid/uiGridCell',
+                    'ui-grid/uiGridColumnFilter',               // error with some applications
+                    'ui-grid/uiGridColumnMenu',
+                    'ui-grid/uiGridFooterCell',
+                    'ui-grid/uiGridHeaderCell',
+                    'ui-grid/uiGridMenu',
+                    'ui-grid/uiGridMenuItem',
+                    'ui-grid/uiGridRenderContainer',
+                    'ui-grid/uiGridViewport'
+                ];
+
+                var start = $interpolate.startSymbol();
+                var end = $interpolate.endSymbol();
+                for (var i = 0; i < templates.length; i++){
+                    var template = templates[i];
+                    var curTemplate = $templateCache.get(template);
+                 //   console.log(template, curTemplate);
+                    if (start !== "}}"){
+                        curTemplate = curTemplate.replace(/\{\{/g, start);
+                    }
+                    if (end !== "}}"){
+                        curTemplate = curTemplate.replace(/\}\}/g, end);
+                    }
+                //    console.log(template, curTemplate);
+                    $templateCache.put(template, curTemplate);
+                }
+            };
+        }]);
+
+        ng.module("ui.grid").run(["$InterpolateUpdateService", function($InterpolateUpdateService){
+            $InterpolateUpdateService.changeGridInterpolate();
+        }]);
+
+    })(angular);
+
+    </script>
+</head>
+<body >
+    {% include "common_header.html" %}
+    <div class="container" data-url="{{request.get_full_path}}">
+     {% for message in messages %}
+            <div class="alert alert-info {% if message.tags %} {{ message.tags }} {% endif %}">{{ message }}</div>
+
+        {% endfor %}
+        <div class="row">
+
+                {% block content %}
+                {% endblock content %}
+
+        </div>
+    </div>
+    {% include "common_footer.html" %}
+
+</body>
+</html>

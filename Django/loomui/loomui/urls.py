@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from workflow import views as workflow_view
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^(?i)workflows/$', workflow_view.workflows, name='workflows'),
 ]
