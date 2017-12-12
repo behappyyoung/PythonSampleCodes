@@ -1,2 +1,8 @@
 2017-04-20 14:46:24,168 - Thread-12 - INFO - cmdexec - execute - line[77] - Command: [gcloud config list]
 2017-04-20 14:46:24,169 - Thread-12 - DEBUG - cmdexec - execute - line[82] - Command list: ['gcloud', 'config', 'list']
+2017-08-24 11:12:08,776 - Thread-12 - INFO - cmdexec - execute - line[77] - Command: [gcloud config list]
+2017-08-24 11:12:08,777 - Thread-12 - DEBUG - cmdexec - execute - line[82] - Command list: ['gcloud', 'config', 'list']
+2017-08-24 11:24:26,852 - Thread-18 - INFO - cmdexec - execute - line[77] - Command: [gcloud config list]
+2017-08-24 11:24:26,852 - Thread-18 - INFO - cmdexec - execute - line[77] - Command: [gcloud config list]
+2017-08-24 11:24:26,853 - Thread-18 - DEBUG - cmdexec - execute - line[82] - Command list: ['gcloud', 'config', 'list']
+2017-08-24 11:24:26,853 - Thread-18 - DEBUG - cmdexec - execute - line[82] - Command list: ['gcloud', 'config', 'list']

@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
-    'kip.LockDown.RequireLoginMiddleware'
+    # 'kip.LockDown.RequireLoginMiddleware'
 ]
 
 ROOT_URLCONF = 'kip.urls'

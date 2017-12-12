@@ -20,6 +20,7 @@ from workflow import views as workflow_view
 
 
 urlpatterns = [
+    url(r'^/$', workflow_view.workflows, name='workflows'),
     url(r'^admin/', admin.site.urls),
     url(r'^(?i)workflows/$', workflow_view.workflows, name='workflows'),
 ]

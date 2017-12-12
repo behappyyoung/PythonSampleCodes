@@ -2,7 +2,7 @@ import re
 
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
-from gims import settings
+from kip import settings
 
 
 class RequireLoginMiddleware(object):
