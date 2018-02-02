@@ -49,10 +49,13 @@ def multi(x, y):
 def add_test(self, x):
     try:
         total = 0
-        logger.debug('adding to {0}'.format(x))
+        logger.info('adding to {0}'.format(x))
         for i in range(1, x):
             total += i
-        return total
+        if int(total) > 40000:
+            return total
+        else:
+            return self(10000)
     except Exception as e:
         logger.error('in exception')
         # print(e)
@@ -60,11 +63,11 @@ def add_test(self, x):
         # raise self.retry(100)
         print('Try {0}/{1}'.format(self.request.retries, self.max_retries))
         if int(self.request.retries) > 1:
-            c_arg = 10000
+            c_arg = 100
         else:
             c_arg = x
 
-        raise self.retry(args=[c_arg], exc=e, countdown=10, max_retries=3)
+        raise self.retry(args=[c_arg], exc=e, countdown=2, max_retries=5)
 
 
 class AddTask(app.Task):

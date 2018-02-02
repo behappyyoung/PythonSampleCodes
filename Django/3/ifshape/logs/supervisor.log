@@ -198,3 +198,29 @@
 2018-02-02 09:42:23,579 INFO stopped: celery (exit status 0)
 2018-02-02 09:42:23,585 INFO spawned: 'celery' with pid 5500
 2018-02-02 09:42:33,723 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 10:11:05,146 INFO waiting for celery to stop
+2018-02-02 10:11:06,784 INFO stopped: celery (exit status 0)
+2018-02-02 10:11:06,792 INFO spawned: 'celery' with pid 6047
+2018-02-02 10:11:16,984 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 10:15:01,205 INFO waiting for celery to stop
+2018-02-02 10:15:02,820 INFO stopped: celery (exit status 0)
+2018-02-02 10:15:02,826 INFO spawned: 'celery' with pid 6123
+2018-02-02 10:15:12,930 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 10:18:01,061 INFO waiting for celery to stop
+2018-02-02 10:18:02,684 INFO stopped: celery (exit status 0)
+2018-02-02 10:18:02,692 INFO spawned: 'celery' with pid 6164
+2018-02-02 10:18:12,879 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 10:21:11,093 INFO waiting for celery to stop
+2018-02-02 10:21:12,717 INFO stopped: celery (exit status 0)
+2018-02-02 10:21:12,724 INFO spawned: 'celery' with pid 6204
+2018-02-02 10:21:22,897 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 10:30:34,763 INFO waiting for celery to stop
+2018-02-02 10:30:36,385 INFO stopped: celery (exit status 0)
+2018-02-02 10:30:36,392 INFO spawned: 'celery' with pid 6402
+2018-02-02 10:30:46,566 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 10:33:01,766 INFO waiting for celery to stop
+2018-02-02 10:33:03,402 INFO stopped: celery (exit status 0)
+2018-02-02 10:33:03,411 INFO spawned: 'celery' with pid 6436
+2018-02-02 10:33:13,717 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 10:34:08,190 INFO waiting for celery to stop
+2018-02-02 10:34:09,804 INFO stopped: celery (exit status 0)
