@@ -1,0 +1,200 @@
+2018-01-25 11:33:05,946 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/supervisord.d/*.ini"
+2018-01-25 11:33:05,946 INFO Increased RLIMIT_NOFILE limit to 1024
+2018-01-25 11:33:06,097 INFO RPC interface 'supervisor' initialized
+2018-01-25 11:33:06,097 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-25 11:33:06,098 INFO daemonizing the supervisord process
+2018-01-25 11:33:06,100 CRIT could not write pidfile /var/run/supervisord.pid
+2018-01-25 11:33:07,107 INFO spawned: 'celery' with pid 77604
+2018-01-25 11:33:07,111 INFO spawned: 'redis' with pid 77605
+2018-01-25 11:33:07,153 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:33:08,155 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-25 11:33:08,159 INFO spawned: 'redis' with pid 77606
+2018-01-25 11:33:08,177 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:33:10,181 INFO spawned: 'redis' with pid 77610
+2018-01-25 11:33:10,213 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:33:11,174 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:33:12,178 INFO spawned: 'celery' with pid 77617
+2018-01-25 11:33:12,686 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:33:13,691 INFO spawned: 'celery' with pid 77623
+2018-01-25 11:33:13,694 INFO spawned: 'redis' with pid 77624
+2018-01-25 11:33:13,715 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:33:14,169 INFO gave up: redis entered FATAL state, too many start retries too quickly
+2018-01-25 11:33:14,204 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:33:16,209 INFO spawned: 'celery' with pid 77630
+2018-01-25 11:33:16,730 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:33:19,738 INFO spawned: 'celery' with pid 77641
+2018-01-25 11:33:20,651 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:33:21,653 INFO gave up: celery entered FATAL state, too many start retries too quickly
+2018-01-25 11:36:07,175 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/supervisord.d/*.ini"
+2018-01-25 11:36:07,181 INFO RPC interface 'supervisor' initialized
+2018-01-25 11:36:07,183 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-25 11:36:07,184 CRIT could not write pidfile /var/run/supervisord.pid
+2018-01-25 11:36:08,189 INFO spawned: 'celery' with pid 77940
+2018-01-25 11:36:08,193 INFO spawned: 'redis' with pid 77941
+2018-01-25 11:36:08,214 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:36:09,188 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-25 11:36:10,198 INFO spawned: 'redis' with pid 77947
+2018-01-25 11:36:10,238 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:36:10,687 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:36:11,691 INFO spawned: 'celery' with pid 77951
+2018-01-25 11:36:12,213 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:36:12,693 INFO spawned: 'redis' with pid 77954
+2018-01-25 11:36:12,718 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:36:13,723 INFO spawned: 'celery' with pid 77955
+2018-01-25 11:36:14,241 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:36:15,987 INFO spawned: 'redis' with pid 77964
+2018-01-25 11:36:16,010 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:36:17,015 INFO spawned: 'celery' with pid 77965
+2018-01-25 11:36:17,017 INFO gave up: redis entered FATAL state, too many start retries too quickly
+2018-01-25 11:36:17,503 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:36:21,459 INFO spawned: 'celery' with pid 77974
+2018-01-25 11:36:21,987 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:36:22,989 INFO gave up: celery entered FATAL state, too many start retries too quickly
+2018-01-25 11:39:19,710 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/supervisord.d/*.ini"
+2018-01-25 11:39:19,710 INFO Increased RLIMIT_NOFILE limit to 1024
+2018-01-25 11:39:20,114 INFO RPC interface 'supervisor' initialized
+2018-01-25 11:39:20,114 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-25 11:39:20,115 INFO daemonizing the supervisord process
+2018-01-25 11:39:20,118 CRIT could not write pidfile /var/run/supervisord.pid
+2018-01-25 11:39:21,121 INFO spawned: 'celery' with pid 78278
+2018-01-25 11:39:21,124 INFO spawned: 'redis' with pid 78279
+2018-01-25 11:39:21,147 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:39:21,672 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:39:22,675 INFO spawned: 'celery' with pid 78285
+2018-01-25 11:39:22,678 INFO spawned: 'redis' with pid 78286
+2018-01-25 11:39:22,696 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:39:23,199 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:39:25,205 INFO spawned: 'celery' with pid 78292
+2018-01-25 11:39:25,208 INFO spawned: 'redis' with pid 78293
+2018-01-25 11:39:25,227 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:39:25,692 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:39:28,673 INFO spawned: 'redis' with pid 78304
+2018-01-25 11:39:28,691 INFO exited: redis (exit status 1; not expected)
+2018-01-25 11:39:29,693 INFO spawned: 'celery' with pid 78305
+2018-01-25 11:39:29,695 INFO gave up: redis entered FATAL state, too many start retries too quickly
+2018-01-25 11:39:30,217 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:39:31,219 INFO gave up: celery entered FATAL state, too many start retries too quickly
+2018-01-25 11:40:40,961 INFO spawned: 'redis' with pid 78420
+2018-01-25 11:40:41,998 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-25 11:40:52,317 INFO spawned: 'celery' with pid 78440
+2018-01-25 11:40:52,846 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:40:53,850 INFO spawned: 'celery' with pid 78443
+2018-01-25 11:40:54,363 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:40:56,371 INFO spawned: 'celery' with pid 78452
+2018-01-25 11:40:56,905 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:41:00,679 INFO spawned: 'celery' with pid 78462
+2018-01-25 11:41:01,171 INFO exited: celery (exit status 1; not expected)
+2018-01-25 11:41:02,173 INFO gave up: celery entered FATAL state, too many start retries too quickly
+2018-01-25 14:38:25,133 INFO spawned: 'celery' with pid 96700
+2018-01-25 14:38:26,140 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-25 14:38:27,726 INFO exited: celery (exit status 1; not expected)
+2018-01-25 14:38:28,730 INFO spawned: 'celery' with pid 96709
+2018-01-25 14:38:29,298 INFO exited: celery (exit status 1; not expected)
+2018-01-25 14:38:30,301 INFO spawned: 'celery' with pid 96715
+2018-01-25 14:38:30,793 INFO exited: celery (exit status 1; not expected)
+2018-01-25 14:38:33,638 INFO spawned: 'celery' with pid 96722
+2018-01-25 14:38:34,150 INFO exited: celery (exit status 1; not expected)
+2018-01-25 14:38:38,032 INFO spawned: 'celery' with pid 96731
+2018-01-25 14:38:38,530 INFO exited: celery (exit status 1; not expected)
+2018-01-25 14:38:39,139 INFO gave up: celery entered FATAL state, too many start retries too quickly
+2018-01-25 14:38:39,148 INFO waiting for redis to die
+2018-01-25 14:38:39,206 INFO stopped: redis (exit status 0)
+2018-01-25 14:38:39,211 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/supervisord.d/*.ini"
+2018-01-25 14:38:39,227 INFO RPC interface 'supervisor' initialized
+2018-01-25 14:38:39,228 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-25 14:38:39,230 CRIT could not write pidfile /var/run/supervisord.pid
+2018-01-25 14:38:40,233 INFO spawned: 'celery' with pid 96741
+2018-01-25 14:38:40,236 INFO spawned: 'redis' with pid 96742
+2018-01-25 14:38:41,269 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-25 14:38:41,273 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-25 14:54:45,943 INFO waiting for celery, redis to die
+2018-01-25 14:54:46,037 INFO stopped: redis (exit status 0)
+2018-01-25 14:54:47,671 INFO stopped: celery (exit status 0)
+2018-01-25 14:54:47,677 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/supervisord.d/*.ini"
+2018-01-25 14:54:47,682 INFO RPC interface 'supervisor' initialized
+2018-01-25 14:54:47,683 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-25 14:54:47,684 CRIT could not write pidfile /var/run/supervisord.pid
+2018-01-25 14:54:47,907 INFO spawned: 'celery' with pid 98325
+2018-01-25 14:54:47,913 INFO spawned: 'redis' with pid 98326
+2018-01-25 14:54:48,955 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-25 14:54:48,959 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-25 15:01:09,372 INFO waiting for celery to stop
+2018-01-25 15:01:11,000 INFO stopped: celery (exit status 0)
+2018-01-25 15:01:11,011 INFO spawned: 'celery' with pid 98988
+2018-01-25 15:01:12,015 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-26 15:30:50,687 INFO waiting for celery to stop
+2018-01-26 15:30:52,466 INFO stopped: celery (exit status 0)
+2018-01-26 15:30:52,475 INFO spawned: 'celery' with pid 49644
+2018-01-26 15:30:53,479 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-30 12:54:25,712 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/supervisord.d/*.ini"
+2018-01-30 12:54:25,712 INFO Increased RLIMIT_NOFILE limit to 1024
+2018-01-30 12:54:25,879 INFO RPC interface 'supervisor' initialized
+2018-01-30 12:54:25,879 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-30 12:54:25,880 INFO daemonizing the supervisord process
+2018-01-30 12:54:25,884 CRIT could not write pidfile /var/run/supervisord.pid
+2018-01-30 12:54:26,889 INFO spawned: 'celery' with pid 2476
+2018-01-30 12:54:26,894 INFO spawned: 'redis' with pid 2477
+2018-01-30 12:54:28,006 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-30 12:54:28,006 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-02-01 12:03:17,522 INFO waiting for celery, redis to die
+2018-02-01 12:03:17,538 INFO stopped: redis (exit status 0)
+2018-02-01 12:03:20,580 INFO waiting for celery to die
+2018-02-01 12:03:24,350 INFO waiting for celery to die
+2018-02-01 12:03:27,682 WARN killing 'celery' (2476) with SIGKILL
+2018-02-01 12:03:27,683 INFO waiting for celery to die
+2018-02-01 12:03:27,689 INFO stopped: celery (terminated by SIGKILL)
+2018-02-01 12:03:27,695 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/supervisord.d/*.ini"
+2018-02-01 12:03:27,698 INFO RPC interface 'supervisor' initialized
+2018-02-01 12:03:27,699 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-02-01 12:03:27,699 CRIT could not write pidfile /var/run/supervisord.pid
+2018-02-01 12:03:28,702 INFO spawned: 'celery' with pid 13755
+2018-02-01 12:03:28,705 INFO spawned: 'redis' with pid 13756
+2018-02-01 12:03:29,752 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-02-01 12:03:29,753 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-02-01 12:04:36,227 INFO waiting for celery to stop
+2018-02-01 12:04:37,855 INFO stopped: celery (exit status 0)
+2018-02-01 12:04:58,708 INFO spawned: 'celery' with pid 13779
+2018-02-01 12:04:59,742 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-02-01 12:06:54,401 INFO waiting for celery to stop
+2018-02-01 12:06:56,026 INFO stopped: celery (exit status 0)
+2018-02-01 14:50:07,604 WARN received SIGTERM indicating exit request
+2018-02-01 14:50:07,604 INFO waiting for redis to die
+2018-02-01 14:50:07,644 INFO stopped: redis (exit status 0)
+2018-02-01 14:55:44,588 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/supervisord.d/*.ini"
+2018-02-01 14:55:44,588 INFO Increased RLIMIT_NOFILE limit to 1024
+2018-02-01 14:55:44,752 INFO RPC interface 'supervisor' initialized
+2018-02-01 14:55:44,752 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-02-01 14:55:44,753 INFO daemonizing the supervisord process
+2018-02-01 14:55:44,757 CRIT could not write pidfile /var/run/supervisord.pid
+2018-02-01 14:55:45,761 INFO spawned: 'celery' with pid 1272
+2018-02-01 14:55:45,766 INFO spawned: 'redis' with pid 1273
+2018-02-01 14:55:46,764 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-02-01 14:55:46,765 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-02-01 14:56:00,847 INFO waiting for celery to stop
+2018-02-01 14:56:02,461 INFO stopped: celery (exit status 0)
+2018-02-02 08:50:34,380 INFO spawned: 'celery' with pid 4734
+2018-02-02 08:50:35,384 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-02-02 08:54:09,392 INFO waiting for celery to stop
+2018-02-02 08:54:11,007 INFO stopped: celery (exit status 0)
+2018-02-02 08:56:16,196 INFO waiting for redis to die
+2018-02-02 08:56:16,283 INFO stopped: redis (exit status 0)
+2018-02-02 08:56:16,289 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/supervisord.d/*.ini"
+2018-02-02 08:56:16,293 INFO RPC interface 'supervisor' initialized
+2018-02-02 08:56:16,293 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-02-02 08:56:16,294 CRIT could not write pidfile /var/run/supervisord.pid
+2018-02-02 08:56:17,300 INFO spawned: 'celery' with pid 4893
+2018-02-02 08:56:17,303 INFO spawned: 'redis' with pid 4894
+2018-02-02 08:56:18,332 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-02-02 08:56:28,043 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 09:09:54,568 INFO waiting for celery to stop
+2018-02-02 09:09:56,187 INFO stopped: celery (exit status 0)
+2018-02-02 09:36:30,226 INFO spawned: 'celery' with pid 5429
+2018-02-02 09:36:40,351 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 09:38:27,378 INFO waiting for celery to stop
+2018-02-02 09:38:29,009 INFO stopped: celery (exit status 0)
+2018-02-02 09:38:29,017 INFO spawned: 'celery' with pid 5464
+2018-02-02 09:38:39,234 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2018-02-02 09:42:21,957 INFO waiting for celery to stop
+2018-02-02 09:42:23,579 INFO stopped: celery (exit status 0)
+2018-02-02 09:42:23,585 INFO spawned: 'celery' with pid 5500
+2018-02-02 09:42:33,723 INFO success: celery entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)

@@ -1,0 +1,401 @@
+[2018-02-02 08:56:18,139: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2018-02-02 08:56:18,141: DEBUG/MainProcess] | Worker: Building graph...
+[2018-02-02 08:56:18,142: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Beat, Timer, Hub, Pool, Autoscaler, Consumer}
+[2018-02-02 08:56:18,160: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2018-02-02 08:56:18,161: DEBUG/MainProcess] | Consumer: Building graph...
+[2018-02-02 08:56:18,183: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Gossip, Tasks, Control, Heart, Agent, event loop}
+[2018-02-02 08:56:18,203: DEBUG/MainProcess] | Worker: Starting Hub
+[2018-02-02 08:56:18,204: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 08:56:18,204: DEBUG/MainProcess] | Worker: Starting Pool
+[2018-02-02 08:56:18,330: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 08:56:18,330: DEBUG/MainProcess] | Worker: Starting Consumer
+[2018-02-02 08:56:18,331: DEBUG/MainProcess] | Consumer: Starting Connection
+[2018-02-02 08:56:18,350: INFO/MainProcess] Connected to redis://localhost:6379//
+[2018-02-02 08:56:18,350: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 08:56:18,350: DEBUG/MainProcess] | Consumer: Starting Events
+[2018-02-02 08:56:18,360: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 08:56:18,360: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2018-02-02 08:56:18,360: INFO/MainProcess] mingle: searching for neighbors
+[2018-02-02 08:56:19,383: INFO/MainProcess] mingle: all alone
+[2018-02-02 08:56:19,383: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 08:56:19,384: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2018-02-02 08:56:19,388: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 08:56:19,389: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2018-02-02 08:56:19,392: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 08:56:19,393: DEBUG/MainProcess] | Consumer: Starting Control
+[2018-02-02 08:56:19,396: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 08:56:19,396: DEBUG/MainProcess] | Consumer: Starting Heart
+[2018-02-02 08:56:19,398: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 08:56:19,399: DEBUG/MainProcess] | Consumer: Starting event loop
+[2018-02-02 08:56:19,399: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2018-02-02 08:56:19,400: WARNING/MainProcess] /Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/venv/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-02-02 08:56:19,400: INFO/MainProcess] celery@Lap11496m ready.
+
+worker: Warm shutdown (MainProcess)
+[2018-02-02 09:09:54,568: DEBUG/MainProcess] | Worker: Closing Hub...
+[2018-02-02 09:09:54,569: DEBUG/MainProcess] | Worker: Closing Pool...
+[2018-02-02 09:09:54,569: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2018-02-02 09:09:54,569: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2018-02-02 09:09:54,569: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2018-02-02 09:09:54,570: DEBUG/MainProcess] | Consumer: Closing Events...
+[2018-02-02 09:09:54,570: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2018-02-02 09:09:54,570: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2018-02-02 09:09:54,570: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2018-02-02 09:09:54,570: DEBUG/MainProcess] | Consumer: Closing Control...
+[2018-02-02 09:09:54,570: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2018-02-02 09:09:54,570: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2018-02-02 09:09:54,570: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2018-02-02 09:09:54,570: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2018-02-02 09:09:54,571: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2018-02-02 09:09:54,574: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2018-02-02 09:09:54,574: DEBUG/MainProcess] Canceling task consumer...
+[2018-02-02 09:09:54,575: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2018-02-02 09:09:54,577: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2018-02-02 09:09:54,577: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2018-02-02 09:09:54,578: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2018-02-02 09:09:54,579: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2018-02-02 09:09:55,586: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2018-02-02 09:09:55,586: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2018-02-02 09:09:55,586: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2018-02-02 09:09:55,586: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2018-02-02 09:09:55,586: DEBUG/MainProcess] Canceling task consumer...
+[2018-02-02 09:09:55,586: DEBUG/MainProcess] Closing consumer channel...
+[2018-02-02 09:09:55,586: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2018-02-02 09:09:55,586: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2018-02-02 09:09:55,587: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2018-02-02 09:09:55,589: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+mybackend.tasks
+ 
+ -------------- celery@Lap11496m v4.1.0 (latentcall)
+---- **** ----- 
+--- * ***  * -- Darwin-15.6.0-x86_64-i386-64bit 2018-02-02 08:56:18
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         mybackend:0x10ba10390
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . adding-to-number
+  . multiplication-of-two-numbers
+  . mybackend.tasks.add
+  . mybackend.tasks.e_add
+  . mybackend.tasks.fail
+
+[2018-02-02 09:36:31,079: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2018-02-02 09:36:31,082: DEBUG/MainProcess] | Worker: Building graph...
+[2018-02-02 09:36:31,083: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, Beat, StateDB, Consumer}
+[2018-02-02 09:36:31,102: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2018-02-02 09:36:31,103: DEBUG/MainProcess] | Consumer: Building graph...
+[2018-02-02 09:36:31,124: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Gossip, Tasks, Control, Heart, event loop}
+[2018-02-02 09:36:31,143: DEBUG/MainProcess] | Worker: Starting Hub
+[2018-02-02 09:36:31,143: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:36:31,143: DEBUG/MainProcess] | Worker: Starting Pool
+[2018-02-02 09:36:31,266: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:36:31,267: DEBUG/MainProcess] | Worker: Starting Consumer
+[2018-02-02 09:36:31,267: DEBUG/MainProcess] | Consumer: Starting Connection
+[2018-02-02 09:36:31,285: INFO/MainProcess] Connected to redis://localhost:6379//
+[2018-02-02 09:36:31,285: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:36:31,285: DEBUG/MainProcess] | Consumer: Starting Events
+[2018-02-02 09:36:31,294: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:36:31,295: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2018-02-02 09:36:31,295: INFO/MainProcess] mingle: searching for neighbors
+[2018-02-02 09:36:32,315: INFO/MainProcess] mingle: all alone
+[2018-02-02 09:36:32,315: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:36:32,315: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2018-02-02 09:36:32,322: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:36:32,322: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2018-02-02 09:36:32,328: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:36:32,328: DEBUG/MainProcess] | Consumer: Starting Control
+[2018-02-02 09:36:32,333: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:36:32,333: DEBUG/MainProcess] | Consumer: Starting Heart
+[2018-02-02 09:36:32,336: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:36:32,336: DEBUG/MainProcess] | Consumer: Starting event loop
+[2018-02-02 09:36:32,336: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2018-02-02 09:36:32,339: WARNING/MainProcess] /Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/venv/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-02-02 09:36:32,339: INFO/MainProcess] celery@Lap11496m ready.
+[2018-02-02 09:37:26,457: INFO/MainProcess] Received task: adding-to-number[5f071832-49dc-4448-b4e7-5d07e408edb7]  
+[2018-02-02 09:37:26,459: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x10cc81400> (args:('adding-to-number', '5f071832-49dc-4448-b4e7-5d07e408edb7', {'lang': 'py', 'task': 'adding-to-number', 'id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'eta': None, 'expires': None, 'group': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'parent_id': None, 'argsrepr': "('x',)", 'kwargsrepr': '{}', 'origin': 'gen5444@Lap11496m', 'reply_to': '2e30cf09-d89c-3455-89f8-ba39f08f353c', 'correlation_id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[["x"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+[2018-02-02 09:37:26,462: DEBUG/MainProcess] Task accepted: adding-to-number[5f071832-49dc-4448-b4e7-5d07e408edb7] pid:5434
+DEBUG adding to x
+[2018-02-02 09:37:26,463: DEBUG/ForkPoolWorker-2] adding to x
+ERROR in exception
+[2018-02-02 09:37:26,466: ERROR/ForkPoolWorker-2] in exception
+[2018-02-02 09:37:26,470: WARNING/ForkPoolWorker-2] Try 0/3
+[2018-02-02 09:37:26,510: INFO/MainProcess] Received task: adding-to-number[5f071832-49dc-4448-b4e7-5d07e408edb7]  ETA:[2018-02-02 17:37:28.474370+00:00] 
+[2018-02-02 09:37:26,513: INFO/ForkPoolWorker-2] Task adding-to-number[5f071832-49dc-4448-b4e7-5d07e408edb7] retry: Retry in 2s: TypeError("'str' object cannot be interpreted as an integer",)
+[2018-02-02 09:37:28,477: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x10cc81400> (args:('adding-to-number', '5f071832-49dc-4448-b4e7-5d07e408edb7', {'lang': 'py', 'task': 'adding-to-number', 'id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'eta': '2018-02-02T17:37:28.474370+00:00', 'expires': None, 'group': None, 'retries': 1, 'timelimit': [None, None], 'root_id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'parent_id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'argsrepr': "('x',)", 'kwargsrepr': '{}', 'origin': 'gen5434@Lap11496m', 'reply_to': '2e30cf09-d89c-3455-89f8-ba39f08f353c', 'correlation_id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[["x"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+[2018-02-02 09:37:29,047: DEBUG/MainProcess] Task accepted: adding-to-number[5f071832-49dc-4448-b4e7-5d07e408edb7] pid:5433
+DEBUG adding to x
+[2018-02-02 09:37:29,048: DEBUG/ForkPoolWorker-1] adding to x
+ERROR in exception
+[2018-02-02 09:37:29,051: ERROR/ForkPoolWorker-1] in exception
+[2018-02-02 09:37:29,053: WARNING/ForkPoolWorker-1] Try 1/3
+[2018-02-02 09:37:29,098: INFO/MainProcess] Received task: adding-to-number[5f071832-49dc-4448-b4e7-5d07e408edb7]  ETA:[2018-02-02 17:37:31.056713+00:00] 
+[2018-02-02 09:37:29,102: INFO/ForkPoolWorker-1] Task adding-to-number[5f071832-49dc-4448-b4e7-5d07e408edb7] retry: Retry in 2s: TypeError("'str' object cannot be interpreted as an integer",)
+[2018-02-02 09:37:31,061: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x10cc81400> (args:('adding-to-number', '5f071832-49dc-4448-b4e7-5d07e408edb7', {'lang': 'py', 'task': 'adding-to-number', 'id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'eta': '2018-02-02T17:37:31.056713+00:00', 'expires': None, 'group': None, 'retries': 2, 'timelimit': [None, None], 'root_id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'parent_id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'argsrepr': "('x',)", 'kwargsrepr': '{}', 'origin': 'gen5433@Lap11496m', 'reply_to': '2e30cf09-d89c-3455-89f8-ba39f08f353c', 'correlation_id': '5f071832-49dc-4448-b4e7-5d07e408edb7', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[["x"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+DEBUG adding to x
+[2018-02-02 09:37:31,318: DEBUG/MainProcess] Task accepted: adding-to-number[5f071832-49dc-4448-b4e7-5d07e408edb7] pid:5434
+[2018-02-02 09:37:31,318: DEBUG/ForkPoolWorker-2] adding to x
+ERROR in exception
+[2018-02-02 09:37:31,320: ERROR/ForkPoolWorker-2] in exception
+[2018-02-02 09:37:31,321: WARNING/ForkPoolWorker-2] Try 2/3
+DEBUG adding to 100
+[2018-02-02 09:37:31,322: DEBUG/ForkPoolWorker-2] adding to 100
+[2018-02-02 09:37:31,324: INFO/ForkPoolWorker-2] Task adding-to-number[5f071832-49dc-4448-b4e7-5d07e408edb7] succeeded in 0.005567271000472829s: 4950
+
+worker: Warm shutdown (MainProcess)
+[2018-02-02 09:38:27,378: DEBUG/MainProcess] | Worker: Closing Hub...
+[2018-02-02 09:38:27,379: DEBUG/MainProcess] | Worker: Closing Pool...
+[2018-02-02 09:38:27,379: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2018-02-02 09:38:27,379: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2018-02-02 09:38:27,379: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2018-02-02 09:38:27,379: DEBUG/MainProcess] | Consumer: Closing Events...
+[2018-02-02 09:38:27,379: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2018-02-02 09:38:27,379: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2018-02-02 09:38:27,380: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2018-02-02 09:38:27,380: DEBUG/MainProcess] | Consumer: Closing Control...
+[2018-02-02 09:38:27,380: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2018-02-02 09:38:27,380: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2018-02-02 09:38:27,380: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2018-02-02 09:38:27,380: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2018-02-02 09:38:27,381: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2018-02-02 09:38:27,385: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2018-02-02 09:38:27,385: DEBUG/MainProcess] Canceling task consumer...
+[2018-02-02 09:38:27,385: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2018-02-02 09:38:27,390: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2018-02-02 09:38:27,391: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2018-02-02 09:38:27,391: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2018-02-02 09:38:27,392: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2018-02-02 09:38:28,399: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2018-02-02 09:38:28,400: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2018-02-02 09:38:28,400: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2018-02-02 09:38:28,400: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2018-02-02 09:38:28,400: DEBUG/MainProcess] Canceling task consumer...
+[2018-02-02 09:38:28,400: DEBUG/MainProcess] Closing consumer channel...
+[2018-02-02 09:38:28,400: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2018-02-02 09:38:28,400: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2018-02-02 09:38:28,401: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2018-02-02 09:38:28,403: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+mybackend.tasks
+ 
+ -------------- celery@Lap11496m v4.1.0 (latentcall)
+---- **** ----- 
+--- * ***  * -- Darwin-15.6.0-x86_64-i386-64bit 2018-02-02 09:36:31
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         mybackend:0x10cbff400
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . adding-to-number
+  . multiplication-of-two-numbers
+  . mybackend.tasks.add
+  . mybackend.tasks.e_add
+  . mybackend.tasks.fail
+
+[2018-02-02 09:38:29,959: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2018-02-02 09:38:29,962: DEBUG/MainProcess] | Worker: Building graph...
+[2018-02-02 09:38:29,962: DEBUG/MainProcess] | Worker: New boot order: {Beat, Timer, Hub, Pool, Autoscaler, StateDB, Consumer}
+[2018-02-02 09:38:29,982: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2018-02-02 09:38:29,982: DEBUG/MainProcess] | Consumer: Building graph...
+[2018-02-02 09:38:30,004: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Tasks, Control, Heart, Gossip, Agent, event loop}
+[2018-02-02 09:38:30,023: DEBUG/MainProcess] | Worker: Starting Hub
+[2018-02-02 09:38:30,023: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:38:30,024: DEBUG/MainProcess] | Worker: Starting Pool
+[2018-02-02 09:38:30,152: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:38:30,152: DEBUG/MainProcess] | Worker: Starting Consumer
+[2018-02-02 09:38:30,153: DEBUG/MainProcess] | Consumer: Starting Connection
+[2018-02-02 09:38:30,171: INFO/MainProcess] Connected to redis://localhost:6379//
+[2018-02-02 09:38:30,171: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:38:30,171: DEBUG/MainProcess] | Consumer: Starting Events
+[2018-02-02 09:38:30,180: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:38:30,180: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2018-02-02 09:38:30,180: INFO/MainProcess] mingle: searching for neighbors
+[2018-02-02 09:38:31,204: INFO/MainProcess] mingle: all alone
+[2018-02-02 09:38:31,204: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:38:31,204: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2018-02-02 09:38:31,209: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:38:31,209: DEBUG/MainProcess] | Consumer: Starting Control
+[2018-02-02 09:38:31,213: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:38:31,213: DEBUG/MainProcess] | Consumer: Starting Heart
+[2018-02-02 09:38:31,216: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:38:31,216: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2018-02-02 09:38:31,220: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:38:31,221: DEBUG/MainProcess] | Consumer: Starting event loop
+[2018-02-02 09:38:31,221: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2018-02-02 09:38:31,223: WARNING/MainProcess] /Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/venv/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-02-02 09:38:31,223: INFO/MainProcess] celery@Lap11496m ready.
+[2018-02-02 09:38:52,677: INFO/MainProcess] Received task: adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63]  
+[2018-02-02 09:38:52,678: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x109319488> (args:('adding-to-number', 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', {'lang': 'py', 'task': 'adding-to-number', 'id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'eta': None, 'expires': None, 'group': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'parent_id': None, 'argsrepr': "('x',)", 'kwargsrepr': '{}', 'origin': 'gen5462@Lap11496m', 'reply_to': '2e2302c0-d7cf-356a-a4f1-0910a5f48018', 'correlation_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[["x"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+[2018-02-02 09:38:52,683: DEBUG/MainProcess] Task accepted: adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63] pid:5470
+DEBUG adding to x
+[2018-02-02 09:38:52,684: DEBUG/ForkPoolWorker-2] adding to x
+ERROR in exception
+[2018-02-02 09:38:52,685: ERROR/ForkPoolWorker-2] in exception
+[2018-02-02 09:38:52,686: WARNING/ForkPoolWorker-2] Try 0/3
+[2018-02-02 09:38:52,727: INFO/MainProcess] Received task: adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63]  ETA:[2018-02-02 17:38:54.689044+00:00] 
+[2018-02-02 09:38:52,732: INFO/ForkPoolWorker-2] Task adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63] retry: Retry in 2s: TypeError("'str' object cannot be interpreted as an integer",)
+[2018-02-02 09:38:54,691: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x109319488> (args:('adding-to-number', 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', {'lang': 'py', 'task': 'adding-to-number', 'id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'eta': '2018-02-02T17:38:54.689044+00:00', 'expires': None, 'group': None, 'retries': 1, 'timelimit': [None, None], 'root_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'parent_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'argsrepr': "('x',)", 'kwargsrepr': '{}', 'origin': 'gen5470@Lap11496m', 'reply_to': '2e2302c0-d7cf-356a-a4f1-0910a5f48018', 'correlation_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[["x"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+[2018-02-02 09:38:54,901: DEBUG/MainProcess] Task accepted: adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63] pid:5469
+DEBUG adding to x
+[2018-02-02 09:38:54,902: DEBUG/ForkPoolWorker-1] adding to x
+ERROR in exception
+[2018-02-02 09:38:54,904: ERROR/ForkPoolWorker-1] in exception
+[2018-02-02 09:38:54,905: WARNING/ForkPoolWorker-1] Try 1/3
+[2018-02-02 09:38:54,946: INFO/MainProcess] Received task: adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63]  ETA:[2018-02-02 17:38:56.907795+00:00] 
+[2018-02-02 09:38:54,951: INFO/ForkPoolWorker-1] Task adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63] retry: Retry in 2s: TypeError("'str' object cannot be interpreted as an integer",)
+[2018-02-02 09:38:56,908: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x109319488> (args:('adding-to-number', 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', {'lang': 'py', 'task': 'adding-to-number', 'id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'eta': '2018-02-02T17:38:56.907795+00:00', 'expires': None, 'group': None, 'retries': 2, 'timelimit': [None, None], 'root_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'parent_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'argsrepr': "('x',)", 'kwargsrepr': '{}', 'origin': 'gen5469@Lap11496m', 'reply_to': '2e2302c0-d7cf-356a-a4f1-0910a5f48018', 'correlation_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[["x"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+DEBUG adding to x
+[2018-02-02 09:38:57,273: DEBUG/MainProcess] Task accepted: adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63] pid:5470
+[2018-02-02 09:38:57,273: DEBUG/ForkPoolWorker-2] adding to x
+ERROR in exception
+[2018-02-02 09:38:57,276: ERROR/ForkPoolWorker-2] in exception
+[2018-02-02 09:38:57,277: WARNING/ForkPoolWorker-2] Try 2/3
+[2018-02-02 09:38:57,281: INFO/MainProcess] Received task: adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63]  ETA:[2018-02-02 17:38:59.278555+00:00] 
+[2018-02-02 09:38:57,281: INFO/ForkPoolWorker-2] Task adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63] retry: Retry in 2s: TypeError("'str' object cannot be interpreted as an integer",)
+[2018-02-02 09:38:59,278: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x109319488> (args:('adding-to-number', 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', {'lang': 'py', 'task': 'adding-to-number', 'id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'eta': '2018-02-02T17:38:59.278555+00:00', 'expires': None, 'group': None, 'retries': 3, 'timelimit': [None, None], 'root_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'parent_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'argsrepr': '(100,)', 'kwargsrepr': '{}', 'origin': 'gen5470@Lap11496m', 'reply_to': '2e2302c0-d7cf-356a-a4f1-0910a5f48018', 'correlation_id': 'efe48ce0-744e-4bb9-a0cc-715d3e448f63', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[[100], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+DEBUG adding to 100
+[2018-02-02 09:38:59,280: DEBUG/MainProcess] Task accepted: adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63] pid:5469
+[2018-02-02 09:38:59,280: DEBUG/ForkPoolWorker-1] adding to 100
+[2018-02-02 09:38:59,282: INFO/ForkPoolWorker-1] Task adding-to-number[efe48ce0-744e-4bb9-a0cc-715d3e448f63] succeeded in 0.0025361500011058524s: 4950
+
+worker: Warm shutdown (MainProcess)
+[2018-02-02 09:42:21,957: DEBUG/MainProcess] | Worker: Closing Hub...
+[2018-02-02 09:42:21,957: DEBUG/MainProcess] | Worker: Closing Pool...
+[2018-02-02 09:42:21,958: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2018-02-02 09:42:21,958: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2018-02-02 09:42:21,958: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2018-02-02 09:42:21,958: DEBUG/MainProcess] | Consumer: Closing Events...
+[2018-02-02 09:42:21,958: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2018-02-02 09:42:21,958: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2018-02-02 09:42:21,958: DEBUG/MainProcess] | Consumer: Closing Control...
+[2018-02-02 09:42:21,959: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2018-02-02 09:42:21,959: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2018-02-02 09:42:21,959: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2018-02-02 09:42:21,959: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2018-02-02 09:42:21,959: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2018-02-02 09:42:21,962: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2018-02-02 09:42:21,963: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2018-02-02 09:42:21,965: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2018-02-02 09:42:21,965: DEBUG/MainProcess] Canceling task consumer...
+[2018-02-02 09:42:21,965: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2018-02-02 09:42:21,965: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2018-02-02 09:42:21,965: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2018-02-02 09:42:21,966: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2018-02-02 09:42:22,971: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2018-02-02 09:42:22,972: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2018-02-02 09:42:22,972: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2018-02-02 09:42:22,972: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2018-02-02 09:42:22,972: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2018-02-02 09:42:22,972: DEBUG/MainProcess] Canceling task consumer...
+[2018-02-02 09:42:22,972: DEBUG/MainProcess] Closing consumer channel...
+[2018-02-02 09:42:22,972: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2018-02-02 09:42:22,973: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2018-02-02 09:42:22,974: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+mybackend.tasks
+ 
+ -------------- celery@Lap11496m v4.1.0 (latentcall)
+---- **** ----- 
+--- * ***  * -- Darwin-15.6.0-x86_64-i386-64bit 2018-02-02 09:38:30
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         mybackend:0x109235b38
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . adding-to-number
+  . multiplication-of-two-numbers
+  . mybackend.tasks.add
+  . mybackend.tasks.e_add
+  . mybackend.tasks.fail
+
+[2018-02-02 09:42:24,445: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2018-02-02 09:42:24,448: DEBUG/MainProcess] | Worker: Building graph...
+[2018-02-02 09:42:24,448: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, Beat, StateDB, Consumer}
+[2018-02-02 09:42:24,468: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2018-02-02 09:42:24,468: DEBUG/MainProcess] | Consumer: Building graph...
+[2018-02-02 09:42:24,490: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Gossip, Agent, Heart, Tasks, Control, event loop}
+[2018-02-02 09:42:24,508: DEBUG/MainProcess] | Worker: Starting Hub
+[2018-02-02 09:42:24,508: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:42:24,509: DEBUG/MainProcess] | Worker: Starting Pool
+[2018-02-02 09:42:24,638: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:42:24,639: DEBUG/MainProcess] | Worker: Starting Consumer
+[2018-02-02 09:42:24,640: DEBUG/MainProcess] | Consumer: Starting Connection
+[2018-02-02 09:42:24,658: INFO/MainProcess] Connected to redis://localhost:6379//
+[2018-02-02 09:42:24,658: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:42:24,658: DEBUG/MainProcess] | Consumer: Starting Events
+[2018-02-02 09:42:24,667: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:42:24,667: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2018-02-02 09:42:24,667: INFO/MainProcess] mingle: searching for neighbors
+[2018-02-02 09:42:25,689: INFO/MainProcess] mingle: all alone
+[2018-02-02 09:42:25,689: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:42:25,690: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2018-02-02 09:42:25,696: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:42:25,696: DEBUG/MainProcess] | Consumer: Starting Heart
+[2018-02-02 09:42:25,699: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:42:25,699: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2018-02-02 09:42:25,705: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:42:25,705: DEBUG/MainProcess] | Consumer: Starting Control
+[2018-02-02 09:42:25,710: DEBUG/MainProcess] ^-- substep ok
+[2018-02-02 09:42:25,711: DEBUG/MainProcess] | Consumer: Starting event loop
+[2018-02-02 09:42:25,711: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2018-02-02 09:42:25,713: WARNING/MainProcess] /Users/s0199669/github/PythonSampleCodes/Django/3/ifshape/venv/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-02-02 09:42:25,713: INFO/MainProcess] celery@Lap11496m ready.
+[2018-02-02 09:42:49,127: INFO/MainProcess] Received task: adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a]  
+[2018-02-02 09:42:49,129: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x102c44400> (args:('adding-to-number', '1bd9d0fe-912d-47c5-9065-80b5b57a323a', {'lang': 'py', 'task': 'adding-to-number', 'id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'eta': None, 'expires': None, 'group': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'parent_id': None, 'argsrepr': "('x',)", 'kwargsrepr': '{}', 'origin': 'gen5495@Lap11496m', 'reply_to': '7129b78d-93dc-39a0-9f81-be79429c077f', 'correlation_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[["x"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+[2018-02-02 09:42:49,134: DEBUG/MainProcess] Task accepted: adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a] pid:5505
+DEBUG adding to x
+[2018-02-02 09:42:49,135: DEBUG/ForkPoolWorker-2] adding to x
+ERROR in exception
+[2018-02-02 09:42:49,137: ERROR/ForkPoolWorker-2] in exception
+[2018-02-02 09:42:49,138: WARNING/ForkPoolWorker-2] Try 0/3
+[2018-02-02 09:42:49,178: INFO/MainProcess] Received task: adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a]  ETA:[2018-02-02 17:42:51.141126+00:00] 
+[2018-02-02 09:42:49,182: INFO/ForkPoolWorker-2] Task adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a] retry: Retry in 2s: TypeError("'str' object cannot be interpreted as an integer",)
+[2018-02-02 09:42:51,147: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x102c44400> (args:('adding-to-number', '1bd9d0fe-912d-47c5-9065-80b5b57a323a', {'lang': 'py', 'task': 'adding-to-number', 'id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'eta': '2018-02-02T17:42:51.141126+00:00', 'expires': None, 'group': None, 'retries': 1, 'timelimit': [None, None], 'root_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'parent_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'argsrepr': "('x',)", 'kwargsrepr': '{}', 'origin': 'gen5505@Lap11496m', 'reply_to': '7129b78d-93dc-39a0-9f81-be79429c077f', 'correlation_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[["x"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+[2018-02-02 09:42:51,316: DEBUG/MainProcess] Task accepted: adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a] pid:5504
+DEBUG adding to x
+[2018-02-02 09:42:51,316: DEBUG/ForkPoolWorker-1] adding to x
+ERROR in exception
+[2018-02-02 09:42:51,318: ERROR/ForkPoolWorker-1] in exception
+[2018-02-02 09:42:51,319: WARNING/ForkPoolWorker-1] Try 1/3
+[2018-02-02 09:42:51,361: INFO/MainProcess] Received task: adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a]  ETA:[2018-02-02 17:42:53.322158+00:00] 
+[2018-02-02 09:42:51,367: INFO/ForkPoolWorker-1] Task adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a] retry: Retry in 2s: TypeError("'str' object cannot be interpreted as an integer",)
+[2018-02-02 09:42:53,323: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x102c44400> (args:('adding-to-number', '1bd9d0fe-912d-47c5-9065-80b5b57a323a', {'lang': 'py', 'task': 'adding-to-number', 'id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'eta': '2018-02-02T17:42:53.322158+00:00', 'expires': None, 'group': None, 'retries': 2, 'timelimit': [None, None], 'root_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'parent_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'argsrepr': "('x',)", 'kwargsrepr': '{}', 'origin': 'gen5504@Lap11496m', 'reply_to': '7129b78d-93dc-39a0-9f81-be79429c077f', 'correlation_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[["x"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+DEBUG adding to x
+[2018-02-02 09:42:53,714: DEBUG/MainProcess] Task accepted: adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a] pid:5505
+[2018-02-02 09:42:53,714: DEBUG/ForkPoolWorker-2] adding to x
+ERROR in exception
+[2018-02-02 09:42:53,716: ERROR/ForkPoolWorker-2] in exception
+[2018-02-02 09:42:53,717: WARNING/ForkPoolWorker-2] Try 2/3
+[2018-02-02 09:42:53,721: INFO/MainProcess] Received task: adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a]  ETA:[2018-02-02 17:42:55.719045+00:00] 
+[2018-02-02 09:42:53,721: INFO/ForkPoolWorker-2] Task adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a] retry: Retry in 2s: TypeError("'str' object cannot be interpreted as an integer",)
+[2018-02-02 09:42:55,721: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x102c44400> (args:('adding-to-number', '1bd9d0fe-912d-47c5-9065-80b5b57a323a', {'lang': 'py', 'task': 'adding-to-number', 'id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'eta': '2018-02-02T17:42:55.719045+00:00', 'expires': None, 'group': None, 'retries': 3, 'timelimit': [None, None], 'root_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'parent_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'argsrepr': '(10000,)', 'kwargsrepr': '{}', 'origin': 'gen5505@Lap11496m', 'reply_to': '7129b78d-93dc-39a0-9f81-be79429c077f', 'correlation_id': '1bd9d0fe-912d-47c5-9065-80b5b57a323a', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}}, b'[[10000], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]', 'application/json', 'utf-8') kwargs:{})
+[2018-02-02 09:42:55,730: DEBUG/MainProcess] Task accepted: adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a] pid:5504
+DEBUG adding to 10000
+[2018-02-02 09:42:55,730: DEBUG/ForkPoolWorker-1] adding to 10000
+[2018-02-02 09:42:55,734: INFO/ForkPoolWorker-1] Task adding-to-number[1bd9d0fe-912d-47c5-9065-80b5b57a323a] succeeded in 0.003895219999321853s: 49995000
