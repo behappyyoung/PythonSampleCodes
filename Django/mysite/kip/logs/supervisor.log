@@ -1,0 +1,24 @@
+2018-01-23 11:19:42,519 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/mysite/kip/supervisord.d/*.ini"
+2018-01-23 11:19:42,519 INFO Increased RLIMIT_NOFILE limit to 1024
+2018-01-23 11:21:41,364 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/mysite/kip/supervisord.d/*.ini"
+2018-01-23 11:21:41,365 INFO Increased RLIMIT_NOFILE limit to 1024
+2018-01-23 11:21:41,524 INFO RPC interface 'supervisor' initialized
+2018-01-23 11:21:41,524 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-23 11:21:41,526 INFO daemonizing the supervisord process
+2018-01-23 11:21:41,529 CRIT could not write pidfile /var/run/supervisord.pid
+2018-01-23 11:24:57,922 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/mysite/kip/supervisord.d/*.ini"
+2018-01-23 11:24:57,926 INFO RPC interface 'supervisor' initialized
+2018-01-23 11:24:57,927 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-23 11:24:57,927 CRIT could not write pidfile /var/run/supervisord.pid
+2018-01-23 11:24:58,932 INFO spawned: 'redis' with pid 23073
+2018-01-23 11:25:00,850 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-23 11:28:16,508 INFO waiting for redis to die
+2018-01-23 11:28:16,580 INFO stopped: redis (exit status 0)
+2018-01-23 11:28:16,585 WARN No file matches via include "/Users/s0199669/github/PythonSampleCodes/Django/mysite/kip/supervisord.d/*.ini"
+2018-01-23 11:28:16,587 INFO RPC interface 'supervisor' initialized
+2018-01-23 11:28:16,588 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-01-23 11:28:16,589 CRIT could not write pidfile /var/run/supervisord.pid
+2018-01-23 11:28:17,593 INFO spawned: 'celery' with pid 23106
+2018-01-23 11:28:17,597 INFO spawned: 'redis' with pid 23107
+2018-01-23 11:28:19,273 INFO success: celery entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-01-23 11:28:19,279 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
