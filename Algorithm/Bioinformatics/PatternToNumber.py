@@ -14,7 +14,7 @@ for i in range(len(in_str)-1, -1, -1):
         c_num = 2
     elif c_char == 'T':
         c_num = 3
-    print c_num, sq, c_num * (4**sq)
+    print (c_num, sq, c_num * (4**sq))
     total_num = total_num + c_num * (4**sq)
 
-print(total_num)
+print (total_num)
