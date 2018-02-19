@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Django/3/ifshape/ifshape/settings.py" afterPath="$PROJECT_DIR$/Django/3/ifshape/ifshape/settings.py" />
-      <change beforePath="$PROJECT_DIR$/Django/3/ifshape/ifshape/urls.py" afterPath="$PROJECT_DIR$/Django/3/ifshape/ifshape/urls.py" />
-      <change beforePath="$PROJECT_DIR$/Django/3/ifshape/templates/base.html" afterPath="$PROJECT_DIR$/Django/3/ifshape/templates/base.html" />
+      <change beforePath="$PROJECT_DIR$/Django/3/ifshape/templates/common_footer.html" afterPath="$PROJECT_DIR$/Django/3/ifshape/templates/common_footer.html" />
     </list>
     <ignored path="PythonSampleCodes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/Django/3/ifshape/ifshape/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#641#682#0" expanded="true" />
               </folding>
@@ -60,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/Django/3/ifshape/mybackend/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -798,6 +795,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2455" y="-26" width="2215" height="1006" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4108352" sideWeight="0.37794432" order="0" side_tool="true" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1260,7 +1258,7 @@
     <entry file="file://$PROJECT_DIR$/Django/3/ifshape/mybackend/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1296,7 +1294,7 @@
     <entry file="file://$PROJECT_DIR$/Django/3/ifshape/ifshape/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#641#682#0" expanded="true" />
           </folding>
