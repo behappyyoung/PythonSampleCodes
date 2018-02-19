@@ -1,5 +1,10 @@
 
-
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 
 <script>
   window.fbAsyncInit = function() {
@@ -21,4 +26,18 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+
+
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
+
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
 </script>
