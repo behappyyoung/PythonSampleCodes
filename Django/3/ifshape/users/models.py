@@ -33,7 +33,7 @@ class Users(models.Model):
 
 # extending User Model with extra fields
 class UserProfile(models.Model):
-    user = models.OneToOneField(User)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=200, null=True)
     session_index = models.CharField(max_length=100, null=True)
     role = models.CharField(max_length=50, default=' ')
@@ -51,8 +51,8 @@ class Widgets(models.Model):
 
 
 class UserWidgets(models.Model):
-    user = models.ForeignKey(User, default=1)
-    widget = models.ForeignKey(Widgets, default=1)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    widget = models.ForeignKey(Widgets, on_delete=models.CASCADE)
     order = models.IntegerField(default=1)
 
 
@@ -67,12 +67,13 @@ MESSAGE_TYPE =(
     ('GROUP', 'Group Message')
 )
 
+
 class UserMessage(models.Model):
-    user = models.ForeignKey(User, related_name='recipient_user', default=1)
+    user = models.ForeignKey(User, related_name='recipient_user', on_delete=models.CASCADE)
     type = models.CharField(max_length=50, choices=MESSAGE_TYPE, default='NOTE')
     message = models.CharField(max_length=200, null=True, blank=True)
     read = models.BooleanField(default=False)
-    sender = models.ForeignKey(User, related_name='sender', default=1)
+    sender = models.ForeignKey(User, related_name='sender', on_delete=models.CASCADE)
     update_time = models.DateTimeField(max_length=200, default=timezone.now())
 
 
