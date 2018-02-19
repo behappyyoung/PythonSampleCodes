@@ -4,6 +4,7 @@ import json
 
 
 def profile(request):
+    print(request, dir(request))
     username = str(request.user)
 
     user_dict = functions.get_userinfo(request.user)
