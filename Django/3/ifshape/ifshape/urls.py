@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from ifshape import views as main_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', main_view.index, name='index'),
     url(r'^(?i)users/', include('users.urls')),
 ]
