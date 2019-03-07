@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth" beforeDir="false" afterPath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleCodes/Library/xHtml2Pdf/xhtml_to_pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleCodes/Library/xHtml2Pdf/xhtml_to_pdf.py" afterDir="false" />
     </list>
     <ignored path="PythonSampleCodes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +33,41 @@
       <file leaf-file-name="xhtml_to_pdf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleCodes/Library/xHtml2Pdf/xhtml_to_pdf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="234">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+              <folding>
+                <element signature="e#24#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="saveTopdf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/Library/pdfkit/saveTopdf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendmail.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/sendmail.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendmail_smtplib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/sendmail_smtplib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -44,32 +75,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="savetopdf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Django/Library/WEasyPrint/savetopdf.py">
+      <file leaf-file-name="manhatan_plot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/Library/Pandas/manhatan_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="612">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html2pdf.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SampleCodes/Library/WEasyPrint/html2pdf.py">
+      <file leaf-file-name="Selenium_search.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/Selenium_search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state>
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="framingham.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleCodes/Library/framingham.py">
+      <file leaf-file-name="Selenium.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/Selenium.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="formtest.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/formtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+            <state>
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read_write.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/Library/PyPDF2/read_write.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html2pdf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/Library/WEasyPrint/html2pdf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -91,6 +149,7 @@
       <find>return user_dict</find>
       <find>self.l</find>
       <find>end</find>
+      <find>password</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -107,10 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Python/Minion-Game.py" />
-        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Strings/String-Formatting.py" />
-        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Strings/Alphabet-Rangoli.py" />
-        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Strings/Capitalize.py" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/Strings/temp" />
         <option value="$PROJECT_DIR$/Algorithm/HackerRank/Strings/Minion-Game.py" />
         <option value="$PROJECT_DIR$/Algorithm/Bioinformatics/reversecomplement.py" />
@@ -158,6 +213,10 @@
         <option value="$PROJECT_DIR$/SampleCodes/Library/xHtml2Pdf/xhtml_to_pdf.py" />
         <option value="$PROJECT_DIR$/Django/Library/WEasyPrint/savetopdf.py" />
         <option value="$PROJECT_DIR$/SampleCodes/Library/WEasyPrint/html2pdf.py" />
+        <option value="$PROJECT_DIR$/SampleCodes/Library/pdfkit/saveTopdf.py" />
+        <option value="$PROJECT_DIR$/SampleCodes/sendmail.py" />
+        <option value="$PROJECT_DIR$/SampleCodes/sendmail_smtplib.py" />
+        <option value="$PROJECT_DIR$/SampleCodes/manhatan_plot.py" />
       </list>
     </option>
   </component>
@@ -172,11 +231,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3" />
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="773" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-2344" />
+    <option name="y" value="-26" />
+    <option name="width" value="2225" />
+    <option name="height" value="1022" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -223,7 +282,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,26 +323,19 @@
               <item name="PythonSampleCodes" type="462c0819:PsiDirectoryNode" />
               <item name="SampleCodes" type="462c0819:PsiDirectoryNode" />
               <item name="Library" type="462c0819:PsiDirectoryNode" />
-              <item name="FPDF" type="462c0819:PsiDirectoryNode" />
+              <item name="Pandas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonSampleCodes" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonSampleCodes" type="462c0819:PsiDirectoryNode" />
               <item name="SampleCodes" type="462c0819:PsiDirectoryNode" />
-              <item name="Library" type="462c0819:PsiDirectoryNode" />
-              <item name="Pillow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonSampleCodes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonSampleCodes" type="462c0819:PsiDirectoryNode" />
-              <item name="SampleCodes" type="462c0819:PsiDirectoryNode" />
-              <item name="Library" type="462c0819:PsiDirectoryNode" />
-              <item name="WEasyPrint" type="462c0819:PsiDirectoryNode" />
+              <item name="Selenium" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,18 +352,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SampleCodes/Library/Pandas" />
       <recent name="$PROJECT_DIR$/SampleCodes/Library/PyPDF2" />
       <recent name="$PROJECT_DIR$/Algorithm/HackerRank/CrackingCodeInterview" />
       <recent name="$PROJECT_DIR$/Algorithm" />
       <recent name="$PROJECT_DIR$/Algorithm/HackerRank/Code26" />
-      <recent name="$PROJECT_DIR$/Algorithm/HackerRank/Inputs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SampleCodes" />
       <recent name="$PROJECT_DIR$/SampleCodes/Library/FPDF" />
       <recent name="$PROJECT_DIR$/SampleCodes/Library/PyPDF2" />
       <recent name="$PROJECT_DIR$/Algorithm" />
       <recent name="$PROJECT_DIR$/Django/3/ifshape/ifshape" />
-      <recent name="$PROJECT_DIR$/Algorithm/Bioinformatics" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -642,16 +693,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1280" height="773" extended-state="6" />
+    <frame x="-2344" y="-26" width="2225" height="1022" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5042194" side_tool="true" visible="true" weight="0.28196982" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5042194" side_tool="true" visible="true" weight="0.16107078" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019412" side_tool="true" weight="0.24013157" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32985386" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32905984" />
       <window_info x="-2514" y="292" width="1086" height="674" id="Python Console" order="4" sideWeight="0.4957806" type="FLOATING" weight="0.31836945" />
-      <window_info id="Structure" order="1" sideWeight="0.48407644" side_tool="true" weight="0.27031508" />
+      <window_info id="Structure" order="1" sideWeight="0.48407644" side_tool="true" weight="0.26981628" />
       <window_info x="-2443" y="176" width="1536" height="756" id="Terminal" order="3" sideWeight="0.53121316" type="FLOATING" weight="0.36282694" />
       <window_info anchor="bottom" x="-2393" y="143" width="1448" height="887" id="Debug" order="3" weight="0.30861506" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32946378" />
@@ -746,12 +797,19 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/WEasyPrint/html2pdf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SampleCodes/Library/xHtml2Pdf/xhtml_to_pdf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#24#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -980,9 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/Celery/celeryProject/celeryProject/celery.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/SuffixTree_Ukkonen_t.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -990,46 +1045,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/bsoup.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/FetchData/getPartOfHtml.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/formtest.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/compress.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/postFile.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/framingham.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SampleCodes/Library/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/Pillow/create_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/PyPDF2/read_write.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="25" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1047,19 +1066,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/xHtml2Pdf/xhtml_to_pdf.py">
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/framingham.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Django/Library/WEasyPrint/savetopdf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="324">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -1067,10 +1083,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/Pillow/create_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SampleCodes/Library/WEasyPrint/html2pdf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="90">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/PyPDF2/read_write.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/xHtml2Pdf/xhtml_to_pdf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="e#24#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/pdfkit/saveTopdf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/sendmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/sendmail_smtplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/Pandas/manhatan_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/Selenium_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/Selenium.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/formtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
