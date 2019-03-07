@@ -16,7 +16,7 @@ formString=''
 warningString='\n \n ========= warning / redirect / ========  \n \n '
 
 currentSite =  checksite
-print ' checking ' +  currentSite 
+print(' checking ' +  currentSite)
 headString ='\n ====== Checking Domain :  ' + currentSite + ' \n ===== Checking form :   ' + checkform + ' \n ===== start : '+ datetime.datetime.now().strftime("%B %d , %H:%M:%S") + '========== \n'
 formUrls = {'wp':'/resources/1518-stop-password-sprawl-with-saas-sso?utm_adgroup=SSO_Exact_-_General&utm_region=NA'}
 
@@ -29,22 +29,25 @@ def sendReport(message):
     p = Popen(["/usr/sbin/sendmail", "-t", "-oi"], stdin=PIPE)
     p.communicate(msg.as_string())
 
+
 def errorHandling(url, errorName):
-	currentError =  " Error connect to ============== " + url
-	print currentError
-        global warningString
-    	sendReport(' Test Done From '+ socket.gethostname() + headString + ' / \n   ************** ERROR ************** \n  ' + errorName +'  : '  + currentError + warningString)
-	exit()
+    currentError =  " Error connect to ============== " + url
+    print(currentError)
+    global warningString
+    sendReport(' Test Done From '+ socket.gethostname() + headString + ' / \n   ************** ERROR ************** \n  ' + errorName +'  : '  + currentError + warningString)
+    exit()
+
 
 def softErrorHandling(url, referurl, errorName):
-	currentError =  " Error connect to === \n " + url +  ' ( From url : ' + referurl + ') \n'
-	print currentError
-        global warningString
-    	sendReport(' Test Done From '+ socket.gethostname() + headString + ' / \n ******* Conncetion Error ********** \n ' + errorName +' : '  + currentError + warningString)
-	exit()
+    currentError =  " Error connect to === \n " + url +  ' ( From url : ' + referurl + ') \n'
+    print(currentError)
+    global warningString
+    sendReport(' Test Done From '+ socket.gethostname() + headString + ' / \n ******* Conncetion Error ********** \n ' + errorName +' : '  + currentError + warningString)
+    exit()
+
 
 def solutionFormTest(checkingURL):
-    print 'young', checkingURL
+    print('young', checkingURL)
     driver.get(checkingURL)
     driver.find_elements_by_id('prospect_first_name')[0].send_keys('Young Park QA')
     driver.find_elements_by_id('prospect_last_name')[0].send_keys('Please Ignore @#@')
@@ -54,13 +57,13 @@ def solutionFormTest(checkingURL):
     driver.find_elements_by_id('prospect_street_address')[0].send_keys('Centrify')
     driver.find_elements_by_id('select2-chosen-2')[0].send_keys(Keys.RETURN)
 
-
     ##thankyou = driver.find_elements_by_css_selector('.landing-page .content-channel h2')[0].text
     ##print thankyou
     return
 
+
 def contactFormTest(checkingURL):
-    print 'young', checkingURL
+    print('young', checkingURL)
     try:
         driver.get(checkingURL)
         driver.find_elements_by_id('firstName')[0].send_keys('Young Park QA')
@@ -78,13 +81,14 @@ def contactFormTest(checkingURL):
         ##s2id_autogen3_search
         ##driver.find_elements_by_css_selector('.tabCompTR .tabCompTD .divCompList')[0].click()
         thankyou = driver.find_elements_by_css_selector('.landing-page .content-channel h2')[0].text
-        print thankyou
+        print(thankyou)
     except Exception as exception:
-        print type(exception).__name__ , 'input error ' , checkingURL     
+        print(type(exception).__name__ , 'input error ' , checkingURL)
     return
 
+
 def identityFormTest(checkingURL):
-    print 'young identity', checkingURL
+    print('young identity', checkingURL)
     try:
         driver.get(checkingURL)
         driver.find_elements_by_id('firstName')[0].send_keys('Young Park QA')
@@ -106,12 +110,14 @@ def identityFormTest(checkingURL):
         driver.find_elements_by_id('accept_eula')[0].click()
         driver.find_elements_by_css_selector('.tabCompTR .tabCompTD .divCompList')[0].click()
         thankyou = driver.find_elements_by_css_selector('.landing-page .content-channel h2')[0].text
-        print thankyou
+        print(thankyou)
     except Exception as exception:
-        print type(exception).__name__ , 'input error ' , checkingURL 
+        print(type(exception).__name__ , 'input error ' , checkingURL )
     return
+
+
 def serverFormTest(checkingURL):
-    print 'young', checkingURL
+    print('young', checkingURL)
     try:
         driver.get(checkingURL)
         driver.find_elements_by_id('firstName')[0].send_keys('Young Park QA')
@@ -131,9 +137,9 @@ def serverFormTest(checkingURL):
 
         ##raw_input("Press Enter to continue...")
         thankyou = driver.find_elements_by_css_selector('.landing-page .content-channel h2')[0].text
-        print thankyou
+        print(thankyou)
     except Exception as exception:
-        print type(exception).__name__ , 'input error ' , checkingURL     
+        print( type(exception).__name__ , 'input error ' , checkingURL  )
     return
 driver = webdriver.Firefox()
 ##driver = webdriver.PhantomJS()
@@ -162,27 +168,27 @@ try:
                 checkingUrl = currentSite + formURL    
               
                 response = subdriver.request('GET',  checkingUrl )
-                print checkingUrl, response.status_code, checkform
+                print(checkingUrl, response.status_code, checkform)
                 if response.status_code == 200 :
                     
                     if checkform=='identity':
                         identityFormTest(checkingUrl)    
                     elif checkform =='server':
-                        print checkform
+                        print(checkform)
                         serverFormTest(checkingUrl)
                     elif checkform =='solutions':
-                        print checkform
+                        # print checkform
                         solutionFormTest(checkingUrl)
                     elif checkform =='contact':
-                        print checkform
+                        # print checkform
                         contactFormTest(checkingUrl)
                     else:
-                        print 'no form checking '
+                        print('no form checking ')
 
                     formString += checkingUrl + '\n'
                 else:
                     statusString = checkingUrl + " =====> " + str(response.status_code)
-                    print  statusString
+                    print (statusString)
                     ##warningString = '\n ****  '+ warningString + statusString + ' *** \n ' 
                     
                 n = raw_input("Enter other form to continue... or 'q' to quit      : ")
@@ -199,12 +205,12 @@ except Exception as exception:
 
 driver.close()
 
-print errorString
+print(errorString)
 
 if errorString == '' :
-	errorString =  formString + '\n  forms are working fine \n \n'
+    errorString =  formString + '\n  forms are working fine \n \n'
 
 sendReport(' Test Done From '+ socket.gethostname() +' /  Finished : ' + datetime.datetime.now().strftime("%B %d , %H:%M:%S") + ' \n ' + headString + errorString + warningString )
 
 
-	
+

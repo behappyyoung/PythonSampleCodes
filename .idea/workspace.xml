@@ -4,6 +4,7 @@
     <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth" beforeDir="false" afterPath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleCodes/Selenium/formtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleCodes/Selenium/formtest.py" afterDir="false" />
     </list>
     <ignored path="PythonSampleCodes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,7 +79,7 @@
       <file leaf-file-name="manhatan_plot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleCodes/Library/Pandas/manhatan_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="540">
               <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -98,18 +99,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Selenium.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/Selenium.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="formtest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="formtest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/formtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="1495">
+              <caret line="137" column="19" selection-start-line="137" selection-start-column="10" selection-end-line="137" selection-end-column="19" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitecheck.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/sitecheck.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check_contents.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/check_contents.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -119,15 +134,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html2pdf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleCodes/Library/WEasyPrint/html2pdf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -150,6 +156,10 @@
       <find>self.l</find>
       <find>end</find>
       <find>password</find>
+      <find>formString</find>
+      <find>driver</find>
+      <find>gecko</find>
+      <find>raw_input</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -166,9 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Strings/temp" />
-        <option value="$PROJECT_DIR$/Algorithm/HackerRank/Strings/Minion-Game.py" />
-        <option value="$PROJECT_DIR$/Algorithm/Bioinformatics/reversecomplement.py" />
         <option value="$PROJECT_DIR$/Algorithm/Bioinformatics/findstr.py" />
         <option value="$PROJECT_DIR$/Algorithm/Bioinformatics/pattern_matching.py" />
         <option value="$PROJECT_DIR$/Algorithm/Bioinformatics/pattern_matching.txt" />
@@ -217,6 +224,9 @@
         <option value="$PROJECT_DIR$/SampleCodes/sendmail.py" />
         <option value="$PROJECT_DIR$/SampleCodes/sendmail_smtplib.py" />
         <option value="$PROJECT_DIR$/SampleCodes/manhatan_plot.py" />
+        <option value="$PROJECT_DIR$/SampleCodes/Selenium/formtest.py" />
+        <option value="$PROJECT_DIR$/SampleCodes/Selenium/check_contents.py" />
+        <option value="$PROJECT_DIR$/SampleCodes/Selenium/sitecheck.py" />
       </list>
     </option>
   </component>
@@ -282,6 +292,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -335,7 +346,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,11 +369,11 @@
       <recent name="$PROJECT_DIR$/Algorithm/HackerRank/Code26" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SampleCodes/Selenium" />
       <recent name="$PROJECT_DIR$/SampleCodes" />
       <recent name="$PROJECT_DIR$/SampleCodes/Library/FPDF" />
       <recent name="$PROJECT_DIR$/SampleCodes/Library/PyPDF2" />
       <recent name="$PROJECT_DIR$/Algorithm" />
-      <recent name="$PROJECT_DIR$/Django/3/ifshape/ifshape" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -797,13 +807,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SampleCodes/Library/WEasyPrint/html2pdf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SampleCodes/Library/xHtml2Pdf/xhtml_to_pdf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1077,9 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,7 +1143,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SampleCodes/Library/Pandas/manhatan_plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="540">
           <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -1160,15 +1160,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/Selenium.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/formtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1495">
+          <caret line="137" column="19" selection-start-line="137" selection-start-column="10" selection-end-line="137" selection-end-column="19" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/sitecheck.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleCodes/Selenium/check_contents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
         </state>
       </provider>
     </entry>
