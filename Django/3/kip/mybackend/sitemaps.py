@@ -1,4 +1,3 @@
-from django.contrib import sitemaps
 from django.contrib.sitemaps import Sitemap
 from django.core.urlresolvers import reverse
 from datetime import datetime
@@ -29,12 +28,12 @@ from datetime import datetime
 #             return ['--']
 
 
-class StaticViewSitemap(sitemaps.Sitemap):
+class StaticViewSitemap(Sitemap):
     priority = 0.5
     changefreq = 'never'
 
     def items(self):
-        return ['index', 'personalis', 'metadata']
+        return ['index', 'user_profile']
 
     def location(self, item):
         return reverse(item)

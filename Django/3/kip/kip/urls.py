@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from kip import views as main_view
+from mybackend import sitemaps
+from django.contrib.sitemaps.views import sitemap
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', main_view.index, name='index'),
     url(r'^(?i)users/', include('users.urls')),
+    url(r'^sitemap\.xml$', sitemap, {'sitemaps': {'static': sitemaps.StaticViewSitemap()}}, name='django.contrib.sitemaps.views.sitemap')
 ]
