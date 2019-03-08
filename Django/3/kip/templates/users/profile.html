@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<style>
+    .elem td.key {
+        width:200px;
+    }
+    .elem td.val {
+            width:300px;
+    }
+    .elem .key {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+.widgetlist{
+    word-break: break-all;
+}
+.popup, .notes{
+    position: fixed;
+    width: 95%;
+    left: 50px;
+    /*max-height: 800px;*/
+    overflow: auto;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: none;
+    z-index: 50;
+
+}
+.popup table{
+    margin:30px auto;
+    background-color: rgba(181, 188, 214, 0.6);
+    width: 95%;
+}
+#popup td{
+    padding:5px;
+}
+.popup table td.date, .popup table td.order_name{
+    width: 150px;
+}
+.popup table td.action{
+    width: 100px;
+}
+.popup table td.order_name{
+    font-weight: bolder;
+}
+</style>
+<script type="text/javascript">
+    gimsApp.controller('profileController', ['$scope', function($scope) {
+                {% autoescape off %}
+                            $scope.user = {{user_list}};
+                 {% endautoescape %}
+
+console.log('user', $scope.user);
+
+}]);
+ $(function () {
+    'use strict';
+        $('.btn-order-note').on('click', function () {
+        // window.open( '/get_log/order/?oid='+$scope.orders[0].order_id,'History','width=800, height=500, location=no');
+        var oid = this.id;
+        console.log(oid);
+        $.ajax({
+            url:'/mybackend/get_notes/',
+            type:'json',
+            method:'POST',
+            data:{'oid': oid},
+            error: function()
+            {
+                //file not exists
+                 console.log('error');
+            },
+            success: function(data)
+            {
+                //file exists
+
+                var json_data = JSON.parse(data);
+                console.log('success', data, json_data);
+                window.json_data = json_data;
+                var hHtml = '<div  class="sub-title"> Notes for '+json_data[0].order_name+' </div><table class="table table-bordered table-striped table-hover"><thead><th> date </th><th> category </th><th> Note </th><th> by </th> <th> recipient</th> <th> </th></thead><tbody>';
+                var urgent='';
+                var recipient;
+                var writer;
+                for(var i=0; i<json_data.length; i++){
+                    urgent = (json_data[i].category.trim() == 'Urgent Matter')? 'danger' : '';
+                    recipient = (typeof json_data[i].recipient ==='undefined' || json_data[i].recipient === null )? '' : json_data[i].recipient;
+                    writer = (typeof json_data[i].writer ==='undefined' || json_data[i].writer === null )? '' : json_data[i].writer;
+                    hHtml += '<tr class="note-detail '+urgent+'" id="'+json_data[i].id+'"><td class="date">'+json_data[i].update_time+
+                    '</td><td>'+json_data[i].category+'</td><td>'+json_data[i].note+'</td><td>'+writer+'</td><td>'+recipient+'</td><td class="action"><a href="/order/'+oid+'/notes/" target="_new" >Add Notes</a></td></tr>';
+                }
+                $('#popup').html(hHtml);
+                $('.popup').css('display', 'block');
+                $('.note-detail').on('click', function() {
+                    console.log('this note', this.id);
+                    // body...
+                })
+            }
+         });
+    });
+         $(".popup").draggable();
+});
+</script>
+<div ng-controller="profileController" id="profileController" class="profile">
+<div class="sub-sub-title">  {{title}}
+ <a href="/user/profile/{$ user.username $}/" class="right-button"> <button class="button btn btn-sm btn-primary"> Edit Profile </button> </a>
+ </div>
+
+
+    <table class="table table-stripped table-bordered " style="margin:auto;width:1000px;">
+
+
+    <body >
+        <tr class="elem">
+                <td class="key"> username</td>
+                <td class="val"> <strong> {$ user.username $} </strong></td>
+                <td class="key"> email</td>
+                <td class="val"> {$ user.email $} </td>
+        </tr>
+        <tr class="elem">
+                <td class="key"> first name</td>
+                <td class="val">{$ user.first_name $}</td>
+                <td class="key"> last name</td>
+                <td class="val"> {$ user.last_name $} </td>
+        </tr>
+        <tr class="elem">
+                <td class="key"> group</td>
+                <td class="val"> {$ user.group $}</td>
+                <td class="key"> title</td>
+                <td class="val"> {$ user.title $}</td>
+        </tr>
+        <tr class="elem">
+                <td class="key"> role</td>
+                <td class="val"> {$ user.role $}</td>
+                <td class="key"> last login</td>
+                <td class="val"> {$ user.last_login $}</td>
+        </tr>
+        <tr class="elem widgetlist">
+                <td class="key"> widgetlist</td>
+                <td class="val" colspan="3"> {$ user.widgetlist $}</td>
+
+        </tr>
+
+        </tbody>
+
+
+
+    </table>
+
+</div>
+
+
+{% comment "Messages" %}
+<div class="sub-sub-title"> Unread Messages  <button class="btn btn-default btn-sm btn-messages " id="" onclick=" $('.popup').css('display', 'block');" > All Messages </button>
+
+</div>
+    <table class="table table-stripped table-bordered " style="margin:auto;width:1000px;">
+     <tr>
+
+                        <th> Date </th>
+                        <th> type </th>
+                        <th> message </th>
+                        <th> From </th>
+
+                    </tr>
+
+        {% for message in mymessages %}
+            {% if message.read == '1' %}
+                    <tr>
+                        <td>{{ message.update_time }}</td>
+                        <td>{{message.category}}</td>
+
+                        <td>
+                           {{ message.message }}
+
+                        </td>
+                        <td class="text-center">         {{message.sender}}        </td>
+                    </tr>
+                {% endif %}
+        {% endfor %}
+
+
+    </table>
+
+</div>
+{% endcomment %}
+    <div class="popup ">
+        <button class="close" onclick="$('.popup').css('display', 'none');">X</button>
+        <div id="popup">
+         <table class="table table-stripped table-bordered " style="margin:30px auto;">
+     <tr>
+
+                        <th> Date </th>
+                        <th> type </th>
+                        <th> message </th>
+                        <th> From </th>
+
+                    </tr>
+
+        {% for message in mymessages %}
+
+                    <tr>
+                        <td>{{ message.update_time }}</td>
+                        <td>{{message.category}}</td>
+
+                        <td>
+                           {{ message.message }}
+
+                        </td>
+                        <td class="text-center">         {{message.sender}}        </td>
+                    </tr>
+
+        {% endfor %}
+
+
+    </table>
+     </div>
+    </div>
+
+
+{% endblock %}
