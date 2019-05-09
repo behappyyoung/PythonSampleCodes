@@ -1,0 +1,63 @@
+1553622003001	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.HX3dkZ88fazf"
+1553622004133	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1553622004134	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1553622007379	Marionette	INFO	Listening on port 57413
+1553622007438	Marionette	WARN	TLS certificate errors will be ignored for this session
+1553622045807	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.TjYa4d2heJZK"
+1553622046559	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1553622046559	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1553622048449	Marionette	INFO	Listening on port 60240
+1553622048501	Marionette	WARN	TLS certificate errors will be ignored for this session
+1553622119300	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.km2gWNYSew03"
+1553622120094	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1553622120095	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1553622121996	Marionette	INFO	Listening on port 64929
+1553622122106	Marionette	WARN	TLS certificate errors will be ignored for this session
+1553622122493	Marionette	INFO	Stopped listening on port 64929
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 841: Error: Connection is not open.
+1553622157667	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.0AUabbdiGBDP"
+1553622158414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1553622158414	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1553622160280	Marionette	INFO	Listening on port 51048
+1553622160381	Marionette	WARN	TLS certificate errors will be ignored for this session
+1553622160663	Marionette	INFO	Stopped listening on port 51048
+1553622220508	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.XV4WKZKe11yS"
+1553622221317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1553622221317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1553622223202	Marionette	INFO	Listening on port 55091
+1553622223235	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://127.0.0.1:8000/, line 20: ReferenceError: angular is not defined
+JavaScript error: http://127.0.0.1:8000/, line 143: ReferenceError: FB is not defined
+JavaScript error: http://127.0.0.1:8000/users/profile/, line 20: ReferenceError: angular is not defined
+JavaScript error: http://127.0.0.1:8000/users/profile/, line 141: TypeError: gimsApp is undefined
+JavaScript error: http://127.0.0.1:8000/users/profile/, line 309: ReferenceError: FB is not defined
+1553622227084	Marionette	INFO	Stopped listening on port 55091
+1553622350629	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.k85Mkyv1qEqo"
+1553622351471	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1553622351472	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1553622353365	Marionette	INFO	Listening on port 63486
+1553622353434	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://127.0.0.1:8000/, line 20: ReferenceError: angular is not defined
+JavaScript error: http://127.0.0.1:8000/, line 143: ReferenceError: FB is not defined
+JavaScript error: http://127.0.0.1:8000/users/profile/, line 20: ReferenceError: angular is not defined
+JavaScript error: http://127.0.0.1:8000/users/profile/, line 141: TypeError: gimsApp is undefined
+JavaScript error: http://127.0.0.1:8000/users/profile/, line 309: ReferenceError: FB is not defined
+1553622355415	Marionette	INFO	Stopped listening on port 63486
+1553622644794	Marionette	INFO	Stopped listening on port 57413
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Can't find symbol 'GetGraphicsResetStatus'.
+Exiting due to channel error.
+Exiting due to channel error.

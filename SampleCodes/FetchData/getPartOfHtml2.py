@@ -13,9 +13,9 @@ try:
     file_.write(mydiv)
     file_.close()
 except requests.exceptions.RequestException as e:  # This is the correct syntax
-    print (e)
+    print(e)
     message = "could not fetch %s" % url
-    print (message)
+    print(message)
     file_ = open('pulseDiv', 'r')
     mydiv = file_.read()
     file_.close()

@@ -197,3 +197,16 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
 
+1551998957325	Marionette	INFO	Stopped listening on port 49320
+1552001942894	Marionette	INFO	Stopped listening on port 64616
+1552001945582	Marionette	INFO	Stopped listening on port 64674
+1552001950857	Marionette	INFO	Stopped listening on port 64728
+1552001953680	Marionette	INFO	Stopped listening on port 64784
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1552001962455	Marionette	INFO	Stopped listening on port 65534
+1552001966285	Marionette	INFO	Stopped listening on port 65289
+1552001968563	Marionette	INFO	Stopped listening on port 65097
+1552001971691	Marionette	INFO	Stopped listening on port 64837
+1552001974522	Marionette	INFO	Stopped listening on port 64899
