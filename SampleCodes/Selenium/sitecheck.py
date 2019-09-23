@@ -55,8 +55,6 @@ try:
                 response = wdriver.request('GET', checkingUrl)
                 # browser.get(checkingUrl)
                 if response.status_code == 200 :
-
-
                     formString += checkingUrl + '\n'
                 else:
                     statusString = checkingUrl + " =====> " + str(response.status_code)

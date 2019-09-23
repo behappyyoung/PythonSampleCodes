@@ -210,3 +210,149 @@ console.error: BroadcastService:
 1552001968563	Marionette	INFO	Stopped listening on port 65097
 1552001971691	Marionette	INFO	Stopped listening on port 64837
 1552001974522	Marionette	INFO	Stopped listening on port 64899
+1568011309995	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.EMwrlmlzkuaQ"
+1568011313935	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568011313935	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568011313936	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568011313936	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568011317845	Marionette	INFO	Listening on port 52922
+1568011333172	Marionette	INFO	Stopped listening on port 52922
+1568011410996	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.0gHAD86ckVby"
+1568011412314	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568011412314	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568011412314	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568011412314	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568011414749	Marionette	INFO	Listening on port 59385
+1568011414799	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+1568011452298	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.U4JcjNXBAS1b"
+1568011453705	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568011453706	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568011453707	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568011453708	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568011456626	Marionette	INFO	Listening on port 62143
+1568011456716	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/ContentMetaHandler.jsm, line 162: NS_ERROR_ILLEGAL_VALUE: 
+1568011930690	Marionette	INFO	Stopped listening on port 62143
+1568011936333	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.LnAbjakZHkkR"
+1568011937635	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568011937636	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568011937636	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568011937636	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568011939720	Marionette	INFO	Listening on port 60436
+1568011939733	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 85087, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 728
+Exiting due to channel error.
+1568587756612	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.CkdFgPyNhVHR"
+1568587757650	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568587757651	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568587757651	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568587757651	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568587759927	Marionette	INFO	Listening on port 55816
+1568587759951	Marionette	WARN	TLS certificate errors will be ignored for this session
+1568587862204	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.5UJ7k3Ct6OW1"
+1568587863206	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568587863206	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568587863206	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568587863206	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568587865661	Marionette	INFO	Listening on port 63171
+1568587865723	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1545208501000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1545208501000-41853.js, line 134: unreachable code after return statement
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1568588138197	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1568588195490	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1568588422717	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1568588428421	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1568592995037	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1568598851844	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1568615588618	Marionette	INFO	Stopped listening on port 63171
+1568753365407	Marionette	INFO	Stopped listening on port 55816
+1568839170546	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.j228DrvUfXzH"
+1568839174755	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568839174755	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568839174756	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568839174756	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568839178295	Marionette	INFO	Listening on port 64878
+1568839207137	Marionette	INFO	Stopped listening on port 64878
+1568839222340	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.EnY9sH69ifJa"
+1568839223602	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568839223602	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568839223603	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568839223603	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568839225917	Marionette	INFO	Listening on port 51862
+1568839225983	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1568839489541	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1568839498490	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1568839886486	Marionette	INFO	Stopped listening on port 51862
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1568841442559	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.DFTXj2mh1Q5S"
+1568841443946	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568841443947	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568841443947	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568841443947	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568841446659	Marionette	INFO	Listening on port 65238
+1568841446737	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1568841643566	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1568841671391	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1568841677196	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1568841680675	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1568841710831	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1568841719338	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1568841727825	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1568841842237	Marionette	INFO	Stopped listening on port 65238
