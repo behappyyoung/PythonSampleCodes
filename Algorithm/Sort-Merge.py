@@ -1,46 +1,52 @@
-def merge(arr, l, m, r):
-	n1 = m-l+1
-	n2 = r-m
-	L = [0]*n1
-	R = [0]*n2
-	for i in xrange(0, n1):
-		L[i] = arr[l+i]
-	for j in xrange(0, n2):
-		R[j] = arr[m+j+1]
+"""
+    merge sort
+    1. mergesort ( 1/2 of array) => recursive
+    2. merge ( 2 * 1/2 of array => 1 )
+    O(nlogn)
+"""
 
-	i = 0
-	j = 0
-	k = l
-	while i < n1 and j < n2:
-		if L[i] <= R[j]:
-			arr[k] = L[i]
-			i += 1
-		else:
-			arr[k] = R[j]
-			j += 1
+def merge(arr, start, middle, end):
+    # create a temp array
+    temp = [0] * (end - start + 1)
+    i = start
+    j = middle + 1
+    k = 0
+    # compare two arrays  // add smaller ones to the temp array
+    while i <= middle and j <= end:
+        if arr[i] <= arr[j]:
+            temp[k] = arr[i]
+            i += 1
+        else:
+            temp[k] = arr[j]
+            j += 1
 
-		k += 1
-	while i < n1:
-		arr[k] = L[i]
-		i += 1
-		k += 1
-	while j < n2:
-		arr[k] = R[j]
-		j += 1
-		k += 1
+        k += 1
+    # add elements left in the left array if there is any
+    while i <= middle:
+        temp[k] = arr[i]
+        i += 1
+        k += 1
+    # add elements left in the right array if there is any
+    while j <= end:
+        temp[k] = arr[j]
+        j += 1
+        k += 1
 
+    # copy temp to original array interval
+    for i in range(start, end+1):
+        arr[i] = temp[i-start]
 
-def merge_sort(arr, l, r):
-	if l < r:
-		m = (l+r)/2
-		merge_sort(arr, l, m)
-		merge_sort(arr, m+1, r)
-		merge(arr, l, m, r)
+def merge_sort(arr, start, end):
+    if start < end:
+        middle = int((start+end)/2)
+        merge_sort(arr, start, middle)
+        merge_sort(arr, middle+1, end)
+        merge(arr, start, middle, end)
 
-
-arr = [5, 12, 13, 10, 7, 6, 2]
-n = len(arr)
-
-merge_sort(arr, 0, n - 1)
-
-print arr
+# test
+test_arr = [5, 12, 13, 10, 7, 6, 2]
+merge_sort(test_arr, 0, len(test_arr) - 1)
+print('sorted :', test_arr)
+test_arr2 = [20, 30, 50, 90, 100, 200, 300, 1, 8]
+merge_sort(test_arr2, 0, len(test_arr2) - 1)
+print('sorted :', test_arr2)

@@ -393,3 +393,80 @@ bail@chrome://marionette/content/sync.js:237:64
 1569719079683	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 bail@chrome://marionette/content/sync.js:237:64
 1569719120928	Marionette	INFO	Stopped listening on port 57386
+1569790462808	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.wDTAwdtutoPl"
+1569790464063	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569790464064	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569790464064	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569790464064	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569790467004	Marionette	INFO	Listening on port 65078
+1569790467063	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1569790568476	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1569790578168	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1569790608995	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+[Child 72577, MediaDecoderStateMachine #1] WARNING: Decoder=1263e9c00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/workspace/build/src/dom/media/MediaDecoderStateMachine.cpp, line 352
+[Child 72577, MediaDecoderStateMachine #1] WARNING: Decoder=1263e9c00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/workspace/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3309
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1569790670208	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1569790694738	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+[Child 72577, MediaDecoderStateMachine #1] WARNING: Decoder=13320b800 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/workspace/build/src/dom/media/MediaDecoderStateMachine.cpp, line 352
+[Child 72577, MediaDecoderStateMachine #1] WARNING: Decoder=13320b800 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/workspace/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3309
+1569790784707	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1569790851423	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1569790882901	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1569790954231	Marionette	INFO	Stopped listening on port 65078
+1569804133416	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/rk/fdvrfkrd067829bsb9xtd9sd29sqg1/T/rust_mozprofile.vmueuQiITHP7"
+1569804134606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569804134607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569804134607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569804134607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569804137251	Marionette	INFO	Listening on port 52808
+1569804137278	Marionette	WARN	TLS certificate errors will be ignored for this session
+1569804144365	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1569804153481	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1569804163426	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1569804328417	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1569804371005	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1569804389650	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/external/js/jquery-1.8.0.min.js?20170206, line 2: SecurityError: Permission denied to access property "nodeType" on cross-origin object
+1569804398839	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1569804454150	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/timeboard_autoplay_740.min.js?20180914, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1569804564035	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1569804597392	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://ssl.pstatic.net/tveta/libs/assets/js/pc/main/min/rollingboard_autoplay_332.min.js?20190819, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1569804696196	Marionette	INFO	Stopped listening on port 52808

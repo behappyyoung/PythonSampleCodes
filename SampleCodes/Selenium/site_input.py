@@ -3,12 +3,6 @@ import sys
 # currentSite = 'http://' + str(sys.argv[1]) if len(sys.argv) > 1 else 'http://www.daum.net'
 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import datetime
-from email.mime.text import MIMEText
-from subprocess import Popen, PIPE
-import socket
-from seleniumrequests import PhantomJS, Firefox
 errorString = ''
 formString=''
 warningString='\n \n ========= warning / redirect / ========  \n \n '
@@ -34,7 +28,7 @@ try:
         checkingUrl = 'http://www.daum.net'
         browser.get(checkingUrl)
         search_id = browser.find_elements_by_id('q')
-        search_id[0].send_keys('라치몬트산후조리원')
+        search_id[0].send_keys('검찰개혁 촛불집회')
         search_button = browser.find_elements_by_css_selector('button.ico_pctop.btn_search')
         search_button[0].click()
 
@@ -42,7 +36,7 @@ try:
 
         browser.get(checkingUrl)
         search_id = browser.find_elements_by_id('query')
-        search_id[0].send_keys('라치몬트산후조리원')
+        search_id[0].send_keys('검찰개혁 촛불집회')
         search_button = browser.find_elements_by_id('search_btn')
         search_button[0].click()
 

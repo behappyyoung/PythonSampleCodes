@@ -3,12 +3,12 @@ def sub_num(num, count):        #width self
 	# print 'num :' , num, 'count :', count
 	if num == count:
 		nums = []
-		for i in xrange(1, num + 1):
+		for i in range(1, num + 1):
 			nums.append(str(i))
 		return [','.join(nums)]
 	elif count == 1:
 		nums = []
-		for i in xrange(1, num+1):
+		for i in range(1, num+1):
 			nums.append(i)
 		return nums
 	elif count > num :
@@ -30,10 +30,10 @@ def sub_num(num, count):        #width self
 
 
 def get_subs(num, count):
-	for i in xrange(num, count-1, -1):
+	for i in range(num, count-1, -1):
 		subs = sub_num(i, count)
-		print i, count, subs
+		print(i, count, subs)
 		for i in subs:
-			print i
+			print(i)
 
 get_subs(4, 2)
