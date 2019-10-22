@@ -7,7 +7,7 @@ gunicorn==19.6.0
 isodate==0.5.0
 lxml==3.6.1
 MySQL-python==1.2.5
-Pillow==3.3.1
+Pillow==6.2.0
 python-saml==2.1.9
 pytz==2016.6.1
 PyYAML==3.11
