@@ -37,6 +37,7 @@ class ExcelParser(object):
             self.return_array.append(xls.sheet_names)
             inter_array = []
             for shName in xls.sheet_names:
+
                 df = xls.parse(shName)
                 print('%s Sheet Name : %s %s' % (bcolors.WARNING, shName, bcolors.ENDC))
 

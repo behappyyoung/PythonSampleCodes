@@ -25,18 +25,19 @@ try:
         df = xls.parse(shName)
         print('%s Sheet Name : %s %s' % (bcolors.WARNING, shName, bcolors.ENDC))
 
-        # print(df.__dict__)
+        df.head()
+        print(df.__dict__)
 
-        # print list of column names
-        print('columns', list(df))
-        print('culumns', df.columns)
-
-        for index, row in df.iterrows():
-            print(index, row)
-
-        for d in df.iloc[:, 5]:
-            if isinstance(d, str) or not math.isnan(d):
-                print(d)
+        # # print list of column names
+        # print('columns', list(df))
+        # print('culumns', df.columns)
+        #
+        # for index, row in df.iterrows():
+        #     print(index, row)
+        #
+        # for d in df.iloc[:, 5]:
+        #     if isinstance(d, str) or not math.isnan(d):
+        #         print(d)
 
     # sheet1 = xls.parse(0)
     # sheet2 = xls.parse(1)

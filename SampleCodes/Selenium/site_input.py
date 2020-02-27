@@ -28,7 +28,7 @@ try:
         checkingUrl = 'http://www.daum.net'
         browser.get(checkingUrl)
         search_id = browser.find_elements_by_id('q')
-        search_id[0].send_keys('검찰개혁 촛불집회')
+        search_id[0].send_keys('문재인응원')
         search_button = browser.find_elements_by_css_selector('button.ico_pctop.btn_search')
         search_button[0].click()
 
@@ -36,7 +36,7 @@ try:
 
         browser.get(checkingUrl)
         search_id = browser.find_elements_by_id('query')
-        search_id[0].send_keys('검찰개혁 촛불집회')
+        search_id[0].send_keys('문재인응원')
         search_button = browser.find_elements_by_id('search_btn')
         search_button[0].click()
 
