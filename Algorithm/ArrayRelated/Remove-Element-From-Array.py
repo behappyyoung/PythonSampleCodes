@@ -6,6 +6,7 @@ then new length is 3, and A is now [4, 2, 3]
 new_arr = [ elem for elem in arr if elem != value]
 
 """
+from datetime import datetime
 
 def remove_element(arr, value):
     len_arr = len(arr)
@@ -20,12 +21,7 @@ def remove_element(arr, value):
 
 
 def remove_element_s(arr, value):
-    len_arr = len(arr)
-    i = len_arr - 1
-    while i >= 0:
-        if arr[i] == value:
-            arr.pop(i)
-        i -= 1
+    arr = [x for x in arr if x!=value]
 
     print(arr)
     return len(arr)
@@ -37,5 +33,17 @@ print(remove_element_s(input_arr, 1))
 
 input_arr = [ 2, 0, 1, 2, 0, 3, 2, 2, 2, 1, 0, 0, 0, 1, 0, 0, 2, 2, 2, 3, 2, 3, 1, 2, 1, 2, 2, 3, 2, 3, 0, 3, 0, 2, 1, 2, 0, 0, 3, 2, 3, 0, 3, 0, 2, 3, 2, 2, 3, 1, 3, 3, 0, 3, 3, 0, 3, 3, 2, 0, 0, 0, 0, 1, 3, 0, 3, 1, 3, 1, 0, 2, 3, 3, 3, 2, 3, 3, 2, 2, 3, 3, 3, 1, 3, 2, 1, 0, 0, 0, 1, 0, 3, 2, 1, 0, 2, 3, 0, 2, 1, 1, 3, 2, 0, 1, 1, 3, 3, 0, 1, 2, 1, 2, 2, 3, 1, 1, 3, 0, 2, 2, 2, 2, 1, 0, 2, 2, 2, 1, 3, 1, 3, 1, 1, 0, 2, 2, 0, 2, 3, 0, 1, 2, 1, 1, 3, 0, 2, 3, 2, 3, 2, 0, 2, 2, 3, 2, 2, 0, 2, 1, 3, 0, 2, 0, 2, 1, 3, 1, 1, 0, 0, 3, 0, 1, 2, 2, 1, 2, 0, 1, 0, 0, 0, 1, 1, 0, 3, 2, 3, 0, 1, 3, 0, 0, 1, 0, 1, 0, 0, 0, 0, 3, 2, 2, 0, 0, 1, 2, 0, 3, 0, 3, 3, 3, 0, 3, 3, 1, 0, 1, 2, 1, 0, 0, 2, 3, 1, 1, 3, 2 ]
 
+start_time = datetime.now()
+print(remove_element(input_arr, 2))
+end_time = datetime.now()
+print(end_time - start_time)
+
+start_time = datetime.now()
 print(remove_element_s(input_arr, 2))
+end_time = datetime.now()
+print(end_time - start_time)
+
+
+
+
 

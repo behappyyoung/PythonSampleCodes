@@ -27,28 +27,23 @@ def add_one_to_number(arr):
     return return_arr
 
 
-def add_one_to_number_s(arr):
-    over_flow = True
-    for i in range(len(arr)-1, -1, -1):
-        c_int = arr[i]
-        if over_flow:
-            c_sum = c_int + 1
+def add_one_to_number_s(digits):
+    i = len(digits) - 1
+    overflow = 1
+    while i >= 0 and overflow == 1:
+        c_sum = digits[i] + overflow
+        if c_sum == 10:
+            digits[i] = 0
+            overflow = 1
+            i -= 1
+        else:
+            digits[i] = c_sum
+            overflow = 0
 
-            if c_sum >= 10:
-                c_sum = c_sum - 10
-                arr[i] = c_sum
-                over_flow = True
-            else:
-                over_flow = False
-                arr[i] = c_sum
-                break
+    if overflow == 1:
+        digits.insert(0, 1)
 
-    if over_flow:
-        arr.insert(0, 1)
-
-    while arr[0] == 0:
-        arr.pop(0)
-    return arr
+    return digits
 
 
 # test
@@ -62,3 +57,5 @@ print(add_one_to_number_s(test_array))
 test_array = [0, 0, 0, 2, 2, 9]
 print(test_array)
 print(add_one_to_number_s(test_array))
+test_array = [0]
+print(test_array, add_one_to_number_s(test_array))

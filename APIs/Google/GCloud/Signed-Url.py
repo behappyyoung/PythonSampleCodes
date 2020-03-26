@@ -44,7 +44,9 @@ class CloudStorageURLSigner(object):
     """Forms and returns the full signed URL to access GCS."""
     base_url = '%s%s' % (self.gcs_api_endpoint, path)
     signature_string = self._MakeSignatureString(verb, path, content_md5,
-                                                 content_type)
+                                                 content_type).encode('utf-8')
+    print('signature string', signature_string)
+    # signature_string = signature_string.encode('utf-8')
     signature_signed = self._Base64Sign(signature_string)
     query_params = {'GoogleAccessId': self.client_id_email,
                     'Expires': str(self.expiration),
@@ -93,6 +95,7 @@ class CloudStorageURLSigner(object):
 
 
 from oauth2client.service_account import ServiceAccountCredentials
+import settings
 
 creds = ServiceAccountCredentials.from_json_keyfile_name(settings.AUTH_JSON)
 private_key = creds._private_key_pkcs8_pem
@@ -102,4 +105,6 @@ GCS_API_ENDPOINT = settings.GCS_API_ENDPOINT
 
 signer = CloudStorageURLSigner(private_key, SERVICE_ACCOUNT_EMAIL,GCS_API_ENDPOINT, 30)
 
-        file_path = '/%s/%s' % (bucket_name, object_name)
+file_path = '/cgs-dev-lims/Quantifications/163/image1.png'
+r = signer.Get(file_path)
+print('url', r.request.url)

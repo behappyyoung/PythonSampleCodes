@@ -28,35 +28,29 @@ def get_sqrt(n):
             return i-1
 
 # using binary search
-def get_sqrt_s(n, start=None, end=None):
+def get_sqrt_s(n):
     if n<=1 :
         return n
-    elif n==2:
-        return 1
-    if start and end:
-        m = (start + end)/2
-    else:
-        start = 1
-        m = int(n/2)
-        end = n
-    square = m * m
-    if square == n:
-        return m
-    elif square > n:
-        new_middle = (start + m) / 2
-        if new_middle <= start:
-            return start
-        return get_sqrt_s(n, start, m)
-    else:
-        new_middle = (m + end) / 2
-        if new_middle <= m:
+
+    l = 2
+    r = n-1
+    ans = 1
+    while l <=r:
+        m = l + (r-l)//2
+        times = m * m
+        if times == n:
             return m
-        return get_sqrt_s(n, m, end)
+        elif times < n:
+            l = m + 1
+            ans = m
+        else:
+            r = m - 1
 
+    return ans
 
-test_int = 3
+test_int = 2
 print(test_int, get_sqrt_s(test_int))
-test_int = 10
+test_int = 4356
 print(test_int, get_sqrt_s(test_int))
 test_int = 930675566
 print(test_int, get_sqrt_s(test_int))

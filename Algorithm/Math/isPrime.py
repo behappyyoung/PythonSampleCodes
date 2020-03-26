@@ -6,13 +6,7 @@
 ## is_prime / is_prime_s : too slow
 
 """
-user_input=input("\n is prime number? : ")
 
-try:
-    user_int = int(user_input)
-except:
-    print("\n need integer input ")
-    exit(1)
 
 """
     
@@ -41,7 +35,7 @@ def is_prime_s(n):
 
 
 def is_prime_s_s(n):
-    if n<=1 or n==4:
+    if n<=1:
         return False
     if n==2 or n==3:
         return True
@@ -52,4 +46,23 @@ def is_prime_s_s(n):
 
     return True
 
-print(is_prime_s_s(user_int))
+user_int = 0
+
+while isinstance(user_int, int):
+
+    user_input=input("\n is prime number? : ")
+
+    try:
+        user_int = int(user_input)
+    except:
+        print("\n need integer input ")
+        exit(1)
+
+    from datetime import datetime
+    start_time = datetime.now()
+    print(is_prime_s_s(user_int))
+    end_time = datetime.now()
+    print(end_time - start_time)
+
+
+exit(1)

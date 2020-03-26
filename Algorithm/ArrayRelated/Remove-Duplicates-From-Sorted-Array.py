@@ -17,20 +17,16 @@ def remove_duplicate(arr):
     i = len_arr - 1
     j = i - 1
     while i > 0:
-        print(i, j, arr)
         if arr[i] == arr[j]:
             arr.pop(i)
             i -= 1
             j = i-1
         else:
+            i = j
             j -= 1
 
-        if j == -1:
-            i -= 1
-            j = i-1
     print(arr)
     return len(arr)
-
 
 # test
 input_arr = [1, 1, 2, 2, 3]

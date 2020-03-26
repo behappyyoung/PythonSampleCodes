@@ -46,11 +46,49 @@ def rotated_sorted_array_search(arr, x, start, end):
                 return rotated_sorted_array_search(arr, x, m, end)
 
 
+
+def rotated_sorted_array_search_s(arr, x):
+    def find_x(arr, x, start, end):
+        m = start + (end-start) // 2
+        if arr[m] == x:
+            return m
+        elif x == arr[start]:
+            return start
+        elif x == arr[end]:
+            return end
+        elif start == m:
+            return -1
+        elif x < arr[m]:
+            if arr[start] < x:  # arr[start] < x < arr[m]
+                return rotated_sorted_array_search(arr, x, start, m)
+            elif x < arr[start]:  # x < arr[start] < arr[m]
+                if arr[start] < arr[m]:  # ==> the other side
+                    return rotated_sorted_array_search(arr, x, m, end)
+                else:
+                    return rotated_sorted_array_search(arr, x, start, m)
+        else:
+
+            if x < arr[end]:  # [m] < x < [end]
+                return rotated_sorted_array_search(arr, x, m, end)
+            else:  # [m] < [end] < x
+                if arr[m] < arr[end]:  # ==> the other side
+                    return rotated_sorted_array_search(arr, x, start, m)
+                else:
+                    return rotated_sorted_array_search(arr, x, m, end)
+
+    start = 0
+    end = len(arr) -1
+    return find_x(arr, x, start, end)
+
+
+
 def rotated_sorted_array_search_for_comparison(arr, x):
     for i in range(len(arr)):
         if arr[i] == x:
             return i
     return -1
+
+
 
 input_arr = []
 for i in range(10000, 1000000):

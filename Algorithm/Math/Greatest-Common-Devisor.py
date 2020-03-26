@@ -26,13 +26,15 @@ def greatest_common_devisor(m, n):
 
 def greatest_common_devisor_s(x, y):
     while y != 0:
+        print(x,y)
         (x, y) = (y, x % y)
     return x
 
 # test
-print(greatest_common_devisor(6, 9))
-print(greatest_common_devisor(61, 99))
-print(greatest_common_devisor(9, 99))
-print(greatest_common_devisor_s(6, 9))
-print(greatest_common_devisor_s(61, 99))
-print(greatest_common_devisor_s(9, 99))
+# print(greatest_common_devisor(6, 9))
+# print(greatest_common_devisor(61, 99))
+# print(greatest_common_devisor(9, 99))
+# print(greatest_common_devisor_s(6, 9))
+# print(greatest_common_devisor_s(61, 99))
+# print(greatest_common_devisor_s(9, 99))
+print(greatest_common_devisor_s(20, 30))

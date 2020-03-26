@@ -25,11 +25,3 @@ def is_prime(x):
 			return False
 	return True
 
-
-p = int(raw_input().strip())
-for _ in xrange(p):
-	n = int(raw_input().strip())
-	if is_prime(n):
-		print 'Prime'
-	else:
-		print 'Not prime'

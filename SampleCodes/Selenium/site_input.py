@@ -1,6 +1,6 @@
 import sys
-
-# currentSite = 'http://' + str(sys.argv[1]) if len(sys.argv) > 1 else 'http://www.daum.net'
+import time
+words = str(sys.argv[1]) if len(sys.argv) > 1 else '문재인응원'
 
 from selenium import webdriver
 errorString = ''
@@ -27,21 +27,23 @@ try:
     for n in range(50):
         checkingUrl = 'http://www.daum.net'
         browser.get(checkingUrl)
+        time.sleep(1)
         search_id = browser.find_elements_by_id('q')
-        search_id[0].send_keys('문재인응원')
+        search_id[0].send_keys(words)
         search_button = browser.find_elements_by_css_selector('button.ico_pctop.btn_search')
         search_button[0].click()
-
+        time.sleep(1)
         checkingUrl = 'http://www.naver.com'
 
         browser.get(checkingUrl)
+        time.sleep(1)
         search_id = browser.find_elements_by_id('query')
-        search_id[0].send_keys('문재인응원')
+        search_id[0].send_keys(words)
         search_button = browser.find_elements_by_id('search_btn')
         search_button[0].click()
 
 except Exception as e:
-    e_message = e.message if hasattr(e, 'message') else ','.join(map(str, e.args))
+    e_message = e.message if hasattr(e, 'message') else ','.join(list(map(str, e.args)))
     print(e_message)
 
 browser.close()

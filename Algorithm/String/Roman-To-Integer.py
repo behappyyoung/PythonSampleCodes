@@ -107,3 +107,4 @@ print('# 2421', roman_to_integer('MMCDXXI'), roman_to_integer_s('MMCDXXI'))
 print('# 1093', roman_to_integer('MXCIII'), roman_to_integer_s('MXCIII'))
 print('# 3287', roman_to_integer('MMMCCLXXXVII'), roman_to_integer_s('MMMCCLXXXVII'))
 
+print('', roman_to_integer('IV'), roman_to_integer_s('IV'))

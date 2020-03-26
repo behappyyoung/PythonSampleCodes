@@ -12,6 +12,7 @@ return [1,6],[8,10],[15,18].
 """
 def merge_overlap_intervals(arr_list):
     return_list = []
+    c_arr = []
     skip = False
     for i in range(len(arr_list)-1):
         if skip:
@@ -31,6 +32,7 @@ def merge_overlap_intervals(arr_list):
                 skip = False
         if not skip:
             return_list.append(c_arr)
+        print(return_list)
     if skip:
         return_list.append(c_arr)
     else:
@@ -44,5 +46,5 @@ test_list = [(1,3),(2,6),(5,10),(15,18)]
 print(merge_overlap_intervals(test_list))
 test_list = [ (1, 10), (2, 9), (3, 8), (4, 7), (5, 6), (6, 6) ]
 print(merge_overlap_intervals(test_list))
-test_list = [ (2, 10), (1, 9), (3, 8), (4, 7), (5, 6), (6, 6) ]
+test_list = [ (2, 4), (1, 9), (3, 8), (4, 7), (5, 6), (16, 26) ]
 print(merge_overlap_intervals(test_list))

@@ -24,8 +24,21 @@ def number_of_1bits_without_bin(input_int):
     return number_of_bit
 
 
+def hammingWeight(n):
+    sum = 0
+    while n != 0:
+        sum += 1
+        n &= (n - 1)
+    return sum
+
+
 print(number_of_1bits(288))
 print(number_of_1bits_without_bin(288))
+print(hammingWeight(288))
 print(number_of_1bits(2))
 print(number_of_1bits_without_bin(2))
+
+print(number_of_1bits(999))
+print(number_of_1bits_without_bin(999))
+print(hammingWeight(999))
 

@@ -1,3 +1,4 @@
+
 def check_binary(node, cmin, cmax):
     if node is None:
         return True
@@ -16,3 +17,4 @@ def check_binary(node, cmin, cmax):
 
 def check_binary_search_tree_(root):
     return check_binary(root, 0, 100000)
+
