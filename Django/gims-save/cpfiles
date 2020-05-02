@@ -1,4 +1,0 @@
-cp -R /Users/s0199669/gcloud/gims/gims/templates/* ./templates/
-cp -R /Users/s0199669/gcloud/gims/staticfiles/ ./stacticfiles/
-cp -R /Users/s0199669/gcloud/gims/tracker/ ./tracker/
-cp -R /Users/s0199669/gcloud/gims/workflows/ ./workflows/
