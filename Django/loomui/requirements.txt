@@ -1,4 +1,4 @@
-Django==1.11.7
+Django==1.11.28
 django-mysql==2.1.1
 gitdb2==2.0.3
 GitPython==2.1.7
