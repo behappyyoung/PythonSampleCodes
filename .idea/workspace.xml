@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth/Index.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth/Index.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth/exercises/Customization/Magics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth/exercises/Customization/Magics.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth/exercises/Customization/_Sample.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleCodes/Jupyter/ipython-in-depth/exercises/Customization/_Sample.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,12 +112,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/s0199669/github/PythonSampleCodes/Algorithm/Graph/Word-Search-Board.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SampleCodes/Django/sample/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="preferences.sourceCode.Python" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -468,6 +465,7 @@
       <item itemvalue="Python.Algorithm" />
     </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
