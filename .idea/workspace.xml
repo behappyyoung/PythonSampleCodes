@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PythonSampleCodes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonSampleCodes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/HackerRank/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/HackerRank/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleCodes/searchFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleCodes/searchFile.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -498,13 +502,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1922" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1590601754326">
-      <screen x="-2560" y="0" width="2560" height="1076" />
-    </state>
-    <state x="-1922" y="291" key="com.intellij.ide.util.TipDialog/0.0.1280.800/-2560.0.2560.1076@-2560.0.2560.1076" timestamp="1590601754326" />
-    <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.23.1280.773@0.23.1280.773" timestamp="1588710303548" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
