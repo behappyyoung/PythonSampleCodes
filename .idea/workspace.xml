@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="388b4315-548b-4fea-97b5-c61e06493177" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PythonSampleCodes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonSampleCodes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/HackerRank/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/HackerRank/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleCodes/searchFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleCodes/searchFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/ArrayRelated/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/ArrayRelated/Untitled.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/ArrayRelated/Untitled2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/ArrayRelated/Untitled2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/DynamicProgramming/knapsacks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/DynamicProgramming/knapsacks.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Math/Calculators.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Math/Calculators.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/String/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/String/Untitled.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
