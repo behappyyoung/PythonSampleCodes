@@ -5,11 +5,8 @@ class TreeNode:
         self.left = None
         self.right = None
 
-    # def __repr__(self):
-    #         return "TreeNode"
-
     def __str__(self):
-            return str(self.val)
+        return str(self.val)
 
 def print_btree(root):
     current_level = [root]
