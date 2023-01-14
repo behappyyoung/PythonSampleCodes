@@ -9,5 +9,5 @@ class ContentType(models.Model):
 class Content(models.Model):
     url = models.URLField(null=False)
     title = models.CharField(max_length=200, null=True)
-    type = models.ForeignKey('ContentType', null=False, default=1)
+    type = models.ForeignKey('ContentType', null=False, default=1, on_delete=models.CASCADE)
     content = models.TextField(null=False)

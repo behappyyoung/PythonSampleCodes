@@ -8,7 +8,7 @@ class Tags(models.Model):
 
 
 class Menu(models.Model):
-    parent = models.ForeignKey('self')
+    parent = models.ForeignKey('self', on_delete=models.CASCADE)
     name = models.CharField(max_length=50, null=False)
     title = models.CharField(max_length=200, null=True)
-    info = models.ForeignKey('info.Content', null=False)
+    info = models.ForeignKey('info.Content', null=False, on_delete=models.CASCADE)
