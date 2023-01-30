@@ -1,4 +1,5 @@
 .idea
+*.ipynb
 .DS_Store
 venv
 venv3
