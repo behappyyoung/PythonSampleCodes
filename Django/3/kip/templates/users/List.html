@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<style>
+    .elem td.key {
+        width:200px;
+    }
+    .elem td.val {
+            width:300px;
+    }
+    .elem .key {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+.widgetlist{
+    word-break: break-all;
+}
+.popup, .notes{
+    position: fixed;
+    width: 95%;
+    left: 50px;
+    /*max-height: 800px;*/
+    overflow: auto;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: none;
+    z-index: 50;
+
+}
+.popup table{
+    margin:30px auto;
+    background-color: rgba(181, 188, 214, 0.6);
+    width: 95%;
+}
+#popup td{
+    padding:5px;
+}
+.popup table td.date, .popup table td.order_name{
+    width: 150px;
+}
+.popup table td.action{
+    width: 100px;
+}
+.popup table td.order_name{
+    font-weight: bolder;
+}
+</style>
+<script type="text/javascript">
+    gimsApp.controller('profileController', ['$scope', function($scope) {
+                {% autoescape off %}
+                            $scope.users = {{users_list}};
+                 {% endautoescape %}
+
+console.log($scope.users)
+}]);
+ $(function () {
+         $(".popup").draggable();
+});
+</script>
+<div ng-controller="userController" id="userController" class="profile">
+<div class="sub-sub-title">  {{title}}
+
+ </div>
+
+
+    <table class="table table-stripped table-bordered " style="margin:auto;width:1000px;">
+        <thead>
+            <th>
+            
+            </th>    
+        </thead>
+        
+
+        <tbody>
+
+        <tr class="elem" ng-repeat="u in users">
+            <td>
+                
+            </td>
+        </tr>
+
+        </tbody>
+
+
+
+    </table>
+
+</div>
+
+
+{% comment "Messages" %}
+<div class="sub-sub-title"> Unread Messages  <button class="btn btn-default btn-sm btn-messages " id="" onclick=" $('.popup').css('display', 'block');" > All Messages </button>
+
+</div>
+    <table class="table table-stripped table-bordered " style="margin:auto;width:1000px;">
+     <tr>
+
+                        <th> Date </th>
+                        <th> type </th>
+                        <th> message </th>
+                        <th> From </th>
+
+                    </tr>
+
+        {% for message in mymessages %}
+            {% if message.read == '1' %}
+                    <tr>
+                        <td>{{ message.update_time }}</td>
+                        <td>{{message.category}}</td>
+
+                        <td>
+                           {{ message.message }}
+
+                        </td>
+                        <td class="text-center">         {{message.sender}}        </td>
+                    </tr>
+                {% endif %}
+        {% endfor %}
+
+
+    </table>
+
+</div>
+{% endcomment %}
+    <div class="popup ">
+        <button class="close" onclick="$('.popup').css('display', 'none');">X</button>
+        <div id="popup">
+         <table class="table table-stripped table-bordered " style="margin:30px auto;">
+     <tr>
+
+                        <th> Date </th>
+                        <th> type </th>
+                        <th> message </th>
+                        <th> From </th>
+
+                    </tr>
+
+        {% for message in mymessages %}
+
+                    <tr>
+                        <td>{{ message.update_time }}</td>
+                        <td>{{message.category}}</td>
+
+                        <td>
+                           {{ message.message }}
+
+                        </td>
+                        <td class="text-center">         {{message.sender}}        </td>
+                    </tr>
+
+        {% endfor %}
+
+
+    </table>
+     </div>
+    </div>
+
+
+{% endblock %}
+
+
+
+

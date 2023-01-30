@@ -3,6 +3,7 @@ from users import views
 
 urlpatterns = [
 
-    url(r'^(?i)profile/$', views.profile, name='user_profile'),
+    url(r'^$', views.users_list, name='user_list'),
+    url(r'^profile/$', views.profile, name='user_profile'),
 
 ]

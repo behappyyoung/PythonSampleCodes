@@ -1,0 +1,550 @@
+2023-01-16 16:41:39,175 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-01-16 16:42:49,028 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/ HTTP/1.1" 200 5266
+2023-01-16 16:42:49,161 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 16:42:49,167 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 16:42:49,167 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 16:42:49,168 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 16:42:49,172 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 16:42:49,172 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 16:42:49,194 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 16:42:49,199 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 16:42:49,200 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 16:42:49,201 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 16:42:51,725 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/add HTTP/1.1" 301 0
+2023-01-16 16:42:51,839 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/add/ HTTP/1.1" 200 6882
+2023-01-16 16:42:51,860 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 16:42:51,874 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 16:42:51,896 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 16:42:51,900 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 16:42:51,905 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 16:42:51,909 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 16:42:51,912 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 16:42:51,918 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 16:42:51,919 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 16:42:51,922 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 16:46:09,216 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 16:46:09,217 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 16:46:09,217 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 16:46:09,218 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 16:46:09,225 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 16:46:09,226 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 16:46:09,235 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 16:46:09,238 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 17:29:32,337 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-01-16 17:29:33,607 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-01-16 17:29:49,268 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-01-16 17:29:50,268 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-01-16 17:31:07,594 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/urls.py changed, reloading.
+2023-01-16 17:31:08,668 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-01-16 17:31:21,523 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/urls.py changed, reloading.
+2023-01-16 17:31:22,525 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-01-16 17:31:52,675 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/urls.py changed, reloading.
+2023-01-16 17:31:53,684 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-01-16 17:33:58,119 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-01-16 17:33:59,111 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-01-16 17:39:03,936 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-01-16 17:39:05,472 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-01-16 17:53:17,538 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py response_for_exception  77 : Invalid HTTP_HOST header: 'master.gims.org:8000'. You may need to add 'master.gims.org' to ALLOWED_HOSTS.
+2023-01-16 17:53:18,585 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Bad Request: /
+2023-01-16 17:53:18,585 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 400 72308
+2023-01-16 17:53:19,115 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py response_for_exception  77 : Invalid HTTP_HOST header: 'master.gims.org:8000'. You may need to add 'master.gims.org' to ALLOWED_HOSTS.
+2023-01-16 17:53:19,189 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Bad Request: /favicon.ico
+2023-01-16 17:53:19,190 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /favicon.ico HTTP/1.1" 400 72367
+2023-01-16 20:12:24,674 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py response_for_exception  77 : Invalid HTTP_HOST header: 'master.gims.org:8000'. You may need to add 'master.gims.org' to ALLOWED_HOSTS.
+2023-01-16 20:12:24,849 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Bad Request: /
+2023-01-16 20:12:24,849 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 400 72308
+2023-01-16 20:12:25,469 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py response_for_exception  77 : Invalid HTTP_HOST header: 'master.gims.org:8000'. You may need to add 'master.gims.org' to ALLOWED_HOSTS.
+2023-01-16 20:12:25,547 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Bad Request: /favicon.ico
+2023-01-16 20:12:25,547 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /favicon.ico HTTP/1.1" 400 72367
+2023-01-16 20:25:55,420 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Not Found: /info/add/
+2023-01-16 20:25:55,421 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/add/ HTTP/1.1" 404 3084
+2023-01-16 20:26:02,595 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Internal Server Error: /info/
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: com/common_menu.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py", line 34, in contents_list
+    return render(request, 'Info/ContentsList.html', {'contents': contents})
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: com/common_menu.html
+2023-01-16 20:26:02,597 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/ HTTP/1.1" 500 160968
+2023-01-16 20:28:37,608 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Internal Server Error: /info/
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 1021, in find_library
+    return parser.libraries[name]
+KeyError: 'custom_filter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py", line 34, in contents_list
+    return render(request, 'Info/ContentsList.html', {'contents': contents})
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 1078, in load
+    lib = find_library(parser, name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 1025, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'custom_filter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2023-01-16 20:28:37,612 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/ HTTP/1.1" 500 189792
+2023-01-16 20:28:38,651 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Internal Server Error: /info/
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 1021, in find_library
+    return parser.libraries[name]
+KeyError: 'custom_filter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py", line 34, in contents_list
+    return render(request, 'Info/ContentsList.html', {'contents': contents})
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 1078, in load
+    lib = find_library(parser, name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 1025, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'custom_filter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2023-01-16 20:28:38,652 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/ HTTP/1.1" 500 189792
+2023-01-16 20:28:48,804 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/ HTTP/1.1" 200 6460
+2023-01-16 20:28:48,826 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:28:48,858 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:28:48,869 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:28:48,875 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:28:48,877 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:28:48,878 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:48,895 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:48,896 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:48,896 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:48,900 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:28:48,910 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:28:52,217 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/ HTTP/1.1" 200 6460
+2023-01-16 20:28:52,261 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:28:52,281 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:28:52,282 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:28:52,283 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:28:52,285 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:52,296 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:28:52,301 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:52,307 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:52,307 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:28:52,308 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:52,320 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:28:53,637 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/ HTTP/1.1" 200 6460
+2023-01-16 20:28:53,673 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:28:53,676 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:28:53,698 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:28:53,725 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:28:53,735 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:53,746 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:53,747 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:28:53,747 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:53,752 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:28:53,752 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:53,764 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:28:54,609 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /info/ HTTP/1.1" 200 6460
+2023-01-16 20:28:54,630 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:28:54,652 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:28:54,667 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:28:54,676 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:28:54,679 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:28:54,681 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:54,684 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:54,686 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:54,688 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:54,694 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:28:54,701 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:28:56,778 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 5973
+2023-01-16 20:28:56,800 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:28:56,816 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:28:56,836 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:28:56,848 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:28:56,856 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:56,860 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:28:56,860 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:56,861 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:56,865 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:56,865 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:28:56,877 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:28:57,879 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 5973
+2023-01-16 20:28:57,902 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:28:57,921 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:28:57,940 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:28:57,949 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:28:57,949 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:28:57,959 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:57,966 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:57,967 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:28:57,968 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:28:57,969 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:28:57,982 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:30:33,002 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 469, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/kip/views.py", line 9, in index
+    {'title': title})
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 471, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 527, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 44: 'static', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2023-01-16 20:30:33,004 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 500 191443
+2023-01-16 20:30:49,898 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 469, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/kip/views.py", line 9, in index
+    {'title': title})
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 471, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/template/base.py", line 533, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 43: 'static'. Did you forget to register or load this tag?
+2023-01-16 20:30:49,899 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 500 176780
+2023-01-16 20:31:51,457 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 6848
+2023-01-16 20:31:51,527 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:31:51,532 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:31:51,535 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:31:51,538 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:31:51,539 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:31:51,540 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:51,571 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:51,574 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:51,575 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:51,578 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:31:51,600 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:31:51,604 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-menu.png HTTP/1.1" 404 1686
+2023-01-16 20:31:51,607 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/close.png HTTP/1.1" 404 1674
+2023-01-16 20:31:53,454 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 6848
+2023-01-16 20:31:53,492 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:31:53,504 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:31:53,511 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:31:53,531 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:31:53,533 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:31:53,535 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:53,538 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:53,543 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:53,544 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:53,547 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:31:53,569 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:31:53,573 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-menu.png HTTP/1.1" 404 1686
+2023-01-16 20:31:53,576 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/close.png HTTP/1.1" 404 1674
+2023-01-16 20:31:54,268 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 6848
+2023-01-16 20:31:54,292 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:31:54,307 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:31:54,331 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:31:54,340 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:54,340 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:31:54,342 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:54,346 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:31:54,347 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:54,353 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:54,355 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:31:54,378 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:31:54,380 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-menu.png HTTP/1.1" 404 1686
+2023-01-16 20:31:54,383 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/close.png HTTP/1.1" 404 1674
+2023-01-16 20:31:55,674 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 6848
+2023-01-16 20:31:55,706 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:31:55,721 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:31:55,731 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:31:55,736 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:31:55,745 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:31:55,750 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:55,760 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:55,764 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:55,765 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:55,768 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:31:55,785 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:31:55,791 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-menu.png HTTP/1.1" 404 1686
+2023-01-16 20:31:55,792 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/close.png HTTP/1.1" 404 1674
+2023-01-16 20:31:56,317 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 6848
+2023-01-16 20:31:56,351 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-16 20:31:56,358 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-16 20:31:56,373 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-16 20:31:56,393 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:56,394 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-16 20:31:56,394 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-16 20:31:56,411 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:56,413 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-16 20:31:56,414 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-16 20:31:56,415 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-16 20:31:56,437 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-16 20:31:56,441 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-menu.png HTTP/1.1" 404 1686
+2023-01-16 20:31:56,444 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/close.png HTTP/1.1" 404 1674
+2023-01-30 09:41:52,841 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-01-30 09:41:57,134 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 6853
+2023-01-30 09:41:57,262 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-30 09:41:57,262 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-30 09:41:57,266 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-30 09:41:57,277 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-30 09:41:57,279 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-30 09:41:57,283 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-30 09:41:57,305 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-30 09:41:57,307 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-30 09:41:57,310 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-30 09:41:57,313 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-30 09:41:57,339 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-30 09:41:57,348 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-menu.png HTTP/1.1" 404 1686
+2023-01-30 09:41:57,349 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/close.png HTTP/1.1" 404 1674
+2023-01-30 09:41:58,758 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Not Found: /favicon.ico
+2023-01-30 09:41:58,759 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /favicon.ico HTTP/1.1" 404 2459
+2023-01-30 09:42:00,626 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 6853
+2023-01-30 09:42:00,670 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 404 1677
+2023-01-30 09:42:00,685 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 404 1689
+2023-01-30 09:42:00,691 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 404 1671
+2023-01-30 09:42:00,706 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 404 1662
+2023-01-30 09:42:00,718 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 404 1692
+2023-01-30 09:42:00,720 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 404 1677
+2023-01-30 09:42:00,728 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 404 1683
+2023-01-30 09:42:00,736 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 404 1677
+2023-01-30 09:42:00,737 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 404 1656
+2023-01-30 09:42:00,739 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 404 1683
+2023-01-30 09:42:00,768 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/close.png HTTP/1.1" 404 1674
+2023-01-30 09:42:00,770 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-menu.png HTTP/1.1" 404 1686
+2023-01-30 09:42:00,772 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 404 1686
+2023-01-30 09:42:02,419 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /admin/ HTTP/1.1" 302 0
+2023-01-30 09:42:03,721 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1918
+2023-01-30 09:42:03,770 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+2023-01-30 09:42:03,773 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+2023-01-30 09:42:03,774 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/admin/css/responsive.css HTTP/1.1" 200 18052
+2023-01-30 09:42:03,780 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2023-01-30 09:42:03,927 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2023-01-30 09:42:03,929 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692

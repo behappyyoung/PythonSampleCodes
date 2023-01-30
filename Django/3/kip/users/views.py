@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from mybackend import functions
 import json
-
+from django.contrib.auth.models import User
+from django.core import serializers
 
 def profile(request):
     print(request, dir(request))
@@ -16,3 +17,10 @@ def profile(request):
 
     return render(request, 'users/profile.html',
                       {'user_list': json.dumps(user_dict), 'title': title})
+
+
+def users_list(request):
+    users = User.objects.all()
+    jsonstring_users = serializers.serialize('json', users)
+    title = 'User List'
+    return render(request, 'users/List.html', {'users_list': jsonstring_users, 'title': title})

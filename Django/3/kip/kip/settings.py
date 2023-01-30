@@ -146,3 +146,67 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'US/Pacific'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'debug_verbose': {
+            'format': '%(asctime)s %(levelname)s %(pathname)s %(funcName)s  %(lineno)d : %(message)s',
+        },
+        'verbose': {
+            'format': '%(asctime)s %(levelname)s  : %(message)s',
+        },
+        'simple': {
+            'format': '%(levelname)s %(pathname)s %(funcName)s -- %(message)s',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'django_file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'maxBytes': 1024 * 1024 * 5,  # 5 MB
+            'backupCount': 5,
+            'filename': BASE_DIR + '/log/system.log',
+            'formatter': 'debug_verbose'
+        },
+        'debug_file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'maxBytes': 1024 * 1024 * 5,  # 5 MB
+            'backupCount': 5,
+            'filename': BASE_DIR + '/log/debug.log',
+            'formatter': 'debug_verbose'
+        },
+        'info_file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'maxBytes': 1024 * 1024 * 5,  # 5 MB
+            'backupCount': 5,
+            'filename': BASE_DIR + '/log/info.log',
+            'formatter': 'verbose'
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['django_file'],
+            'level': 'DEBUG',
+            'propagate': True
+        },
+        'debug': {
+            'handlers': ['console', 'debug_file'],
+            'level': 'DEBUG',
+            'propagate': True
+        },
+        'info': {
+            'handlers': ['info_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+
+    },
+}

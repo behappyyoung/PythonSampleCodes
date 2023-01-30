@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<style>
+   
+</style>
+<script type="text/javascript">
+    gimsApp.controller('contentController', ['$scope', function($scope) {
+                {% autoescape off %}
+                       // $scope.contents = {{contents}}
+                 {% endautoescape %}
+
+
+}]);
+
+
+</script>
+<div ng-controller="contentController" id="contentController" class="content">
+<div class="sub-sub-title">  {{title}}
+
+ </div>
+
+<div class="contentslist" id="SfD_kinetic">
+  <table class="table table-bordered table-striped table-hover" id="contentslist_table">
+   <tr>
+    <th>
+     Content
+    </th>
+    <th>
+     url
+    </th>
+    <th>
+    </th>
+   </tr>
+   {% for content in contents %}
+   <tr>
+    <td class="content">
+     {{content.content}}
+    </td>
+    <td>
+        {{content.url}}
+    </td>
+   </tr>
+   {% endfor %}
+  </table>
+ </div>
+{% endblock %}

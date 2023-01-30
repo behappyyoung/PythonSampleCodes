@@ -1,6 +1,50 @@
+<style>
+.report_sub, .lab_sub, .loom_sub, .admin_sub, .order_sub{ 
+    display: none;
+    left: 100px;
+    position: absolute;
+    top: 10px;
+    list-style: none;
+ }
+ .loom_sub{ 
+    top: 60px;
+ }
+ .lab_sub{ 
+    top: 90px;
+ }
+
+ .report_sub{ 
+    top: 110px;
+ }
+ .admin_sub{
+    top:160px;
+ }
+.dropdown-menu li a:hover{
+    background-color: #337ab7;
+}
+.dropdown-menu-sub{
+    font-size: 0.9em;
+}
+.q_text{
+    text-transform: capitalize;
+}
+</style>
+
 <div> ================ header ==================== </div>
 <fb:login-button 
   scope="public_profile,email"
   onlogin="checkLoginState();">
 </fb:login-button>
 <div> ================ header ==================== </div>
+
+<div class=" main-header ">
+        <div class="menu-show" >
+
+            <div onclick="openMenu();" id="openMenu"> 
+              <img class="icon" src="/static/IMAGES/icon-menu.png" style="height: 30px;"> Menu </div>
+            <div onclick="closeMenu();" id="closeMenu" style="display: none;"> 
+              <img class="icon" src="/static/IMAGES/close.png" style="height: 30px;"> close  </div>
+        </div>
+
+
+</div>

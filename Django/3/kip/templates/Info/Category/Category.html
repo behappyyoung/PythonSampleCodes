@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<style>
+
+</style>
+<script type="text/javascript">
+    gimsApp.controller('profileController', ['$scope', function($scope) {
+                {% autoescape off %}
+                            $scope.categories = {{category_list}};
+                 {% endautoescape %}
+
+console.log($scope.categories)
+}]);
+ $(function () {
+         $(".popup").draggable();
+});
+</script>
+<div ng-controller="userController" id="userController" class="profile">
+<div class="sub-sub-title">  {{title}}
+
+ </div>
+
+
+    <table class="table table-stripped table-bordered " style="margin:auto;width:1000px;">
+        <thead>
+            <th>
+            
+            </th>    
+        </thead>
+        
+
+        <tbody>
+
+        <tr class="elem" ng-repeat="c in categories">
+            <td>
+                
+            </td>
+        </tr>
+
+        </tbody>
+
+
+
+    </table>
+
+</div>
+
+
+{% comment "Messages" %}
+<div class="sub-sub-title"> Unread Messages  
+    <button class="btn btn-default btn-sm btn-messages " id="" onclick=" $('.popup').css('display', 'block');" > All Messages </button>
+
+</div>
+    <table class="table table-stripped table-bordered " style="margin:auto;width:1000px;">
+     <tr>
+
+                        <th> Date </th>
+                        <th> type </th>
+                        <th> message </th>
+                        <th> From </th>
+
+                    </tr>
+
+        {% for message in mymessages %}
+            {% if message.read == '1' %}
+                    <tr>
+                        <td>{{ message.update_time }}</td>
+                        <td>{{message.category}}</td>
+
+                        <td>
+                           {{ message.message }}
+
+                        </td>
+                        <td class="text-center">         {{message.sender}}        </td>
+                    </tr>
+                {% endif %}
+        {% endfor %}
+
+
+    </table>
+
+</div>
+{% endcomment %}
+    <div class="popup ">
+        <button class="close" onclick="$('.popup').css('display', 'none');">X</button>
+        <div id="popup">
+         <table class="table table-stripped table-bordered " style="margin:30px auto;">
+     <tr>
+
+                        <th> Date </th>
+                        <th> type </th>
+                        <th> message </th>
+                        <th> From </th>
+
+                    </tr>
+
+        {% for message in mymessages %}
+
+                    <tr>
+                        <td>{{ message.update_time }}</td>
+                        <td>{{message.category}}</td>
+
+                        <td>
+                           {{ message.message }}
+
+                        </td>
+                        <td class="text-center">         {{message.sender}}        </td>
+                    </tr>
+
+        {% endfor %}
+
+
+    </table>
+     </div>
+    </div>
+
+
+{% endblock %}
+
+
+
+

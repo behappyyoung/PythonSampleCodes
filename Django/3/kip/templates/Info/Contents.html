@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<style>
+   
+</style>
+<script type="text/javascript">
+    gimsApp.controller('contentController', ['$scope', function($scope) {
+                {% autoescape off %}
+                       
+                 {% endautoescape %}
+
+
+}]);
+
+
+</script>
+<div ng-controller="contentController" id="contentController" class="content">
+<div class="sub-sub-title">  {{title}}
+
+ </div>
+
+ <div class="form-wrapper" id="SfD_vanish">
+  {% if messages %}
+
+    {% for message in messages %}
+        <div class="alert alert-info" id="message">
+            {{ message  }}
+        </div>
+    {% endfor %}
+ {% endif %}
+
+  <form action="/PatientOrderGeneList/{{order.id}}/" id="contentform" method="post">
+                {% csrf_token %}
+              {{form}}
+   <div class="actions" id="div_actions">
+    <button class="btn btn-primary btn-sm" id="button_submit" type="submit">
+     Add
+    </button>
+    <input id="input_action" name="action" type="hidden" value="add"/>
+    <button class="btn btn-sm" id="button_cancel" type="button">
+     <a href="/order/{{order.id}}/" id="SfA_wisdom">
+      Cancel
+     </a>
+    </button>
+   </div>
+  </form>
+ </div>
+
+
+{% endblock %}

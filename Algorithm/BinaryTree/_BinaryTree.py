@@ -4,7 +4,8 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
-
+        self.next = None # for trace => array to tree
+        
     def __str__(self):
         return str(self.val)
 
@@ -26,6 +27,44 @@ def print_btree(root):
                 next_level.append('-')
         current_level = next_level
 
+def array_to_tree(tree_arr):
+    null = '--'
+    t = TreeNode(tree_arr[0])
+    i = 0
+    left_top = t
+    while i < len(tree_arr) and left_top:
+            if left_top == '--':
+                left_top = left
+            i += 1
+            if i >= len(tree_arr):
+                break
+            left_top.left = TreeNode(tree_arr[i])
+            left = left_top.left
+            i += 1
+            if i >= len(tree_arr):
+                break
+            left_top.right = TreeNode(tree_arr[i])
+            right = left_top.right
+            left.next = right
+            while left_top.next:
+                left_top = left_top.next
+                if left_top.val != '--':
+                    i += 1
+                    if i >= len(tree_arr):
+                        break
+                    left_top.left = TreeNode(tree_arr[i])
+                    next_left = left_top.left
+                    right.next = next_left
+                    i += 1
+                    if i >= len(tree_arr):
+                        break
+                    left_top.right = TreeNode(tree_arr[i])
+                    right = left_top.right
+                    next_left.next = right
+            left_top = left
+            
+    return t
+        
 # def serialize_btree(root):
 #     r_arr = list()
 #     while root:
