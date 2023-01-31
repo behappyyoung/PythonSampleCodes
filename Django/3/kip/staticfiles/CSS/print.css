@@ -1,0 +1,31 @@
+@page {
+                size: landscape;
+                webkit-transform: rotate(-90deg); -moz-transform:rotate(-90deg);
+                filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.text-center{
+	text-align:center;
+}
+.flex{
+        display: flex;
+}
+.flex .left-flex,.flex .right-flex, .flex .flex-left,.flex .flex-right{
+    width: 50%;
+}
+
+.tube{
+    display: inline-block;
+    width: 100px;
+}
+.intube{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: #eee;
+    margin: 1px;
+    vertical-align:top;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+}

@@ -1,0 +1,93 @@
+@page {
+                size: landscape;
+                webkit-transform: rotate(-90deg); -moz-transform:rotate(-90deg);
+                filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.printingDiv {
+    width: 98%;
+    margin: 10px auto;
+}
+.printingDiv .list-table table{
+    margin-top: 20px;
+    font-size: 10px;
+    width: 95%;
+    margin: auto;
+}
+.printingDiv table{
+    width: 98%;
+    border-collapse: collapse;
+    font-size: 10px;
+    
+}
+.printingDiv table tbody{
+  word-break: break-all;
+}
+.printingDiv table.table-bordered th, .printingDiv table.table-bordered td{
+    border: 1px solid #ddd;
+}
+.print-exclude{
+  display: none;
+}
+.text-center{
+  text-align: center;
+}
+.sub-sub-title{
+    margin: 10px
+}
+
+.printingDiv table tr td, .printingDiv table tr th{
+  padding: 0;
+}
+table.pcr_platemap  th, table.pcr_platemap tr td{
+  min-width: 80px;
+}
+table.pcr_plate  th, table.pcr_plate tr td, table.location_plate th, table.location_plate tr td{
+  min-width: 80px;
+}
+
+table.sanger-table thead th.well,
+table.sanger-table tbody td.well{
+    min-width: 40px;
+    width: 40px;
+}
+table.sanger-table thead th.reviewer,table.sanger-table tbody td.reviewer{
+    min-width: 150px;
+    width: 150px;
+}
+table.sanger-table tbody td.reviewer .review-fr{
+  float: left;
+}
+.Negative{
+  color:red;
+}
+.Positive{
+  color:blue;
+}
+.tubes td.column{
+  padding: 0;
+}
+.tubes th{
+  height: 20px;
+}
+.column div, #tube-details-print tr.sanger_new td{
+  height: 14px;
+   border: solid 1px #bdc9ca;
+    padding: 1px 5px;
+    text-align: center;
+}
+.column div.F, #tube-details-print tr.sanger_new td.F{
+  background-color: #ffff22;
+}
+.column div.R, #tube-details-print tr.sanger_new td.R{
+  background-color: #ffa27c;
+}
+.tubes td.column_2, .tubes td.column_5, .tubes td.column_8, #tube-details-print tr.sanger_new td.column_2, #tube-details-print tr.sanger_new td.column_5, #tube-details-print tr.sanger_new td.column_8{
+        border-right: solid 2px black;
+}
+div.reagent{
+    font-size:1rem;
+    display: inline-block;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}

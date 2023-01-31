@@ -1,0 +1,55 @@
+.printingDiv table{
+	table-layout: auto;
+  page-break-inside: auto;
+}
+.printingDiv #plate-table .well{
+      min-width: 60px;
+}
+.printingDiv table.table-scroll .wells,
+.printingDiv table.table-scroll .tube-number,
+.printingDiv table.table-scroll .deck{
+   min-width: 50px;
+   width: 50px;
+   text-align: center;
+}
+.printingDiv table.table-scroll .water,
+.printingDiv table.table-scroll .volume,
+.printingDiv table.table-scroll .concentration{
+    width:80px;
+    min-width:80px;
+     text-align: center;
+}
+.printingDiv table.table-scroll .dna{
+    width:60px;
+    min-width:60px;
+     text-align: center;
+}
+
+.print-menu-table div{
+    font-size: medium;
+}
+#qpcr-plate.size384{
+    font-size: x-small;
+}
+#qpcr-plate.size96{
+    font-size: small;
+}
+.printingDiv .wrapper{
+	margin: 20px auto;
+}
+.printingDiv  table.mid-table{
+    width: 500px;
+    font-size: 10px;
+    margin: 10px 30px;
+  }
+.printingDiv  table.mini-table{
+    width: 400px;
+    font-size: 10px;
+    margin: 10px 30px;
+  }
+.printingDiv  table.mini-table td{
+    width: 150px;
+  }
+.printingDiv .platemap-asn{
+    font-weight: bold;
+}

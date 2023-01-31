@@ -5,7 +5,14 @@ from .models import *
 from .forms import ContentForm
 from django.contrib import messages
 from django.core import serializers
+from kip import settings
 # Create your views here.
+global_context = {
+        'LOCAL': settings.LOCAL,
+        # 'GIT_BRANCH': settings.GIT_BRANCH,
+        # 'GIMS_VERSION': settings.KIP_VERSION,
+}
+
 
 # Contents
 # @login_required()
@@ -29,16 +36,22 @@ def add_content(request):
 
 
 def contents_list(request):
+    title = 'Info - Contents'
+
     contents = Content.objects.all()
 
-    return render(request, 'Info/ContentsList.html', {'contents': contents})
+    return render(request, 'Info/ContentsList.html', {'contents': contents, title: title})
 
 
 ### Category
-def category_list(request):
+def categories(request):
     category_list = Category.objects.all()
     jsonstring_category = serializers.serialize('json', category_list)
-    return render(request, 'Info/ContentsList.html', {'category_list': jsonstring_category})
+    context = global_context
+    title = 'Categories'
+    templates = 'Info/Category/Category.html'
+    context.update({'title': title, 'category_list': jsonstring_category})
+    return render(request, templates, context)
 
 def add_category(request):
     if request.method == 'POST':

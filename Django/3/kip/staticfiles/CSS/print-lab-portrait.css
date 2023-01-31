@@ -1,0 +1,14 @@
+@page {
+            width:21cm;
+            height:29.7cm;
+            margin: 0;  /* this affects the margin in the printer settings */
+            padding:10mm;
+            size: portrait;
+}
+
+.printingDiv{
+	width:800px;
+}
+.printingDiv table, .printingDiv .list-table table, div.top-table{
+    width: 780px;
+}

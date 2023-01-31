@@ -29,14 +29,6 @@
     text-transform: capitalize;
 }
 </style>
-
-<div> ================ header ==================== </div>
-<fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">
-</fb:login-button>
-<div> ================ header ==================== </div>
-
 <div class=" main-header ">
         <div class="menu-show" >
 
@@ -46,5 +38,15 @@
               <img class="icon" src="/static/IMAGES/close.png" style="height: 30px;"> close  </div>
         </div>
 
+        <div> ================ top header ==================== </div>
+        <fb:login-button 
+          scope="public_profile,email"
+          onlogin="checkLoginState();">
+        </fb:login-button>
+        <div> ================ top header ==================== </div>
 
 </div>
+
+<div> ================ common header ==================== </div>
+ Title : {{ title }}
+<div> ================ common header ==================== </div>

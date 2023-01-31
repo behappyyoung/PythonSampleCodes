@@ -24,6 +24,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', main_view.index, name='index'),
     re_path(r'^users/', include('users.urls')),
-    re_path(r'^info/', include('info.urls')),
+    re_path(r'^info/(?i)', include('info.urls')),
     url(r'^sitemap\.xml$', sitemap, {'sitemaps': {'static': sitemaps.StaticViewSitemap()}}, name='django.contrib.sitemaps.views.sitemap')
 ]

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from git import Repo
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,8 +25,9 @@ SECRET_KEY = 'b_0v*djgytu=^3-1!20x9)##kvb+=t-qdn(rjvo(6vi-k!d862'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+LOCAL = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*",]
 
 
 # Application definition
@@ -137,8 +139,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'gims', 'staticroot')
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticroot')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'staticfiles')
+]
 # CELERY STUFF
 BROKER_URL = 'redis://localhost:6379'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379'
@@ -210,3 +214,8 @@ LOGGING = {
 
     },
 }
+
+# GIT_TAG = Repo(BASE_DIR).git.describe(always=True)
+# GIT_BRANCH = Repo(BASE_DIR).git.describe(always=True)
+KIP_VERSION = 'KIP'
+

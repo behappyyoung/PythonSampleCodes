@@ -1,0 +1,148 @@
+@page {
+                size: landscape;
+                webkit-transform: rotate(-90deg); -moz-transform:rotate(-90deg);
+                filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.printingDiv {
+    width: 95%;
+    margin: 10px auto;
+}
+.printingDiv .list-table table{
+    margin-top: 20px;
+    font-size: 10px;
+    width: 95%;
+    margin: auto;
+}
+.printingDiv table{
+    width: 95%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+.assay_inlets, .sample_inlets, .assay_plate{
+        /*margin-top: 40px;*/
+}
+.sub-sub-title{
+    text-align: center;
+    margin: 20px
+}
+
+.printingDiv table tr td, .printingDiv table tr th{
+  padding: 0;
+}
+table.platemap, table.assay_plate_table {
+  text-align: center;
+  width: 1300px;
+}
+.platemap .column{
+  min-width: 80px;
+   text-align: center;
+   border: solid 1px gray;
+}
+.platemap .min-column{
+  min-width: 30px;
+   text-align: center;
+   border: solid 1px gray;
+}
+.printingDiv table td.column{
+   padding:0;
+   border: solid 1px gray;
+  vertical-align: middle;
+}
+table.platemap td.column, table.assay_plate_table td.column{
+   padding:0;
+   border: solid 1px gray;
+  vertical-align: middle;
+}
+table.platemap .extra-column, table.assay_plate_table .extra-column{
+   padding:0;
+  width: 30px;
+   background-color: #ccc;
+   border: solid 1px gray;
+  vertical-align: middle;
+}
+table.platemap th.column{
+  background-color: Orange;
+} 
+
+.assay_inlets{
+  float: left;
+}
+.sample_inlets{
+  float: right;
+}
+.assay_inlets table {
+  width: 400px;
+}
+.sample_inlets table {
+  min-width: 600px;
+}
+.assay_inlets table tr td, .sample_inlets table tr td{
+  padding: 0;
+    text-align: center;
+}
+table.assay_inlets_table .first{
+   background-color: rgba(148, 148, 255, 1);
+}
+table.assay_inlets_table .second_row .first{
+   background-color: rgba(148, 148, 255, 0.5);
+}
+table.assay_inlets_table .second{
+  background-color: rgba(100, 100, 100, 1);
+}
+table.assay_inlets_table .second_row .second{
+  background-color: rgba(100, 100, 100, 0.5);
+}
+table.assay_inlets_table .third{
+  background-color: rgba(243, 236, 24, 1);
+}
+table.assay_inlets_table .second_row .third{
+  background-color: rgba(243, 236, 24, 0.5);
+}
+table.sample_inlets_table .first{
+   background-color: rgba(247, 218, 79, 1);
+}
+table.sample_inlets_table .second_row .first{
+   background-color: rgba(247, 218, 79, 0.5);
+}
+table.sample_inlets_table .second{
+  background-color: rgba(120, 255, 120, 1);
+}
+table.sample_inlets_table .second_row .second{
+  background-color: rgba(120, 255, 120, 0.5);
+}
+table.sample_inlets_table .third{
+  background-color: rgba(243, 135, 24, 1);
+}
+table.sample_inlets_table .second_row .third{
+  background-color: rgba(243, 135, 24, 0.5);
+}
+.middle_map{
+    height: 280px;
+    width: 1300px;
+}
+#ifc_chip{
+  height: 30px;
+  width: 100px;
+  background-color: rgba(148, 148, 255, 1);
+  display: inline-block;
+    margin: auto;
+     position: relative; 
+    top: 100px;
+        text-align: center;
+    left: 80px;
+    vertical-align: middle;
+    padding: 40px 10px;
+}
+table.assay_plate_table th.column-1, table.assay_plate_table th.column-2{
+  background-color: rgba(148, 148, 255, 1);
+} 
+table.assay_plate_table th.column-3, table.assay_plate_table th.column-4{
+  background-color: rgba(100, 100, 100, 1);
+} 
+table.assay_plate_table th.column-5, table.assay_plate_table th.column-6{
+  background-color: rgba(243, 236, 24, 1);
+} 
+.arrow img{
+  width: 30px;
+  height: 30px;
+}

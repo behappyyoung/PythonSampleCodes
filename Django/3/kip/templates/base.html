@@ -17,7 +17,7 @@
     <script src="{% static 'JS/bootstrap.min.js' %}" ></script>
     <script src="{% static 'JS/main.js' %}" ></script>
     <script type="text/javascript">
-           var gimsApp = angular.module('myApp',  [])               // for use of AngularJs with Django
+           var kipApp = angular.module('myApp',  [])               // for use of AngularJs with Django
                                    .config(function($interpolateProvider) {
                                           $interpolateProvider.startSymbol('{$');
                                           $interpolateProvider.endSymbol('$}');
@@ -93,6 +93,7 @@
                 {% include "common_header.html" %}
 
                 {% block content %}
+                
                 {% endblock content %}
 
         </div>

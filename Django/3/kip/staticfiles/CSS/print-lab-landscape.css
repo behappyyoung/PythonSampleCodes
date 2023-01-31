@@ -1,0 +1,83 @@
+@page {
+                size: landscape;
+                webkit-transform: rotate(-90deg); -moz-transform:rotate(-90deg);
+                filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+
+.tube{
+    display: inline-block;
+    width: 100px;
+}
+.intube{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: #eee;
+    margin: 1px;
+    vertical-align:top;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+}
+#tube-desc{
+    overflow: auto;
+    width: 100%;
+    margin: auto;
+}
+#tube-details table{
+    font-size: 12px;
+    width: 95%;
+    margin: auto;
+}
+#tube-desc table .tube{
+    width: 100px;
+}
+#tube-desc table .id{
+    width: 180px;
+}
+#tube-desc table th{
+    border: solid 1px #CCC;
+    padding: 5px;
+    text-transform: capitalize;
+}
+#tube-desc table tbody td{
+    text-align: left;
+    padding-left: 30px;
+}
+#tube-desc div{
+    margin: 10px 5px;
+}
+.platemap select{
+    display: none;
+}
+.exclude {
+    display: none;
+}
+.final-values{
+  text-align: right;
+  margin-right:100px; 
+}
+.final-values div label{
+  width: 200px;
+}
+.final-values div input{
+  width: 40px;
+}
+.Negative{
+    color:red;
+}
+.Positive{
+    color:blue;
+}
+table#platemap-table th{
+    background-color: transparent;
+    border: none;
+}
+#platemap-table td.empty{
+    background-color: lightgrey;
+}
+#platemap-table td.c_name{
+    background-color: transparent;
+    border: none;
+}
