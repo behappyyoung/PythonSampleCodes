@@ -7,9 +7,10 @@
 
 </style>
 <script type="text/javascript">
-    gimsApp.controller('profileController', ['$scope', function($scope) {
+    kipApp.controller('categoryController', ['$scope', function($scope) {
                 {% autoescape off %}
-                            $scope.categories = {{category_list}};
+                    var None = " ";
+                    $scope.categories = {{category_list}};
                  {% endautoescape %}
 
 console.log($scope.categories)
@@ -18,9 +19,9 @@ console.log($scope.categories)
          $(".popup").draggable();
 });
 </script>
-<div ng-controller="userController" id="userController" class="profile">
+<div ng-controller="categoryController" id="categoryController" class="category">
 <div class="sub-sub-title">  {{title}}
-
+        <button class="btn btn-primary right-button"> new category</button>
  </div>
 
 
@@ -35,6 +36,7 @@ console.log($scope.categories)
         <tbody>
 
         <tr class="elem" ng-repeat="c in categories">
+            {$ c $}
             <td>
                 
             </td>

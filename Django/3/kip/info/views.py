@@ -6,6 +6,7 @@ from .forms import ContentForm
 from django.contrib import messages
 from django.core import serializers
 from kip import settings
+import json
 # Create your views here.
 global_context = {
         'LOCAL': settings.LOCAL,
@@ -45,12 +46,17 @@ def contents_list(request):
 
 ### Category
 def categories(request):
-    category_list = Category.objects.all()
-    jsonstring_category = serializers.serialize('json', category_list)
+    try:
+        category_list = Category.objects.filter().values()
+        jsonstring_category = json.dumps(list(category_list))
+
+    except Exception as e:
+        jsonstring_category = []
+
     context = global_context
     title = 'Categories'
     templates = 'Info/Category/Category.html'
-    context.update({'title': title, 'category_list': jsonstring_category})
+    context.update({'title': title, 'category_list': list(category_list)})
     return render(request, templates, context)
 
 def add_category(request):
