@@ -4,7 +4,10 @@
 
 
 <style>
-   
+#contentController form input, #contentController form textarea{
+    width: 400px;
+    display: block;
+}   
 </style>
 <script type="text/javascript">
     kipApp.controller('contentController', ['$scope', function($scope) {
@@ -32,7 +35,7 @@
     {% endfor %}
  {% endif %}
 
-  <form action="/PatientOrderGeneList/{{order.id}}/" id="contentform" method="post">
+  <form action="Content/add/" id="contentform" method="post">
                 {% csrf_token %}
               {{form}}
    <div class="actions" id="div_actions">

@@ -1075,3 +1075,210 @@ ValueError: Non-reversible reg-exp portion: '(?i'
 2023-09-24 09:06:01,609 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9429
 2023-09-24 09:06:01,645 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 404 1755
 2023-09-24 09:06:01,654 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/report/css/report.css HTTP/1.1" 404 1689
+2023-09-24 11:00:24,965 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/report/css/report.css HTTP/1.1" 404 1689
+2023-09-24 11:00:24,965 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 404 1755
+2023-09-24 11:06:00,113 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 404 1755
+2023-09-24 11:06:00,113 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/report/css/report.css HTTP/1.1" 404 1689
+2023-09-25 08:14:37,798 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 404 1755
+2023-09-25 08:14:37,799 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/report/css/report.css HTTP/1.1" 404 1689
+2023-09-25 08:14:37,839 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 200 310548
+2023-09-25 08:14:37,856 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 200 253385
+2023-10-07 13:30:49,288 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-07 13:30:52,947 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 7124
+2023-10-07 13:30:53,002 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 200 121215
+2023-10-07 13:30:53,007 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 200 36001
+2023-10-07 13:30:53,016 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/main.css HTTP/1.1" 200 12539
+2023-10-07 13:30:53,018 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 200 53740
+2023-10-07 13:30:53,048 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 200 5547
+2023-10-07 13:30:53,075 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/bootstrap.min.js HTTP/1.1" 200 36868
+2023-10-07 13:30:53,084 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29062
+2023-10-07 13:30:53,117 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/daterangepicker.css HTTP/1.1" 200 8133
+2023-10-07 13:30:53,126 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-2.2.4.min.js HTTP/1.1" 200 85578
+2023-10-07 13:30:53,134 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-home.png HTTP/1.1" 200 6259
+2023-10-07 13:30:53,142 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-menu.png HTTP/1.1" 200 2901
+2023-10-07 13:30:53,150 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/close.png HTTP/1.1" 200 280
+2023-10-07 13:30:53,169 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 404 1755
+2023-10-07 13:30:53,173 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/report/css/report.css HTTP/1.1" 404 1689
+2023-10-07 13:30:53,205 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/angular.min.js HTTP/1.1" 200 159088
+2023-10-07 13:30:53,224 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/ui-grid.min.js HTTP/1.1" 200 310548
+2023-10-07 13:30:53,238 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/jquery-ui.min.js HTTP/1.1" 200 253385
+2023-10-07 13:30:55,184 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Not Found: /favicon.ico
+2023-10-07 13:30:55,184 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /favicon.ico HTTP/1.1" 404 2463
+2023-10-07 13:30:58,523 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9429
+2023-10-07 13:30:58,566 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/report/css/report.css HTTP/1.1" 404 1689
+2023-10-07 13:30:58,566 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 404 1755
+2023-10-07 13:31:00,066 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Categories HTTP/1.1" 301 0
+2023-10-07 13:31:00,086 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Categories/ HTTP/1.1" 200 8637
+2023-10-07 13:31:00,132 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 404 1755
+2023-10-07 13:31:00,134 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/report/css/report.css HTTP/1.1" 404 1689
+2023-10-07 13:31:05,573 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9429
+2023-10-07 13:31:05,608 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/report/css/report.css HTTP/1.1" 404 1689
+2023-10-07 13:31:05,612 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 404 1755
+2023-10-07 13:31:11,419 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Categories/ HTTP/1.1" 200 8637
+2023-10-07 13:31:11,452 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/report/css/report.css HTTP/1.1" 404 1689
+2023-10-07 13:31:11,452 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 404 1755
+2023-10-22 14:10:36,140 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 14:10:38,897 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 7124
+2023-10-22 14:10:39,042 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/JS/main.js HTTP/1.1" 200 5547
+2023-10-22 14:10:39,045 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/icon-menu.png HTTP/1.1" 200 2901
+2023-10-22 14:10:39,046 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/jquery-ui.css HTTP/1.1" 200 36001
+2023-10-22 14:10:39,050 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/bootstrap.min.css HTTP/1.1" 200 121215
+2023-10-22 14:10:39,052 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/CSS/ui-grid.css HTTP/1.1" 200 53740
+2023-10-22 14:10:39,069 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /static/IMAGES/close.png HTTP/1.1" 200 280
+2023-10-22 14:10:39,847 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Not Found: /favicon.ico
+2023-10-22 14:10:39,847 WARNING /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /favicon.ico HTTP/1.1" 404 2463
+2023-10-22 14:10:43,046 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9429
+2023-10-22 14:10:44,732 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 249, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 221, in inner
+    if request.path == reverse('admin:logout', current_app=self.name):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/urls/base.py", line 55, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 521, in app_dict
+    self._populate()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 479, in _populate
+    new_matches = normalize(p_pattern + pat)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/regex_helper.py", line 126, in normalize
+    raise ValueError("Non-reversible reg-exp portion: '(?%s'" % ch)
+ValueError: Non-reversible reg-exp portion: '(?i'
+2023-10-22 14:10:44,735 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /admin/ HTTP/1.1" 500 108036
+2023-10-22 14:10:48,342 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Categories/ HTTP/1.1" 200 8637
+2023-10-22 14:10:50,941 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 7124
+2023-10-22 14:10:55,099 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/ HTTP/1.1" 200 7606
+2023-10-22 14:10:57,945 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9429
+2023-10-22 14:11:00,760 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/ HTTP/1.1" 200 7606
+2023-10-22 14:13:25,186 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 14:13:38,132 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 14:13:40,982 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 7124
+2023-10-22 14:14:49,374 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/ HTTP/1.1" 200 7606
+2023-10-22 14:15:38,385 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9429
+2023-10-22 14:29:39,917 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9418
+2023-10-22 14:35:35,345 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Categories/ HTTP/1.1" 200 8637
+2023-10-22 17:17:25,867 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/models.py changed, reloading.
+2023-10-22 17:17:28,956 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 17:18:18,612 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9433
+2023-10-22 17:18:38,301 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/models.py changed, reloading.
+2023-10-22 17:18:39,651 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 17:18:45,633 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9433
+2023-10-22 17:19:04,573 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9433
+2023-10-22 17:19:05,334 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9433
+2023-10-22 17:19:05,543 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9433
+2023-10-22 17:19:05,754 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9433
+2023-10-22 17:19:05,917 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9433
+2023-10-22 17:19:06,086 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9433
+2023-10-22 17:19:06,220 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9433
+2023-10-22 17:19:14,575 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 19:52:51,439 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/forms.py changed, reloading.
+2023-10-22 19:52:54,674 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 19:53:00,097 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 19:53:05,115 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9248
+2023-10-22 19:54:10,281 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "POST /Info/Content/add/Content/add/ HTTP/1.1" 302 0
+2023-10-22 19:54:10,306 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 7298
+2023-10-22 19:54:15,722 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9248
+2023-10-22 23:10:41,689 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9354
+2023-10-22 23:13:10,600 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/forms.py changed, reloading.
+2023-10-22 23:13:14,027 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 23:13:28,654 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/forms.py changed, reloading.
+2023-10-22 23:13:30,606 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 23:13:34,853 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Internal Server Error: /Info/Content/add/
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py", line 33, in add_content
+    form = ContentForm(request.POST)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/forms.py", line 13, in __init__
+    self.fields['contenttype'].widget = forms.Select(choices=((x.id, x.type) for x in CHOICES))
+KeyError: 'contenttype'
+2023-10-22 23:13:34,855 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 500 81111
+2023-10-22 23:14:18,563 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/forms.py changed, reloading.
+2023-10-22 23:14:19,903 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 23:14:21,314 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9319
+2023-10-22 23:14:57,551 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/forms.py changed, reloading.
+2023-10-22 23:14:58,891 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 23:15:31,088 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/forms.py changed, reloading.
+2023-10-22 23:15:32,352 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 23:15:44,296 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/forms.py changed, reloading.
+2023-10-22 23:15:45,745 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 23:15:47,738 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9217
+2023-10-22 23:23:54,304 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9325
+2023-10-22 23:24:28,330 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9323
+2023-10-22 23:24:30,784 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9323
+2023-10-22 23:24:31,078 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9323
+2023-10-22 23:25:26,725 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9321
+2023-10-22 23:25:38,567 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9321
+2023-10-22 23:57:17,335 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "POST /Info/Content/add/Content/add/ HTTP/1.1" 200 9077
+2023-10-22 23:58:37,837 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-10-22 23:58:41,827 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 23:58:45,682 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-22 23:58:48,104 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/Content/add/ HTTP/1.1" 200 9333
+2023-10-23 00:00:04,492 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-10-23 00:00:06,066 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-23 00:00:13,978 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/Content/add/Content/add/ HTTP/1.1" 200 9059
+2023-10-23 00:00:21,182 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "POST /Info/Content/add/Content/add/Content/add/Content/add/ HTTP/1.1" 200 9071
+2023-10-23 00:01:26,058 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-10-23 00:01:27,258 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-23 00:01:34,065 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "POST /Info/Content/add/Content/add/Content/add/Content/add/ HTTP/1.1" 302 0
+2023-10-23 00:01:34,090 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET / HTTP/1.1" 200 7196
+2023-10-23 00:01:42,885 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/ HTTP/1.1" 200 7979
+2023-10-23 00:02:07,158 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-10-23 00:02:08,504 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-23 00:02:11,606 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-10-23 00:02:12,899 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-23 00:02:18,290 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9035
+2023-10-23 00:02:31,537 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-10-23 00:02:32,751 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-23 00:03:03,571 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-10-23 00:03:04,811 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-23 00:03:19,270 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py trigger_reload  222 : /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/info/views.py changed, reloading.
+2023-10-23 00:03:20,519 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/autoreload.py run_with_reloader  598 : Watching for file changes with StatReloader
+2023-10-23 00:03:23,121 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9035
+2023-10-23 00:03:31,081 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "POST /Info/Content/add/Content/add/ HTTP/1.1" 302 0
+2023-10-23 00:03:31,102 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/ HTTP/1.1" 200 8176
+2023-10-23 00:04:10,211 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/ HTTP/1.1" 200 8240
+2023-10-23 00:04:28,124 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/ HTTP/1.1" 200 8265
+2023-10-23 00:04:50,299 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/ HTTP/1.1" 200 8275
+2023-10-23 09:09:18,978 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9035
+2023-10-23 09:09:29,827 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/log.py log_response  228 : Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 249, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 221, in inner
+    if request.path == reverse('admin:logout', current_app=self.name):
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/urls/base.py", line 55, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 521, in app_dict
+    self._populate()
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 479, in _populate
+    new_matches = normalize(p_pattern + pat)
+  File "/Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/utils/regex_helper.py", line 126, in normalize
+    raise ValueError("Non-reversible reg-exp portion: '(?%s'" % ch)
+ValueError: Non-reversible reg-exp portion: '(?i'
+2023-10-23 09:09:29,830 ERROR /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /admin/ HTTP/1.1" 500 113034
+2023-10-23 09:09:33,144 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Categories/ HTTP/1.1" 200 8656
+2023-10-23 09:09:52,313 INFO /Users/s0199669/Github/PythonSampleCodes/Django/3/kip/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py log_message  157 : "GET /Info/Content/add/ HTTP/1.1" 200 9035

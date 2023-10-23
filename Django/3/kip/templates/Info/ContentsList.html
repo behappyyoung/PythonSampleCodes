@@ -25,22 +25,28 @@
 <div class="contentslist" id="SfD_kinetic">
   <table class="table table-bordered table-striped table-hover" id="contentslist_table">
    <tr>
-    <th>
-     Content
-    </th>
+
     <th>
      url
     </th>
     <th>
+        title
+    </th>
+        <th>
+     Content
     </th>
    </tr>
    {% for content in contents %}
    <tr>
-    <td class="content">
-     {{content.content}}
-    </td>
+    
     <td>
         {{content.url}}
+    </td>
+    <td>
+        {{content.title}}
+    </td>
+    <td class="content">
+     {{content.contents}}
     </td>
    </tr>
    {% endfor %}

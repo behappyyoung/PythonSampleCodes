@@ -23,14 +23,16 @@ def add_content(request):
         try:
             if form.is_valid():
                 form.save()
+                messages.error(request, 'Saved')
+                return HttpResponseRedirect('/Info/')
             else:
                 messages.error(request, form.errors)
-                return HttpResponseRedirect('/')
+                form = ContentForm(request.POST)
         except:
             messages.error(request, form.errors)
-            return HttpResponseRedirect('/')
+            form = ContentForm(request.POST)
     else:
-        form = ContentForm(request.POST)
+        form = ContentForm()
 
     # functions.f_access_log(request, 'access')
     return render(request, 'Info/Contents.html', {'form': form })

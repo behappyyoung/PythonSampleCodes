@@ -25,12 +25,12 @@ class ContentType(models.Model):
 
 
 class Content(RecordDateMixin):
-    url = models.URLField(null=False)
+    url = models.URLField(null=True)
     title = models.CharField(max_length=200, null=True)
     content_type = models.ForeignKey(ContentType, null=False, default=1, on_delete=models.CASCADE)
     content_category = models.ForeignKey(Category, null=True, on_delete=models.CASCADE)
     contents = models.TextField(null=False)
-    tags = models.ManyToManyField(Tags, through="ContentTags")
+    tags = models.TextField(null=True)
 
 
 class ContentTags(RecordDateMixin):
