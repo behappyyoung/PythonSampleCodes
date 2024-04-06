@@ -24,32 +24,47 @@
 
 <div class="contentslist" id="SfD_kinetic">
   <table class="table table-bordered table-striped table-hover" id="contentslist_table">
-   <tr>
+    <thead>
+       <tr>
 
-    <th>
-     url
-    </th>
-    <th>
-        title
-    </th>
         <th>
-     Content
-    </th>
-   </tr>
-   {% for content in contents %}
-   <tr>
-    
-    <td>
-        {{content.url}}
-    </td>
-    <td>
-        {{content.title}}
-    </td>
-    <td class="content">
-     {{content.contents}}
-    </td>
-   </tr>
-   {% endfor %}
+         url
+        </th>
+        <th>
+            title
+        </th>
+            <th>
+         Content
+        </th>
+        <th>
+            
+        </th>
+       </tr>
+    </thead>
+    <tbody>
+       {% for content in contents %}
+       <tr>
+        
+        <td>
+            {{content}}
+            {{content.url}}
+            }
+        </td>
+        <td>
+            {{content.title}}
+        </td>
+        <td class="content">
+         {{content.contents}}
+        </td>
+                <td class="content">
+         {{content.content_category.name}}
+        </td>
+        <td>
+            {{content.tag}}
+        </td>
+       </tr>
+       {% endfor %}
+    </tbody>
   </table>
  </div>
 {% endblock %}

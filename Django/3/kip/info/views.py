@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import Http404, HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import login_required
 from .models import *
-from .forms import ContentForm
+from .forms import *
 from django.contrib import messages
 from django.core import serializers
 from kip import settings
@@ -48,9 +48,12 @@ def contents_list(request):
 
 ### Category
 def categories(request):
+    jsonstring_category = []
     try:
-        category_list = Category.objects.filter().values()
-        jsonstring_category = json.dumps(list(category_list))
+        category = Category.objects.filter().values()
+        for c in category:
+            parent_id = c.get('parent_id') or '--'
+            jsonstring_category.append({'id': c.get('id'), 'name': c.get('name')})
 
     except Exception as e:
         jsonstring_category = []
@@ -58,18 +61,26 @@ def categories(request):
     context = global_context
     title = 'Categories'
     templates = 'Info/Category/Category.html'
-    context.update({'title': title, 'category_list': list(category_list)})
+    context.update({'title': title, 'category_list': jsonstring_category})
     return render(request, templates, context)
 
 def add_category(request):
     if request.method == 'POST':
+        form = CategoryForm(request.POST)
         try:
-            pass
+            if form.is_valid():
+                form.save()
+                messages.error(request, 'Saved')
+                return HttpResponseRedirect('/Info/Categories/')
+            else:
+                messages.error(request, form.errors)
+                form = CategoryForm(request.POST)
         except:
-            return ''
+            messages.error(request, form.errors)
+            form = CategoryForm(request.POST)
 
     else:
-        messages.error(request, 'only POST')
+        form = CategoryForm()
 
-    return render(request, 'Info/Contents.html', {})
+    return render(request, 'Info/Category/AddCategory.html', {'form': form})
 

@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 {% block content %}
 
@@ -21,24 +22,31 @@ console.log($scope.categories)
 </script>
 <div ng-controller="categoryController" id="categoryController" class="category categoryController">
 <div class="sub-sub-title">  {{title}}
-        <button class="btn btn-primary right-button"> new category</button>
+        <button class="btn btn-primary right-button"> <a href="/info/categories/add/"> new category </a> </button>
  </div>
 
 
     <table class="table table-stripped table-bordered " style="margin:auto;width:1000px;">
         <thead>
             <th>
-            
-            </th>    
+                    name
+            </th>
+            <th>
+                    parent
+            </th>
+                
         </thead>
         
 
         <tbody>
 
         <tr class="elem" ng-repeat="c in categories">
-            {$ c $}
+           
             <td>
-                
+                     {$ c.name $}     
+            </td>
+            <td>
+                {$ c.id $}
             </td>
         </tr>
 

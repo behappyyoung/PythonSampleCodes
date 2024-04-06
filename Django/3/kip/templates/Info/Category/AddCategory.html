@@ -35,7 +35,7 @@
     {% endfor %}
  {% endif %}
 
-  <form action="Content/add/" id="contentform" method="post">
+  <form action="/Info/categories/add/" id="form_caregory" method="post">
                 {% csrf_token %}
               {{form}}
    <div class="actions" id="div_actions">
@@ -44,7 +44,7 @@
     </button>
     <input id="input_action" name="action" type="hidden" value="add"/>
     <button class="btn btn-sm" id="button_cancel" type="button">
-     <a href="/info/" id="SfA_wisdom">
+     <a href="/info/categories/" id="SfA_wisdom">
       Cancel
      </a>
     </button>

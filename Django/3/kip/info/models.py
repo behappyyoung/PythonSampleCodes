@@ -13,6 +13,9 @@ class Category(models.Model):
     name = models.CharField(max_length=100, null=False)
     parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True, help_text='null=main category')
 
+    def __unicode__(self):
+        return self.name
+
 
 class Tags(models.Model):
     name = models.CharField(max_length=100, null=False)
@@ -20,6 +23,9 @@ class Tags(models.Model):
 
 
 class ContentType(models.Model):
+    """
+        text / images / url(?)
+    """
     type = models.CharField(max_length=10, null=False)
     type_name = models.CharField(max_length=100, null=False)
 
