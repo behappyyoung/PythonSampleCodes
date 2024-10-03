@@ -3,9 +3,5 @@
 *.log
 .DS_Store
 **/log
-venv
-venv3
-wenv
-wvenv
-venv3
+venv/
 *.pyc
