@@ -10,5 +10,4 @@ def get_recipe(url):
     c.setopt(c.WRITEDATA, buffer)
     c.perform()
     c.close()
-    print buffer
     return buffer.getvalue()

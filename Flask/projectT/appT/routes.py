@@ -1,20 +1,22 @@
 from appT import app
 from flask import render_template, request
 
+
 @app.route('/')
 @app.route('/index')
 def index():
-    return "Hello, Testing World!"
-    
+    return "Hello, appT app /index Testing World!"
+
+@app.route('/testing')
+def test_html():
+    test = dict(name='test', path='test',  children=[])
+    return render_template('test.html', title='Testing', test=test)
+
+
 @app.route('/python')
 def python():
     return render_template('python/xml.xml')
 
-@app.route('/test')
-@app.route('/testing')
-def test():
-    test = dict(name='test', path = 'test',  children=[])
-    return render_template('index.html', title='Home', test=test)
 
 @app.route('/example')
 def withTemp():
