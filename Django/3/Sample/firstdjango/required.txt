@@ -1,4 +1,4 @@
 Django==1.11.29
 django-filter==0.13.0
-djangorestframework==3.3.3
+djangorestframework==3.11.2
 Markdown==2.6.6
